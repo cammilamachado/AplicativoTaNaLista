@@ -1,24 +1,26 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`Compras App`
 
-`DISCIPLINA`
+`Trabalho Interdisciplinar: Desenvolvimento de Aplicações Móveis`
 
-`SEMESTRE`
+`4° Semestre`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Edrei Dornelas
+* Camila Machado
+* Tarsis Augustus
+* Giordano Norberto
+* Márcio Lucas
+* Leonardo Mendes
 
 ## Orientador
 
-* Nome completo do professor 1
-
+* Felipe Alves de Oliveira
+  
 ## Instruções de utilização
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
