@@ -1,12 +1,14 @@
 # COMPRAS APP
 
-`Compras App`
+`Análise e Desenvolvimento de Sistemas`
 
-`Trabalho Interdisciplinar: Desenvolvimento de Aplicações Móveis`
+`Trabalho Interdisciplinar: Aplicação Móvel`
 
 `4° Semestre`
 
-O Compras App é um aplicativo móvel multiplataforma projetado para otimizar a gestão de listas de compras voltado, principalmente, para repúblicas estudantis. A ferramenta permite que os usuários criem e organizem listas de compras de forma intuitiva, garantindo maior controle sobre os itens adquiridos e, assim, evitando desperdícios. Além de simplificar o planejamento das compras coletivas, o aplicativo inclui recursos como autenticação, gestão de usuários, sugestão automática de produtos e controle de estoque, que proporcionam uma administração mais eficiente dos suprimentos e dos gastos compartilhados.
+O projeto em desenvolvimento foca na criação de um aplicativo móvel multiplataforma para facilitar a gestão de listas de compras voltado, principalmente, para repúblicas estudantis. A iniciativa surge da dificuldade enfrentada pelas pessoas ao organizar compras coletivas, resultando em desperdícios, itens repetidos e falta de controle sobre os gastos. Além disso, a ausência de uma ferramenta eficiente torna desafiador o planejamento e a divisão de responsabilidades entre, por exemplo, os moradores da república.
+
+Esta aplicação visa otimizar a administração das compras compartilhadas, abordando esses desafios por meio de uma interface intuitiva e recursos como gestão de estoque, sugestão automática de produtos e controle de gastos. O objetivo final do projeto é solucionar problemas organizacionais e aprimorar a experiência dos usuários, tornando a gestão de suprimentos mais eficiente.
 
 ## Integrantes
 
@@ -19,7 +21,7 @@ O Compras App é um aplicativo móvel multiplataforma projetado para otimizar a 
   
 ## Orientador
 
-* Felipe Alves de Oliveira
+* Pedro Felipe Alves de Oliveira
   
 ## Instruções de utilização
 
