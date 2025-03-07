@@ -25,12 +25,14 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Considerando os problemas levantados anteriormente, o desenvolvimeto de um software especializado auxiliará os usuários na organização e gestão da casa.
+Dentre os potenciais benefícios do software, destacam-se:
+ Otimização do tempo;
+ Redução de desperdícios;
+ Redução de gastos;
+ Aumento da disponibilidade de recursos;
+ Facilitação na organização;
+Além disso, uma solução baseada em software pode, futuramente, ser aprimorada para oferecer mais funcionalidades, caso as necessidades dos usuários mudem com o tempo.
 
 ## Público-Alvo
 
