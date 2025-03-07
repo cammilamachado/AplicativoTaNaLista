@@ -22,7 +22,8 @@ Dentre os objetivos específicos, destacam-se:
 > - Desenvolver uma interface intuitiva e acessível que permita aos usuários adicionar, editar e excluir itens de sua lista de compras;
 > - Incluir recursos de categorização de itens e sugestão de produtos para otimizar a experiência do usuário;
 > - Implementar um sistema de autenticação e gestão de usuários;
-> - Criar um sistema de gestão de estoque para auxiliar os usuários a monitorar a disponibilidade de mercadorias e desenvolver uma funcionalidade de gestão de produtos, que permitem aos usuários armazenar informações sobre itens frequentes;
+> - Criar um sistema de gestão de estoque que auxilie os usuários a monitorar a disponibilidade de mercadorias;
+> - Desenvolver uma funcionalidade de gestão de produtos, para armazenar informações sobre itens frequentes;
 > - Implementar um recurso de autocompletar para sugerir itens com base no histórico de compras.
 
 ## Justificativa
