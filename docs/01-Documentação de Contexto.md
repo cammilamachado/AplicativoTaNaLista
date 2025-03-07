@@ -27,11 +27,11 @@ Apresente também alguns (pelo menos 2) objetivos específicos dependendo de ond
 
 Considerando os problemas levantados anteriormente, o desenvolvimeto de um software especializado auxiliará os usuários na organização e gestão da casa.
 Dentre os potenciais benefícios do software, destacam-se:
- Otimização do tempo;
- Redução de desperdícios;
- Redução de gastos;
- Aumento da disponibilidade de recursos;
- Facilitação na organização;
+> Otimização do tempo;
+> Redução de desperdícios;
+> Redução de gastos;
+> Aumento da disponibilidade de recursos;
+> Facilitação na organização;
 Além disso, uma solução baseada em software pode, futuramente, ser aprimorada para oferecer mais funcionalidades, caso as necessidades dos usuários mudem com o tempo.
 
 ## Público-Alvo
