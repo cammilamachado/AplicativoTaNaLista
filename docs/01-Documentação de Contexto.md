@@ -16,13 +16,13 @@ A solução proposta, o "Compras App", permitirá aos usuários criar, gerenciar
 
 O objetivo geral é desenvolver um aplicativo móvel que simplifique a gestão de listas de compras, que proporcione uma organização mais prática e eficiente dos itens adquiridos. Além de reduzir desperdícios e otimizar os gastos domésticos, a aplicação visa melhorar a experiência do usuário por meio de funcionalidades intuitivas, para maior controle sobre as compras e colaboração entre os usuários.
 
-Dentre os objetivos específicos, destaca-se:
+Dentre os objetivos específicos, destacam-se:
 
-- Desenvolver uma interface intuitiva e acessível que permita aos usuários adicionar, editar e excluir itens de sua lista de compras;
-- Incluir recursos de categorização de itens e sugestão de produtos para otimizar a experiência do usuário;
-- Implementar um sistema de autenticação e gestão de usuários;
-- Criar um sistema de gestão de estoque para auxiliar os usuários a monitorar a disponibilidade de mercadorias e desenvolver uma funcionalidade de gestão de produtos, que permitem aos usuários armazenar informações sobre itens frequentes;
-- Implementar um recurso de autocompletar para sugerir itens com base no histórico de compras.
+> - Desenvolver uma interface intuitiva e acessível que permita aos usuários adicionar, editar e excluir itens de sua lista de compras;
+> - Incluir recursos de categorização de itens e sugestão de produtos para otimizar a experiência do usuário;
+> - Implementar um sistema de autenticação e gestão de usuários;
+> - Criar um sistema de gestão de estoque para auxiliar os usuários a monitorar a disponibilidade de mercadorias e desenvolver uma funcionalidade de gestão de produtos, que permitem aos usuários armazenar informações sobre itens frequentes;
+> - Implementar um recurso de autocompletar para sugerir itens com base no histórico de compras.
 
 ## Justificativa
 
