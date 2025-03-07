@@ -32,7 +32,7 @@ Dentre os potenciais benefícios do software, destacam-se:
 > - Redução de gastos;
 > - Aumento da disponibilidade de recursos;
 > - Facilitação na organização;
-Além disso, uma solução baseada em software pode, futuramente, ser aprimorada para oferecer mais funcionalidades, caso as necessidades dos usuários mudem com o tempo.
+-Além disso, uma solução baseada em software pode, futuramente, ser aprimorada para oferecer mais funcionalidades, caso as necessidades dos usuários mudem com o tempo.
 
 ## Público-Alvo
 
