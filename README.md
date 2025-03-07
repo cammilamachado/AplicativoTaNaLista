@@ -6,17 +6,17 @@
 
 `4° Semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O Compras App é um aplicativo móvel multiplataforma projetado para otimizar a gestão de listas de compras voltado, principalmente, para repúblicas estudantis. A ferramenta permite que os usuários criem e organizem listas de compras de forma intuitiva, garantindo maior controle sobre os itens adquiridos e, assim, evitando desperdícios. Além de simplificar o planejamento das compras coletivas, o aplicativo inclui recursos como autenticação, gestão de usuários, sugestão automática de produtos e controle de estoque, que proporcionam uma administração mais eficiente dos suprimentos e dos gastos compartilhados.
 
 ## Integrantes
 
-* Edrei Dornelas
 * Camila Machado
-* Tarsis Augustus
+* Edrei Dornelas
 * Giordano Norberto
-* Márcio Lucas
 * Leonardo Mendes
-
+* Márcio Lucas
+* Tarsis Augustus
+  
 ## Orientador
 
 * Felipe Alves de Oliveira
