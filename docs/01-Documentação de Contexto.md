@@ -10,6 +10,7 @@ Além disso, o aplicativo é voltado para, principalmente, moradores de repúbli
 ## Problema
 
 Muitos indivíduos enfrentam dificuldades na gestão de compras do cotidiano, resultando em aquisições impulsivas, perda de alimentos e dificuldades financeiras. A ausência de um sistema organizado para controle das mercadorias pode gerar acúmulo de produtos, esquecimentos e gastos desnecessários.
+
 A solução proposta, o "Compras App", permitirá aos usuários criar, gerenciar e compartilhar listas de compras de forma simples e eficiente. A aplicação será desenvolvida com foco na usabilidade, garantindo que os usuários possam adicionar e acessar suas listas de maneira rápida e organizada, proporcionando maior controle sobre suas compras e evitando desperdícios.
 
 ## Objetivos
