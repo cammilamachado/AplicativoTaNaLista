@@ -28,7 +28,7 @@ Dentre os objetivos específicos, destacam-se:
 
 ## Justificativa
 
-O artigo "A GESTÃO COMPARTILHADA EM ORGANIZAÇÕES ESTUDANTIS: O CASO DA REPÚBLICA AQUARIUS DE OURO PRETO." (MACHADO, O. L.Disponível em: <https://www.aacademica.org/otavioluizmachado/4>. Acesso em: 7 mar. 2025.)
+O artigo "A GESTÃO COMPARTILHADA EM ORGANIZAÇÕES ESTUDANTIS: O CASO DA REPÚBLICA AQUARIUS DE OURO PRETO." (MACHADO, O. L. Disponível em: <https://www.aacademica.org/otavioluizmachado/4>. Acesso em: 7 mar. 2025.)
 reúne entrevistas realizadas com ex membros de uma república da UFOP (Universidade Federal de Ouro Preto), nas quais os entrevistados relatam que o principal motivo para o sucesso da república vem do sistema robusto desenvolvido para a gestão. Além disso, destaca-se a alta participação de todos os integrantes para a tomada de decisões importantes, como a escolha de membros e organização da casa.
 Considerando os problemas levantados anteriormente, o desenvolvimeto de um software especializado auxiliará os usuários na organização e gestão da casa.
 Dentre os potenciais benefícios do software, destacam-se:
@@ -38,9 +38,9 @@ Dentre os potenciais benefícios do software, destacam-se:
 > - Aumento da disponibilidade de recursos;
 > - Facilitação na organização;
 
-Além disso, uma solução baseada em software pode, futuramente, ser aprimorada para oferecer mais funcionalidades, caso as necessidades dos usuários mudem com o tempo.
+Ademais, uma solução baseada em software pode, futuramente, ser aprimorada para oferecer mais funcionalidades, caso as necessidades dos usuários mudem com o tempo.
 
 ## Público-Alvo
 
-O público alvo são jovens (de 18 a 30 anos) estudantes universitários que moram juntos numa república ou espaço similar, possuem familiaridade com tecnologia e pouca ou nenhuma experiência com a gestão de uma casa compartilhada.
+O público-alvo são jovens (de 18 a 30 anos) estudantes universitários que moram juntos numa república ou espaço similar, possuem familiaridade com tecnologia e pouca ou nenhuma experiência com a gestão de uma casa compartilhada.
 ![Proto Persona](https://github.com/user-attachments/assets/645bb756-56bb-4fe9-abfd-a368a7a6bdd0)
