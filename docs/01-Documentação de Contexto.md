@@ -39,4 +39,5 @@ Além disso, uma solução baseada em software pode, futuramente, ser aprimorada
 
 ## Público-Alvo
 
-O público alvo são jovens estudantes universitários que moram juntos numa república ou espaço similar. Sua faixa etária varia entre os 18 aos 30 anos.
+O público alvo são jovens (de 18 a 30 anos) estudantes universitários que moram juntos numa república ou espaço similar, possuem familiaridade com tecnologia e pouca ou nenhuma experiência com a gestão de uma casa compartilhada.
+![Proto Persona](https://github.com/user-attachments/assets/645bb756-56bb-4fe9-abfd-a368a7a6bdd0)
