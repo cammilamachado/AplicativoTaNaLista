@@ -1,14 +1,53 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+O desenvolvimento do aplicativo seguirá a abordagem Ágil, utilizando a metodologia Scrum para garantir flexibilidade e entregas incrementais. O projeto será dividido nas seguintes fases:  
+## 1. Levantamento de Requisitos  
+- Coleta de necessidades dos usuários por meio de entrevistas e pesquisas.  
+- Definição das funcionalidades essenciais do aplicativo.  
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+## 2. Planejamento e Design  
+- Elaboração de wireframes e prototipagem da interface.  
+- Foco na usabilidade e experiência do usuário (UX/UI).  
 
-## Relação de Ambientes de Trabalho
+## 3. Desenvolvimento  
+- Implementação das funcionalidades em ciclos curtos (sprints).  
+- Utilização das tecnologias:
+  - **React Native** para o front-end.  
+  - **Python (Django)** para a API.  
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito deverá ser apresentada em uma tabela que especifica que detalha Ambiente, Plataforma e Link de Acesso. 
-Nota: Vide documento modelo do estudo de caso "Portal de Notícias" e defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+## 4. Testes e Validação  
+- Aplicação de testes unitários e testes de integração.  
+- Testes com usuários para validação da experiência e eficiência do sistema.  
+
+## 5. Implantação e Feedback  
+- Publicação da versão inicial do aplicativo (APK).  
+- Coleta de feedback dos usuários e ajustes para melhorias contínuas.  
+
+# Relação de Ambientes de Trabalho  
+
+Os artefatos do projeto são desenvolvidos em diferentes ambientes, garantindo um fluxo de trabalho eficiente e organizado. A tabela abaixo apresenta a relação dos ambientes, as plataformas utilizadas e os respectivos links de acesso.  
+
+| **Ambiente**      | **Plataforma**                                      | **Link de Acesso**                         |
+|------------------|--------------------------------------------------|--------------------------------------------|
+| **Desenvolvimento** | React Native, Expo, Django (Python), SQLite       | [GitHub - Repositório do Projeto](#)      |
+| **Homologação**   | Firebase (Auth, Firestore), Render, TestFlight     | [TestFlight - Versão Beta](#)             |
+| **Produção**      | Google Play Store, App Store, API em AWS/Firebase | [Google Play Store](#) / [App Store](#)   |
+
+## Tecnologias e Frameworks Utilizados  
+
+- **Front-end:** React Native + Expo  
+- **Back-end:** Django (Python)  
+- **Banco de Dados:** SQLite (desenvolvimento), Firebase Firestore (produção)  
+- **Autenticação:** Firebase Auth  
+- **Hospedagem da API:** Render ou AWS  
+- **Testes:** Jest + React Native Testing Library  
+- **Distribuição:** Inicialmente um arquivo APK para cada usuário e posteriormente Google Play Store / App Store.
+
+Cada ambiente tem um propósito específico:  
+- **Desenvolvimento:** Local, utilizado para a implementação de novas funcionalidades.  
+- **Homologação:** Validação e testes com usuários antes da publicação.  
+- **Produção:** Aplicativo disponível para os usuários finais.  
 
 ## Controle de Versão
 
