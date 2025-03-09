@@ -49,7 +49,7 @@ Controlar o custo total do desenvolvimento do aplicativo, garantindo que os recu
 ## Personas
 
 ### Persona 1:
-João, o Estudante Universitário Organizado. 22 anos, estudante de Engenharia, mora sozinho em um apartamento, utiliza como tecnlogia: Smartphone Android, Laptop, Apps de produtividade. 
+João, o Estudante Universitário Organizado. 22 anos, estudante de Engenharia, mora sozinho em um apartamento, utiliza como tecnologia: Smartphone Android, Laptop, Apps de produtividade. 
 
 #### Objetivos:
 Organizar suas compras de maneira eficiente, evitando desperdícios e mantendo o orçamento controlado.
