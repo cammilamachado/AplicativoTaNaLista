@@ -34,8 +34,9 @@ Planejar e controlar todas as etapas do desenvolvimento do aplicativo, asseguran
 Trello ou Jira: Ferramentas de gestão de tarefas que permitem a organização de atividades, criação de sprints e acompanhamento do progresso da equipe.
 Metodologia Ágil (Scrum ou Kanban): Usada para garantir entregas incrementais e contínuas, com feedback constante.
 
-### 10. Gerenciamento de tempo: O gerenciamento de tempo é fundamental para garantir que todas as tarefas do projeto sejam realizadas dentro do prazo estipulado, otimizando a produtividade da equipe e evitando atrasos no desenvolvimento do "Compras App". Para alcançar isso, são utilizadas as seguintes ferramentas e técnicas:
-    Ferramentas Utilizadas:
+### 10. Gerenciamento de tempo: 
+O gerenciamento de tempo é fundamental para garantir que todas as tarefas do projeto sejam realizadas dentro do prazo estipulado, otimizando a produtividade da equipe e evitando atrasos no desenvolvimento do "Compras App". Para alcançar isso, são utilizadas as seguintes ferramentas e técnicas:
+### Ferramentas Utilizadas:
 Pomodoro: Técnica que divide o trabalho em intervalos de tempo curtos (geralmente 25 minutos), seguidos de uma pausa curta. Isso ajuda a manter o foco e a evitar a procrastinação.
 Time Tracking (Toggl, Harvest): Ferramentas que permitem o rastreamento do tempo gasto em cada tarefa, possibilitando ajustes no planejamento e assegurando que os prazos sejam cumpridos.
 
