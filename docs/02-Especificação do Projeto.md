@@ -112,6 +112,35 @@ O aplicativo também pode gerar relatórios de gastos, ajudando Lucas a manter s
 |Maria       | Criar uma lista de compras compartilhada              | Dividir as compras com meus colegas de república e garantir que todos saibam o que falta |
 |Lucas       | Adicionar rapidamente itens à minha lista de compras                 | Evitar esquecer o que preciso comprar quando estou ocupado |
 
+#### Histórias de Usuários para Controle de Orçamento e Despesas
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|--------------------|------------------------------------|----------------------------------------|
+|João  | Controlar meu orçamento de compras               |Evitar gastar mais do que o planejado e garantir que minhas compras fiquem dentro do orçamento
+|Maria       | Dividir o valor total das compras entre os membros da república |Garantir que todos contribuam de maneira justa e evitem conflitos sobre quem pagou o quê
+|Lucas       | Visualizar o histórico de gastos |Entender onde posso economizar e evitar gastos desnecessários
+
+#### Histórias de Usuários para Controle de Estoque e Validade
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|--------------------|------------------------------------|----------------------------------------|
+|João  | Registrar a validade dos produtos em minha casa               |Evitar desperdício de alimentos e controlar o que precisa ser consumido mais rapidamente
+|Maria       | Verificar a validade dos produtos em nossa casa |Garantir que não compramos itens desnecessários e evitar que os alimentos estraguem
+|Lucas       | Receber notificações sobre a validade dos produtos |Planejar minhas compras de forma mais eficiente e evitar que alimentos se percam
+
+#### Histórias de Usuários para Funcionalidades de Compartilhamento e Colaboração
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|--------------------|------------------------------------|----------------------------------------|
+|João  | Compartilhar minha lista de compras com outros usuários               |Facilitar a comunicação e colaboração em compras familiares ou entre amigos
+|Maria       | Compartilhar minha lista de compras com outros usuários              | Garantir que todos saibam o que está faltando e evitar compras duplicadas |
+
+
+#### Histórias de Usuários para Notificações e Alertas
+|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
+|--------------------|------------------------------------|----------------------------------------|
+|João  | Receber notificações sobre o que está faltando em minha lista de compras              |Lembrar-me de comprar itens essenciais que eu possa ter esquecido
+|Lucas       | Receber alertas sobre produtos que estão perto da data de validade | Evitar desperdício de alimentos e consumir o que está prestes a vencer |
+
+
+
 
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
