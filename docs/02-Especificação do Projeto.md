@@ -105,12 +105,14 @@ O aplicativo também pode gerar relatórios de gastos, ajudando Lucas a manter s
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
-
+#### Histórias de Usuários para Funcionalidades de Listas de Compras
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|João  | Registrar itens em uma lista de compras        | Não esquecer de comprar os itens que preciso e organizar minha compra de forma eficiente               |
+|Maria       | Criar uma lista de compras compartilhada              | Dividir as compras com meus colegas de república e garantir que todos saibam o que falta |
+|Lucas       | Adicionar rapidamente itens à minha lista de compras                 | Evitar esquecer o que preciso comprar quando estou ocupado |
+
+
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
