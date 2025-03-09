@@ -68,7 +68,7 @@ A funcionalidade de controle de validade ajuda a evitar desperdício de alimento
 A organização das listas por categorias e o compartilhamento com outros membros da casa facilita a comunicação e o controle.
 
 ### Persona 2:
-Maria, a moradora de república conectada, 20 anos, estudande de medicina, mora em uma república com 4 colegas, utiliza como tecnnologia: Smartphone iOS, Apps de comunicação (WhatsApp, Facebook), GPS.
+Maria, a moradora de república conectada, 20 anos, estudande de medicina, mora em uma república com 4 colegas, utiliza como tecnologia: Smartphone iOS, Apps de comunicação (WhatsApp, Facebook), GPS.
 
 #### Objetivos:
 Garantir que todas as necessidades da casa sejam atendidas sem causar conflitos entre os colegas de república.
@@ -86,7 +86,7 @@ O sistema de orçamento compartilhado ajuda a garantir que todos contribuam igua
 As notificações de validade e estoque ajudam a manter o controle dos itens na casa.
 
 ### Persona 3:
-Lucas, o Jovem Profissional Empreendedor, 25 anos, Freelancer de Design Gráfico,  Mora sozinho em um pequeno apartamento, tecnologia utilizada: Smartphone Android, Laptop, Apps de produtividade e finanças.
+Lucas, o Jovem Profissional Empreendedor, 25 anos, Freelancer de Design Gráfico, Mora sozinho em um pequeno apartamento, tecnologia utilizada: Smartphone Android, Laptop, Apps de produtividade e finanças.
 
 #### Objetivos:
 Economizar dinheiro, mantendo um controle rigoroso sobre suas finanças pessoais e evitando desperdícios com compras desnecessárias.
