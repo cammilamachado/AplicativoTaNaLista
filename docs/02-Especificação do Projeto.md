@@ -268,17 +268,23 @@ O gerenciamento adequado de tarefas contribuirá para que o projeto alcance alto
 ![Simple Project Timeline](img/02-project-timeline.png)
 
 ## Gestão de Orçamento
-####Recursos Humanos
+#### Recursos Humanos
+
 ![image](https://github.com/user-attachments/assets/3adae013-bcce-4002-b8e1-75ee53a56d9f)
-####Hardware
+#### Hardware
+
 ![image](https://github.com/user-attachments/assets/7ed5ac6d-65e9-4c3d-8281-aa6608ec0ae2)
-####Rede
+#### Rede
+
 ![image](https://github.com/user-attachments/assets/1c1a88bd-0d1e-41e9-88dd-a3e1452a13b7)
-####Software
+#### Software
+
 ![image](https://github.com/user-attachments/assets/b59f828a-415a-48ff-8d03-499067aeab67)
-####Serviços
+#### Serviços
+
 ![image](https://github.com/user-attachments/assets/721d3200-d562-428b-933c-381b49bd8f67)
-####Resumo do Orçamento
+#### Resumo do Orçamento
+
 ![image](https://github.com/user-attachments/assets/22dcb557-57df-4d07-a848-c4ad9b323b96)
 
 
