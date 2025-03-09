@@ -4,7 +4,8 @@
 
 O cotidiano de muitas pessoas, especialmente de estudantes universitários e moradores de repúblicas, é marcado pela falta de organização na gestão de compras domésticas. A partir deste o projeto "Compras App" tem como objetivo entender as necessidades dos usuários e mapear como a solução proposta pode atender a essas demandas de forma eficiente. Para isso, serão abordados os seguintes pontos:
 
-1. Diagrama de Personas: Será criada uma representação dos usuários típicos que utilizarão o "Compras App". O diagrama de personas ajudará a ilustrar as características, necessidades e comportamentos dos usuários, a fim de garantir que o aplicativo seja desenvolvido com foco no seu público-alvo.
+### 1. Diagrama de Personas: 
+Será criada uma representação dos usuários típicos que utilizarão o "Compras App". O diagrama de personas ajudará a ilustrar as características, necessidades e comportamentos dos usuários, a fim de garantir que o aplicativo seja desenvolvido com foco no seu público-alvo.
 
 2. Histórias de Usuários: Serão descritas as funcionalidades do aplicativo do ponto de vista dos usuários. As histórias de usuários servirão para mapear as interações que os usuários terão com o sistema, destacando suas necessidades e objetivos.
 
