@@ -4,7 +4,7 @@
 
 O cotidiano de muitas pessoas, especialmente de estudantes universitários e moradores de repúblicas, é marcado pela falta de organização na gestão de compras domésticas. A partir deste o projeto "Compras App" tem como objetivo entender as necessidades dos usuários e mapear como a solução proposta pode atender a essas demandas de forma eficiente. Para isso, serão abordados os seguintes pontos:
 
-### 1. Diagrama de Personas: 
+### 1. Personas: 
 Será criada uma representação dos usuários típicos que utilizarão o "Compras App". O diagrama de personas ajudará a ilustrar as características, necessidades e comportamentos dos usuários, a fim de garantir que o aplicativo seja desenvolvido com foco no seu público-alvo.
 
 ### 2. Histórias de Usuários: 
@@ -49,19 +49,26 @@ Controlar o custo total do desenvolvimento do aplicativo, garantindo que os recu
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+### Persona 1. 
+João, o Estudante Universitário Organizado. 22 anos, estudante de Engenharia, mora sozinho em um apartamento, utiliza como tecnlogia: Smartphone Android, Laptop, Apps de produtividade. 
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+#### Objetivos:
+Organizar suas compras de maneira eficiente, evitando desperdícios e mantendo o orçamento controlado.
+Controlar o que já possui em casa, para não comprar produtos desnecessários.
+Planejar suas compras com antecedência, para garantir que não faltem itens essenciais durante a semana.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+#### Frustrações:
+Esquece o que tem em casa, acabando por comprar mais do que precisa.
+Se sente perdido ao tentar organizar as compras no meio de uma rotina agitada de estudos.
+Dificuldade em controlar os gastos mensais, já que o orçamento é apertado.
+
+#### Como o "Compras App" pode ajudar:
+
+O aplicativo permite que ele registre e visualize suas listas de compras e quantidades necessárias.
+A funcionalidade de controle de validade ajuda a evitar desperdício de alimentos.
+A organização das listas por categorias e o compartilhamento com outros membros da casa facilita a comunicação e o controle.
+
+
 
 ## Histórias de Usuários
 
