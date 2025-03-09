@@ -168,7 +168,7 @@ Obs.: todas as informações para gerar os indicadores devem estar no diagrama d
 |RF-012| Permitir que o usuário adicione observações ou notas aos itens da lista   | MÉDIA |
 |RF-013| Permitir que o usuário altere o status de um item  | ALTA |
 
-### Requisitos não Funcionais
+### Requisitos Não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
