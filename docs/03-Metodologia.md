@@ -2,6 +2,7 @@
 # Metodologia
 
 O desenvolvimento do aplicativo seguirá a abordagem Ágil, utilizando a metodologia Scrum para garantir flexibilidade e entregas incrementais. O projeto será dividido nas seguintes fases:  
+
 ## 1. Levantamento de Requisitos  
 - Coleta de necessidades dos usuários por meio de entrevistas e pesquisas.  
 - Definição das funcionalidades essenciais do aplicativo.  
@@ -13,8 +14,8 @@ O desenvolvimento do aplicativo seguirá a abordagem Ágil, utilizando a metodol
 ## 3. Desenvolvimento  
 - Implementação das funcionalidades em ciclos curtos (sprints).  
 - Utilização das tecnologias:
-  - **React Native** para o front-end.  
-  - **Python (Django)** para a API.  
+  - React Native para o front-end.  
+  - .NET (C#) para a API.  
 
 ## 4. Testes e Validação  
 - Aplicação de testes unitários e testes de integração.  
@@ -30,24 +31,24 @@ Os artefatos do projeto são desenvolvidos em diferentes ambientes, garantindo u
 
 | **Ambiente**      | **Plataforma**                                      | **Link de Acesso**                         |
 |------------------|--------------------------------------------------|--------------------------------------------|
-| **Desenvolvimento** | React Native, Expo, Django (Python), SQLite       | [GitHub - Repositório do Projeto](#)      |
+| **Desenvolvimento** | React Native, Expo, .NET (C#), SQLite             | [GitHub - Repositório do Projeto](#)      |
 | **Homologação**   | Firebase (Auth, Firestore), Render, TestFlight     | [TestFlight - Versão Beta](#)             |
 | **Produção**      | Google Play Store, App Store, API em AWS/Firebase | [Google Play Store](#) / [App Store](#)   |
 
 ## Tecnologias e Frameworks Utilizados  
 
 - **Front-end:** React Native + Expo  
-- **Back-end:** Django (Python)  
+- **Back-end:** .NET Core (C#)  
 - **Banco de Dados:** SQLite (desenvolvimento), Firebase Firestore (produção)  
 - **Autenticação:** Firebase Auth  
 - **Hospedagem da API:** Render ou AWS  
-- **Testes:** Jest + React Native Testing Library  
-- **Distribuição:** Inicialmente um arquivo APK para cada usuário e posteriormente Google Play Store / App Store.
+- **Testes:** NUnit ou xUnit para .NET  
+- **Distribuição:** Inicialmente um arquivo APK para cada usuário e posteriormente Google Play Store / App Store.  
 
 Cada ambiente tem um propósito específico:  
 - **Desenvolvimento:** Local, utilizado para a implementação de novas funcionalidades.  
 - **Homologação:** Validação e testes com usuários antes da publicação.  
-- **Produção:** Aplicativo disponível para os usuários finais.  
+- **Produção:** Aplicativo disponível para os usuários finais.    
 
 ## Controle de Versão
 
