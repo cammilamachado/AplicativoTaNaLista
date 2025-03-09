@@ -10,40 +10,37 @@ Será criada uma representação dos usuários típicos que utilizarão o "Compr
 ### 2. Histórias de Usuários: 
 Serão descritas as funcionalidades do aplicativo do ponto de vista dos usuários. As histórias de usuários servirão para mapear as interações que os usuários terão com o sistema, destacando suas necessidades e objetivos.
 
-### 3. Modelagem do Processo de Negócio: 
-Descrever e representar de forma visual os processos relacionados à gestão de compras, desde a criação de listas até a execução da compra e o controle de estoque.
-
-### 4. Indicadores de desempenho: 
+### 3. Indicadores de desempenho: 
 Avaliar o sucesso do aplicativo e da gestão das compras, com foco em como os usuários estão utilizando a ferramenta e se estão atingindo seus objetivos.
 
-### 5. Requisitos Funcionais: 
+### 4. Requisitos Funcionais: 
 Serão listados os requisitos essenciais que o aplicativo deve atender para garantir que os usuários possam atingir seus objetivos de maneira eficiente. Isso incluirá funcionalidades como criar, editar, compartilhar e visualizar listas de compras, além de permitir a organização e a gestão de itens.
 
-### 6. Requisitos Não Funcionais: 
+### 5. Requisitos Não Funcionais: 
 Serão descritos os requisitos relacionados ao desempenho, segurança, usabilidade e confiabilidade do aplicativo. Estes requisitos garantirão que o "Compras App" funcione de maneira otimizada e segura, proporcionando uma experiência satisfatória para o usuário.
 
-### 7. Restrições do Projeto: 
+### 6. Restrições do Projeto: 
 Serão destacadas as limitações ou condições que precisam ser consideradas durante o desenvolvimento do aplicativo, como o uso das tecnologias React Native para o desenvolvimento multiplataforma (Android e iOS), a necessidade de uma interface simples e intuitiva e a compatibilidade com dispositivos de diferentes especificações
 
-### 8. Diagramas de casos de uso: 
+### 7. Diagramas de casos de uso: 
 Representar as interações entre os usuários e o sistema, identificando as funcionalidades essenciais que o aplicativo deve oferecer.
 
-### 9. Gerenciamento de projeto: 
+### 8. Gerenciamento de projeto: 
 Planejar e controlar todas as etapas do desenvolvimento do aplicativo, assegurando que o projeto seja concluído dentro do prazo, custo e qualidade desejados.
 ### Ferramentas:
-Trello ou Jira: Ferramentas de gestão de tarefas que permitem a organização de atividades, criação de sprints e acompanhamento do progresso da equipe.
+Projects: Ferramentas de gestão de tarefas que permitem a organização de atividades, criação de sprints e acompanhamento do progresso da equipe.
 Metodologia Ágil (Scrum ou Kanban): Usada para garantir entregas incrementais e contínuas, com feedback constante.
 
-### 10. Gerenciamento de tempo: 
+### 9. Gerenciamento de tempo: 
 O gerenciamento de tempo é fundamental para garantir que todas as tarefas do projeto sejam realizadas dentro do prazo estipulado, otimizando a produtividade da equipe e evitando atrasos no desenvolvimento do "Compras App". Para alcançar isso, são utilizadas as seguintes ferramentas e técnicas:
 ### Ferramentas Utilizadas:
 Pomodoro: Técnica que divide o trabalho em intervalos de tempo curtos (geralmente 25 minutos), seguidos de uma pausa curta. Isso ajuda a manter o foco e a evitar a procrastinação.
 Time Tracking (Toggl, Harvest): Ferramentas que permitem o rastreamento do tempo gasto em cada tarefa, possibilitando ajustes no planejamento e assegurando que os prazos sejam cumpridos.
 
-### 11. Gerenciamento de equipe: 
+### 10. Gerenciamento de equipe: 
 Garantir que a equipe de desenvolvimento esteja utilizando seu tempo de forma eficiente e que as atividades sejam concluídas dentro do prazo estipulado.
 
-### 12. Gestão de orçamento: 
+### 11. Gestão de orçamento: 
 Controlar o custo total do desenvolvimento do aplicativo, garantindo que os recursos sejam alocados adequadamente e dentro do orçamento previsto.
 
 ## Personas
