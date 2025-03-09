@@ -2,7 +2,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-O cotidiano de muitas pessoas, especialmente de estudantes universitários e moradores de repúblicas, é marcado pela falta de organização na gestão de compras domésticas. A partir deste o projeto "Compras App" tem como objetivo entender as necessidades dos usuários e mapear como a solução proposta pode atender a essas demandas de forma eficiente. Para isso, serão abordados os seguintes pontos:
+O cotidiano de muitas pessoas, especialmente de estudantes universitários e moradores de repúblicas, é marcado pela falta de organização na gestão de compras domésticas. A partir deste, o projeto "Compras App" tem como objetivo entender as necessidades dos usuários e mapear como a solução proposta pode atender a essas demandas de forma eficiente. Para isso, serão abordados os seguintes pontos:
 
 ### 1. Personas: 
 Será criada uma representação dos usuários típicos que utilizarão o "Compras App". O diagrama de personas ajudará a ilustrar as características, necessidades e comportamentos dos usuários, a fim de garantir que o aplicativo seja desenvolvido com foco no seu público-alvo.
@@ -30,7 +30,7 @@ Representar as interações entre os usuários e o sistema, identificando as fun
 
 ### 9. Gerenciamento de projeto: 
 Planejar e controlar todas as etapas do desenvolvimento do aplicativo, assegurando que o projeto seja concluído dentro do prazo, custo e qualidade desejados.
-    Ferramentas:
+### Ferramentas:
 Trello ou Jira: Ferramentas de gestão de tarefas que permitem a organização de atividades, criação de sprints e acompanhamento do progresso da equipe.
 Metodologia Ágil (Scrum ou Kanban): Usada para garantir entregas incrementais e contínuas, com feedback constante.
 
@@ -46,10 +46,9 @@ Garantir que a equipe de desenvolvimento esteja utilizando seu tempo de forma ef
 ### 12. Gestão de orçamento: 
 Controlar o custo total do desenvolvimento do aplicativo, garantindo que os recursos sejam alocados adequadamente e dentro do orçamento previsto.
 
-
 ## Personas
 
-### Persona 1. 
+### Persona 1:
 João, o Estudante Universitário Organizado. 22 anos, estudante de Engenharia, mora sozinho em um apartamento, utiliza como tecnlogia: Smartphone Android, Laptop, Apps de produtividade. 
 
 #### Objetivos:
@@ -68,7 +67,41 @@ O aplicativo permite que ele registre e visualize suas listas de compras e quant
 A funcionalidade de controle de validade ajuda a evitar desperdício de alimentos.
 A organização das listas por categorias e o compartilhamento com outros membros da casa facilita a comunicação e o controle.
 
+### Persona 2:
+Maria, a moradora de república conectada, 20 anos, estudande de medicina, mora em uma república com 4 colegas, utiliza como tecnnologia: Smartphone iOS, Apps de comunicação (WhatsApp, Facebook), GPS.
 
+#### Objetivos:
+Garantir que todas as necessidades da casa sejam atendidas sem causar conflitos entre os colegas de república.
+Manter o orçamento compartilhado equilibrado, dividindo as compras de forma justa.
+Evitar o acúmulo de produtos, já que a casa tem espaço limitado.
+
+#### Frustrações:
+Muitas vezes, os colegas compram os mesmos itens sem saber que outros já compraram.
+Há pouca comunicação sobre o que precisa ser comprado, resultando em desperdício de alimentos.
+Dificuldade em fazer um controle efetivo do que foi comprado e quem pagou por cada item.
+
+#### Como o "Compras App" pode ajudar:
+O aplicativo permite que Maria e seus colegas compartilhem listas de compras em tempo real, evitando compras duplicadas.
+O sistema de orçamento compartilhado ajuda a garantir que todos contribuam igualmente para as compras, com um histórico de gastos acessível.
+As notificações de validade e estoque ajudam a manter o controle dos itens na casa.
+
+### Persona 3:
+Lucas, o Jovem Profissional Empreendedor, 25 anos, Freelancer de Design Gráfico,  Mora sozinho em um pequeno apartamento, tecnologia utilizada: Smartphone Android, Laptop, Apps de produtividade e finanças.
+
+#### Objetivos:
+Economizar dinheiro, mantendo um controle rigoroso sobre suas finanças pessoais e evitando desperdícios com compras desnecessárias.
+Organizar suas compras de forma prática, já que ele tem pouco tempo livre devido ao trabalho.
+Ter uma ferramenta que ajude a planejar as compras para as semanas seguintes, sem perder tempo no supermercado.
+
+#### Frustrações:
+Muitas vezes compra itens impulsivamente e se esquece do que já tem em casa.
+Sente que seu orçamento é apertado e não sabe como controlar melhor suas despesas com alimentação.
+Demora muito para decidir o que comprar e o que está faltando em casa.
+
+#### Como o "Compras App" pode ajudar:
+O "Compras App" oferece a função de adicionar itens à lista de compras rapidamente, ajudando Lucas a economizar tempo.
+A função de controle de estoque e validade permite que ele tenha um panorama de tudo o que está em casa e o que precisa ser reabastecido.
+O aplicativo também pode gerar relatórios de gastos, ajudando Lucas a manter seu orçamento sob controle.
 
 ## Histórias de Usuários
 
