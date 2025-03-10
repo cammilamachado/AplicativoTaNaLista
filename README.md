@@ -16,7 +16,7 @@ Esta aplicação visa otimizar a administração das compras compartilhadas, abo
 * Edrei Dornelas
 * Giordano Norberto
 * Leonardo Mendes
-* Márcio Lucas
+* Marcio Lucas
 * Tarsis Augustus
   
 ## Orientador
