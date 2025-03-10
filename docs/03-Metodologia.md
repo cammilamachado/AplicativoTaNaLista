@@ -90,16 +90,23 @@ Essa estrutura proporciona um fluxo de trabalho funcional e organizado, garantin
 
 ### Divisão de Papéis
 A equipe adota a metodologia ágil Scrum, com as seguintes funções:
-- Scrum Master: Edrei Dornelas
-- Product Owner: Giordano Norberto
+
+- Scrum Master:
+> - Edrei Dornelas
+  
+- Product Owner:
+> - Giordano Norberto
+  
 - Equipe de Desenvolvimento:
-Camila Machado
-Edrei Dornelas
-Giordano Norberto
-Leonardo Mendes
-Márcio Lucas
-Tarsis Augustus
-Equipe de Design: Camila Machado
+> - Camila Machado
+> - Edrei Dornelas
+> - Giordano Norberto
+> - Leonardo Mendes
+> - Márcio Lucas
+> - Tarsis Augustus
+
+Equipe de Design:
+> - Camila Machado
 
 Cada um dos membros da equipe assume responsabilidades específicas para garantir a entrega contínua do projeto de forma eficiente e dentro do prazo.
 
