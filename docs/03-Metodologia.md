@@ -102,7 +102,7 @@ A equipe adota a metodologia ágil Scrum, com as seguintes funções:
 > - Edrei Dornelas
 > - Giordano Norberto
 > - Leonardo Mendes
-> - Márcio Lucas
+> - Marcio Lucas
 > - Tarsis Augustus
 
 Equipe de Design:
