@@ -107,6 +107,7 @@ A equipe adota a metodologia ágil Scrum, com as seguintes funções:
 
 Equipe de Design:
 > - Camila Machado
+> - Leonardo Mendes
 
 Cada um dos membros da equipe assume responsabilidades específicas para garantir a entrega contínua do projeto de forma eficiente e dentro do prazo.
 
