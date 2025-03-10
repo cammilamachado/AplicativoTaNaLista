@@ -51,35 +51,28 @@ Cada ambiente tem um propósito específico:
 - **Produção:** Aplicativo disponível para os usuários finais.    
 
 ## Controle de Versão
-
-A ferramenta de controle de versão adotada no projeto foi o
-[Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-foi utilizado para hospedagem do repositório.
-
+A ferramenta de controle de versão adotada no projeto foi o Git, com o GitHub para hospedagem do repositório. O controle de versões permite rastrear alterações, colaborar de forma eficiente e manter a integridade do código ao longo do desenvolvimento.
 O projeto segue a seguinte convenção para o nome de branches:
-
-- `main`: versão estável já testada do software
-- `unstable`: versão já testada do software, porém instável
-- `testing`: versão em testes do software
-- `dev`: versão de desenvolvimento do software
-
-Quanto à gerência de issues, o projeto adota a seguinte convenção para
-etiquetas:
-
-- `documentation`: melhorias ou acréscimos à documentação
-- `bug`: uma funcionalidade encontra-se com problemas
-- `enhancement`: uma funcionalidade precisa ser melhorada
-- `feature`: uma nova funcionalidade precisa ser introduzida
-
-Discuta como a configuração do projeto foi feita na ferramenta de versionamento escolhida. Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.
-
-> **Links Úteis**:
-> - [Microfundamento: Gerência de Configuração](https://pucminas.instructure.com/courses/87878/)
-> - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
-> - [Git e Github](https://www.youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA)
->  - [Comparando fluxos de trabalho](https://www.atlassian.com/br/git/tutorials/comparing-workflows)
-> - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-> - [The gitflow workflow - in less than 5 mins](https://www.youtube.com/watch?v=1SXpE08hvGs)
+	•	main: versão estável já testada do software
+	•	unstable: versão testada, mas ainda instável
+	•	testing: versão em fase de testes
+	•	dev: versão em desenvolvimento, onde novas funcionalidades são implementadas
+Além disso, para facilitar a gerência do código e o rastreamento de mudanças, o projeto segue boas práticas para commits, merges e tags:
+	•	Commits: Mensagens de commit seguem o padrão [tipo]: descrição breve, por exemplo:
+	◦	feat: adicionar funcionalidade de notificação
+	◦	fix: corrigir erro na sincronização 
+	◦	docs: atualizar documentação do controle de versão
+	•	Merges: Utiliza-se a estratégia de pull requests para garantir revisões de código antes de fusões. 
+	•	Tags: As versões do sistema são marcadas com tags seguindo o formato vX.Y.Z, onde:
+	◦	X = grandes mudanças
+	◦	Y = melhorias e novas funcionalidades
+	◦	Z = correções de bugs
+	•	Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas:
+	◦	bug: indica um erro identificado no sistema
+	◦	feature: uma nova funcionalidade a ser desenvolvida
+	◦	enhancement: uma funcionalidade precisa ser melhorada
+	◦	documentation: melhorias ou acréscimos à documentação. 
+Essa estrutura proporciona um fluxo de trabalho funcional e organizado, garantindo que o código esteja sempre atualizado e bem documentado.
 
 ## Gerenciamento de Projeto
 
