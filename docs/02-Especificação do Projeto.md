@@ -34,6 +34,7 @@ Metodologia Ágil (Scrum ou Kanban): Usada para garantir entregas incrementais e
 ### 9. Gerenciamento de tempo: 
 O gerenciamento de tempo é fundamental para garantir que todas as tarefas do projeto sejam realizadas dentro do prazo estipulado, otimizando a produtividade da equipe e evitando atrasos no desenvolvimento do "Compras App". Para alcançar isso, são utilizadas as seguintes ferramentas e técnicas:
 ### Ferramentas Utilizadas:
+Diagrama de redes: Representação visual de todas as etapas referentes ao desenvolvimento do software, incluindo os dias estimados para conclusão de cada uma, até alcançar a última atividade.
 Pomodoro: Técnica que divide o trabalho em intervalos de tempo curtos (geralmente 25 minutos), seguidos de uma pausa curta. Isso ajuda a manter o foco e a evitar a procrastinação.
 Time Tracking (Toggl, Harvest): Ferramentas que permitem o rastreamento do tempo gasto em cada tarefa, possibilitando ajustes no planejamento e assegurando que os prazos sejam cumpridos.
 
