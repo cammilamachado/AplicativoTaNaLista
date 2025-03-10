@@ -82,44 +82,46 @@ Essa estrutura proporciona um fluxo de trabalho funcional e organizado, garantin
 ## Gerenciamento de Projeto
 
 ### Divisão de Papéis
+A equipe adota a metodologia ágil Scrum, com as seguintes funções:
+- Scrum Master: Edrei Dornelas
+- Product Owner: Giordano Norberto
+- Equipe de Desenvolvimento:
+Camila Machado
+Edrei Dornelas
+Giordano Norberto
+Leonardo Mendes
+Márcio Lucas
+Tarsis Augustus
+Equipe de Design: Camila Machado
 
-Apresente a divisão de papéis entre os membros do grupo.
-
-Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
-- Scrum Master: Felipe Domingos;
-- Product Owner: Rommel Carneiro;
-- Equipe de Desenvolvimento: Pedro Penna, Pedro Ivo, Rodrigo Richard;
-- Equipe de Design: Simone Nogueira.
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-> - [Os papéis do Scrum e a verdade sobre cargos nessa técnica](https://www.atlassian.com/br/agile/scrum/roles)
+Cada um dos membros da equipe assume responsabilidades específicas para garantir a entrega contínua do projeto de forma eficiente e dentro do prazo.
 
 ### Processo
+O projeto é gerenciado por meio do **GitHub Projects**, permitindo o acompanhamento das tarefas e do progresso por meio de um quadro **Kanban**, que contém as seguintes colunas:
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Planejamento e Gestáo Ágil de Projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+- **Backlog** – Lista de funcionalidades e melhorias a serem implementadas;
+- **Em andamento** – Tarefas que estão sendo feitas;
+- **Em revisão** – Itens que aguardam por uma validação;
+- **Concluído** – Funcionalidades concluídas e integradas ao sistema.
+
+A cada **sprint** (duração de 2 semanas), será revisado e definido as prioridades da próxima iteração, garantindo entregas contínuas e melhorias incrementais.
 
 ### Ferramentas
+São utilizadas as ferramentas a seguir para otimizar o desenvolvimento e a colaboração:
 
-As ferramentas empregadas no projeto são:
+Gerenciamento de Código
+- **GitHub**
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+Comunicação
+- **Discord**
 
-O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
+Gerenciamento de Projetos
+- **GitHub Projects**
 
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+Desenvolvimento
+- **Editor de Código**: Visual Studio Code + extensões para React Native e .NET
+- **Prototipagem**: Figma (para UX/UI e wireframes)
+- **Banco de Dados**: SQLite (desenvolvimento) e Firebase Firestore (produção)
+- **Hospedagem**: Render (para API) e Firebase (para autenticação e banco de dados)
+
+As ferramentas foram escolhidas pela facilidade de integração, compatibilidade com as tecnologias usadas e suporte a práticas ágeis.
