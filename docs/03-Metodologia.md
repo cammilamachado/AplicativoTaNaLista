@@ -114,7 +114,7 @@ O projeto é gerenciado por meio do **GitHub Projects**, permitindo o acompanham
 A cada **sprint** (duração de 2 semanas), será revisado e definido as prioridades da próxima iteração, garantindo entregas contínuas e melhorias incrementais.
 
 ### Ferramentas
-São utilizadas as ferramentas a seguir para otimizar o desenvolvimento e a colaboração:
+São utilizadas as ferramentas a seguir para otimizar o desenvolvimento e para a colaboração:
 
 #### Gerenciamento de Código
 - **GitHub**
