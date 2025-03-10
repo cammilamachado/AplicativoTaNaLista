@@ -109,19 +109,20 @@ A cada **sprint** (duração de 2 semanas), será revisado e definido as priorid
 ### Ferramentas
 São utilizadas as ferramentas a seguir para otimizar o desenvolvimento e a colaboração:
 
-Gerenciamento de Código
+#### Gerenciamento de Código
 - **GitHub**
 
-Comunicação
+#### Comunicação
 - **Discord**
 
-Gerenciamento de Projetos
+#### Gerenciamento de Projetos
 - **GitHub Projects**
 
-Desenvolvimento
+#### Desenvolvimento
 - **Editor de Código**: Visual Studio Code + extensões para React Native e .NET
 - **Prototipagem**: Figma (para UX/UI e wireframes)
 - **Banco de Dados**: SQLite (desenvolvimento) e Firebase Firestore (produção)
 - **Hospedagem**: Render (para API) e Firebase (para autenticação e banco de dados)
 
+#### Justificativa
 As ferramentas foram escolhidas pela facilidade de integração, compatibilidade com as tecnologias usadas e suporte a práticas ágeis.
