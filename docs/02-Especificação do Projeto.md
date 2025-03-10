@@ -137,13 +137,8 @@ O aplicativo também pode gerar relatórios de gastos, ajudando Lucas a manter s
 |Lucas       | Receber alertas sobre produtos que estão perto da data de validade | Evitar desperdício de alimentos e consumir o que está prestes a vencer |
 
 ## Indicadores de Desempenho
-
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
-
-Usar o seguinte modelo: 
-
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
+ 
+![Indicadores-ComprasApp](https://github.com/user-attachments/assets/24abd4bf-91fd-41c4-b39a-e3dcb08b3a45)
 
 ## Requisitos
 
@@ -187,7 +182,10 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|02| Deve ser desenvolvido em módulos front-end e back-end |
+|03| A linguaem de programação deve incluir React Native |
+|04| A aplicação deve ser direcionada a dispositivos móveis |
+|05| A aplicação deve haver compatibilidade Android/iOS |
 
 ## Diagrama de Casos de Uso
 
@@ -197,15 +195,11 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Para desenvolver projetos um profissional deve se preocupar em gerenciar todas essas dez áreas. Elas se complementam e se relacionam, de tal forma que não se deve apenas examinar uma área de forma estanque. É preciso considerar, por exemplo, que as áreas de Escopo, Cronograma e Custos estão muito relacionadas. Assim, se eu amplio o escopo de um projeto eu posso afetar seu cronograma e seus custos.
 
+![GerenciamentoEquipe-ComprasApp](https://github.com/user-attachments/assets/f5c36f80-ba89-4c60-83c2-9918b38fbcf1)
+
 ## Gerenciamento de Tempo
 
-Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
-
-![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
-
-O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
-
-![Gráfico de Gantt](img/02-grafico-gantt.png)
+![ComprasApp - Diagrama de redes](https://github.com/user-attachments/assets/b47f756a-9bd1-4d92-809e-3303714adc33)
 
 ## Gerenciamento de Equipe
 
