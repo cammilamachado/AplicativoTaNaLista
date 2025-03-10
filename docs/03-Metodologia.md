@@ -52,26 +52,31 @@ Cada ambiente tem um propósito específico:
 
 ## Controle de Versão
 A ferramenta de controle de versão adotada no projeto foi o Git, com o GitHub para hospedagem do repositório. O controle de versões permite rastrear alterações, colaborar de forma eficiente e manter a integridade do código ao longo do desenvolvimento.
+
 O projeto segue a seguinte convenção para o nome de branches:
-	•	main: versão estável já testada do software
-	•	unstable: versão testada, mas ainda instável
-	•	testing: versão em fase de testes
-	•	dev: versão em desenvolvimento, onde novas funcionalidades são implementadas
+- main: versão estável já testada do software
+- unstable: versão testada, mas ainda instável
+- testing: versão em fase de testes
+- dev: versão em desenvolvimento, onde novas funcionalidades são implementadas
+
 Além disso, para facilitar a gerência do código e o rastreamento de mudanças, o projeto segue boas práticas para commits, merges e tags:
-	•	Commits: Mensagens de commit seguem o padrão [tipo]: descrição breve, por exemplo:
-	◦	feat: adicionar funcionalidade de notificação
-	◦	fix: corrigir erro na sincronização 
-	◦	docs: atualizar documentação do controle de versão
-	•	Merges: Utiliza-se a estratégia de pull requests para garantir revisões de código antes de fusões. 
-	•	Tags: As versões do sistema são marcadas com tags seguindo o formato vX.Y.Z, onde:
-	◦	X = grandes mudanças
-	◦	Y = melhorias e novas funcionalidades
-	◦	Z = correções de bugs
-	•	Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas:
-	◦	bug: indica um erro identificado no sistema
-	◦	feature: uma nova funcionalidade a ser desenvolvida
-	◦	enhancement: uma funcionalidade precisa ser melhorada
-	◦	documentation: melhorias ou acréscimos à documentação. 
+Commits: Mensagens de commit seguem o padrão [tipo]: descrição breve, por exemplo:
+- feat: adicionar funcionalidade de notificação
+- fix: corrigir erro na sincronização 
+- docs: atualizar documentação do controle de versão
+
+Merges: Utiliza-se a estratégia de pull requests para garantir revisões de código antes de fusões. 
+
+Tags: As versões do sistema são marcadas com tags seguindo o formato vX.Y.Z, onde:
+- X = grandes mudanças
+- Y = melhorias e novas funcionalidades
+- Z = correções de bugs
+
+Quanto à gerência de issues, o projeto adota a seguinte convenção para etiquetas:
+- bug: indica um erro identificado no sistema
+- feature: uma nova funcionalidade a ser desenvolvida
+- enhancement: uma funcionalidade precisa ser melhorada
+- documentation: melhorias ou acréscimos à documentação. 
 Essa estrutura proporciona um fluxo de trabalho funcional e organizado, garantindo que o código esteja sempre atualizado e bem documentado.
 
 ## Gerenciamento de Projeto
