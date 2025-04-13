@@ -48,13 +48,13 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 ## Qualidade de Software
 
 📝 Plano de Garantia da Qualidade de Software (Compras App)
-1. Introdução
+## 1. Introdução
 Este documento descreve o plano de garantia da qualidade de software para o projeto Compras App, um aplicativo mobile voltado à organização de compras domésticas e compartilhamento de listas em grupo (família, república, etc). O plano é baseado nas diretrizes da norma ISO/IEC 25010:2011.
 
-2. Objetivos
+## 2. Objetivos
 Garantir que o produto atenda aos requisitos dos usuários com qualidade, eficiência e segurança, respeitando os padrões internacionais, promovendo satisfação dos stakeholders e facilitando manutenções futuras.
 
-3. Referências
+## 3. Referências
 - ISO/IEC 25010:2011 – Modelos de qualidade de sistemas e software
 
 - IEEE 730 – Standard for Software Quality Assurance Plans
@@ -63,7 +63,7 @@ Garantir que o produto atenda aos requisitos dos usuários com qualidade, efici�
 
 - Documentos internos do projeto (Figma, Backlog, GitHub)
 
-4. Escopo
+## 4. Escopo
 - Aplica-se a todas as fases do desenvolvimento do aplicativo Compras App, abrangendo:
 
 - Front-end em React Native + Expo
@@ -76,15 +76,15 @@ Garantir que o produto atenda aos requisitos dos usuários com qualidade, efici�
 
 - Autenticação via Firebase Auth
 
-5. Características de Qualidade Selecionadas (ISO/IEC 25010)
+## 5. Características de Qualidade Selecionadas (ISO/IEC 25010)
   
 ![image](https://github.com/user-attachments/assets/5a13d109-632a-4b0a-a4ac-e5c3396cda86)
 
-6. Métricas de Avaliação da Qualidade
+## 6. Métricas de Avaliação da Qualidade
 
 ![image](https://github.com/user-attachments/assets/353f0b4b-c16e-4f9e-a126-fa694b2c7737)
   
-7. Ações de Garantia de Qualidade
+## 7. Ações de Garantia de Qualidade
 Integração contínua via GitHub Actions
 
 Revisão de código em pull requests
@@ -97,11 +97,11 @@ Prototipação no Figma com validação antes do desenvolvimento
 
 Checklist de deploy e documentação técnica
 
-8. Responsabilidades
+## 8. Responsabilidades
    
 ![image](https://github.com/user-attachments/assets/79422a80-91e7-4a1a-b100-6fc4dc883636)
    
-9. Ferramentas de Apoio
+## 9. Ferramentas de Apoio
 GitHub – Repositório e versionamento
 
 Figma – Prototipagem UI/UX
@@ -116,7 +116,7 @@ Postman / Insomnia – Testes de API
 
 Crashlytics / TestFlight – Feedback em dispositivos
 
-10. Revisão e Atualização
+## 10. Revisão e Atualização
 O plano de garantia da qualidade será revisado ao final de cada sprint e atualizado conforme mudanças no escopo, arquitetura ou feedback dos usuários.
 
 
