@@ -47,15 +47,76 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 
 ## Qualidade de Software
 
-Conceituar qualidade de fato é uma tarefa complexa, mas ela pode ser vista como um método gerencial que através de procedimentos disseminados por toda a organização, busca garantir um produto final que satisfaça às expectativas dos stakeholders.
+📝 Plano de Garantia da Qualidade de Software (Compras App)
+1. Introdução
+Este documento descreve o plano de garantia da qualidade de software para o projeto Compras App, um aplicativo mobile voltado à organização de compras domésticas e compartilhamento de listas em grupo (família, república, etc). O plano é baseado nas diretrizes da norma ISO/IEC 25010:2011.
 
-No contexto de desenvolvimento de software, qualidade pode ser entendida como um conjunto de características a serem satisfeitas, de modo que o produto de software atenda às necessidades de seus usuários. Entretanto, tal nível de satisfação nem sempre é alcançado de forma espontânea, devendo ser continuamente construído. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
+2. Objetivos
+Garantir que o produto atenda aos requisitos dos usuários com qualidade, eficiência e segurança, respeitando os padrões internacionais, promovendo satisfação dos stakeholders e facilitando manutenções futuras.
 
-A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software.
-Com base nessas características e nas respectivas sub-características, identifique as sub-características que sua equipe utilizará como base para nortear o desenvolvimento do projeto de software considerando-se alguns aspectos simples de qualidade. Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão a equipe avaliar os objetos de interesse.
+3. Referências
+- ISO/IEC 25010:2011 – Modelos de qualidade de sistemas e software
 
-> **Links Úteis**:
->
-> - [ISO/IEC 25010:2011 - Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models](https://www.iso.org/standard/35733.html/)
-> - [Análise sobre a ISO 9126 – NBR 13596](https://www.tiespecialistas.com.br/analise-sobre-iso-9126-nbr-13596/)
-> - [Qualidade de Software - Engenharia de Software 29](https://www.devmedia.com.br/qualidade-de-software-engenharia-de-software-29/18209/)
+- IEEE 730 – Standard for Software Quality Assurance Plans
+
+- SPICE (ISO/IEC 15504) – Avaliação de processos de software
+
+- Documentos internos do projeto (Figma, Backlog, GitHub)
+
+4. Escopo
+- Aplica-se a todas as fases do desenvolvimento do aplicativo Compras App, abrangendo:
+
+- Front-end em React Native + Expo
+
+- Back-end em .NET Core (C#)
+
+- Banco de dados em SQLite (desenvolvimento) e Firebase Firestore (produção)
+
+- Hospedagem em Render / AWS
+
+- Autenticação via Firebase Auth
+
+5. Características de Qualidade Selecionadas (ISO/IEC 25010)
+  
+![image](https://github.com/user-attachments/assets/5a13d109-632a-4b0a-a4ac-e5c3396cda86)
+
+6. Métricas de Avaliação da Qualidade
+
+![image](https://github.com/user-attachments/assets/353f0b4b-c16e-4f9e-a126-fa694b2c7737)
+  
+7. Ações de Garantia de Qualidade
+Integração contínua via GitHub Actions
+
+Revisão de código em pull requests
+
+Testes manuais e automatizados
+
+Testes exploratórios com usuários reais
+
+Prototipação no Figma com validação antes do desenvolvimento
+
+Checklist de deploy e documentação técnica
+
+8. Responsabilidades
+   
+![image](https://github.com/user-attachments/assets/79422a80-91e7-4a1a-b100-6fc4dc883636)
+   
+9. Ferramentas de Apoio
+GitHub – Repositório e versionamento
+
+Figma – Prototipagem UI/UX
+
+Visual Studio Code – IDE de desenvolvimento
+
+xUnit / NUnit – Testes unitários
+
+Firebase – Autenticação, banco e análise
+
+Postman / Insomnia – Testes de API
+
+Crashlytics / TestFlight – Feedback em dispositivos
+
+10. Revisão e Atualização
+O plano de garantia da qualidade será revisado ao final de cada sprint e atualizado conforme mudanças no escopo, arquitetura ou feedback dos usuários.
+
+
