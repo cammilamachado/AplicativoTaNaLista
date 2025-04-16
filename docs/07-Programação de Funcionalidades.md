@@ -4,9 +4,9 @@
 
 ## Implementação de Layouts de Telas
 
-## Desenvolvimento de Wireframes
+### Desenvolvimento de Wireframes
 
-O Wireframe foi desenvolvido utilizando o Figma: [Tá na Lista no Figma](https://www.figma.com/design/NlQGLKGaC0UFdYNKh72Lt1/T%C3%A1-na-Lista-?node-id=0-1&t=FrJ0wrSeIfKir5gg-1)
+O Wireframe foi desenvolvido utilizando o Figma: [Tá na Lista!](https://www.figma.com/design/NlQGLKGaC0UFdYNKh72Lt1/T%C3%A1-na-Lista-?node-id=0-1&t=FrJ0wrSeIfKir5gg-1)
 
 Implementação de Layouts
 
