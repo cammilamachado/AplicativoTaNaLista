@@ -8,7 +8,7 @@
 
 O Wireframe foi desenvolvido utilizando o Figma: [Tá na Lista!](https://www.figma.com/design/NlQGLKGaC0UFdYNKh72Lt1/T%C3%A1-na-Lista-?node-id=0-1&t=FrJ0wrSeIfKir5gg-1)
 
-Implementação de Layouts
+### Implementação de Layouts
 
 Os Layouts foram implementados utilizando React Native e o código fonte pode ser acessado pelo link.
 
