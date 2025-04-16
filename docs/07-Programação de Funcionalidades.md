@@ -2,14 +2,51 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
 
-Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
+## Implementação de Layouts de Telas
 
-Para cada requisito funcional, pode ser entregue um artefato desse tipo
+## Desenvolvimento de Wireframes
 
-> **Links Úteis**:
->
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+O Wireframe foi desenvolvido utilizando o Figma: [Tá na Lista no Figma](https://www.figma.com/design/NlQGLKGaC0UFdYNKh72Lt1/T%C3%A1-na-Lista-?node-id=0-1&t=FrJ0wrSeIfKir5gg-1)
+
+Implementação de Layouts
+
+Os Layouts foram implementados utilizando React Native e o código fonte pode ser acessado pelo link.
+
+## Quadro Visual Atual de Gestão de Trabalho no GitHub
+
+Atribuição de Responsabilidades e Acompanhamento de Progresso
+
+* Atribuição de Responsabilidades - Camila Machado
+  
+* Atribuição de Responsabilidades - Edrei Dornelas
+  
+* Atribuição de Responsabilidades - Giordano Sa
+  
+* Atribuição de Responsabilidades - Leonardo Mendes
+
+* Atribuição de Responsabilidades - Marcio Lucas
+  
+* Atribuição de Responsabilidades - Tarsis Augustus
+  
+
+## Status Atual das Contribuições dos Membros do Time no GitHub
+
+Integração Contínua
+
+Garantia de que as contribuições são integradas ao código principal de forma contínua e segura.
+
+## Comentários Adicionais sobre as Participações Individuais
+
+Avaliação de Desempenho
+
+Camila: 
+
+Edrei:
+
+Giordano:
+
+Leonardo:
+
+Marcio:
+
+Tarsis: 
