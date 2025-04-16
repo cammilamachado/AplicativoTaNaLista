@@ -14,7 +14,7 @@ Os Layouts foram implementados utilizando React Native e o código fonte pode se
 
 ## Quadro Visual Atual de Gestão de Trabalho no GitHub
 
-Atribuição de Responsabilidades e Acompanhamento de Progresso
+### Atribuição de Responsabilidades e Acompanhamento de Progresso
 
 * Atribuição de Responsabilidades - Camila Machado
   
@@ -31,22 +31,22 @@ Atribuição de Responsabilidades e Acompanhamento de Progresso
 
 ## Status Atual das Contribuições dos Membros do Time no GitHub
 
-Integração Contínua
+### Integração Contínua
 
 Garantia de que as contribuições são integradas ao código principal de forma contínua e segura.
 
 ## Comentários Adicionais sobre as Participações Individuais
 
-Avaliação de Desempenho
+**Avaliação de Desempenho**
 
-Camila: 
+**Camila:**
 
-Edrei:
+**Edrei:**
 
-Giordano:
+**Giordano:**
 
-Leonardo:
+**Leonardo:**
 
-Marcio:
+**Marcio:**
 
-Tarsis: 
+**Tarsis:**
