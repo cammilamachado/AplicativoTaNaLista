@@ -28,6 +28,10 @@
   
 ## Iconografia
 
+A aplicação fará uso de uma variedade de ícones com o objetivo de aprimorar tanto a usabilidade quanto a estética. Dessa forma, para assegurar consistência visual e facilitar a implementação, serão utilizados ícones de bibliotecas ou sites.
+
+![Icons](./img/icones.png)
+
 ## Layout Padrão
 
 ![Layout_Padrao](./img/Layout.png)
