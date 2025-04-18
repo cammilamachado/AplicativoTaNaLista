@@ -85,21 +85,21 @@ Verificar se o sistema atende aos requisitos funcionais e não funcionais descri
 # 🧪 Cenários de Teste Selecionados
 
 ```markdown
-| ID     | Cenário de Teste                                  | Requisitos Relacionados       | Descrição                                                                 |
-|--------|---------------------------------------------------|-------------------------------|---------------------------------------------------------------------------|
-| CT-001 | Cadastro de produto                               | RF-001                        | Usuário cadastra um novo produto com nome, categoria, quantidade e validade. |
-| CT-002 | Compartilhamento de lista                         | RF-006                        | Usuário compartilha uma lista com outro usuário da república.            |
-| CT-003 | Alerta de produto próximo da validade             | RF-005                        | Usuário recebe notificação push sobre item que vence em 2 dias.          |
-| CT-004 | Sugestão de itens com base no histórico           | RF-010                        | Usuário digita “le” e o app sugere “leite” baseado em compras anteriores.|
-| CT-005 | Classificação por validade                        | RF-003                        | Lista é ordenada automaticamente com base na data de validade.           |
-| CT-006 | Criação de múltiplas listas                       | RF-011                        | Usuário cria uma lista chamada “Feira” e outra chamada “Supermercado”.   |
-| CT-007 | Relatório de gastos mensal                        | RF-002, RF-007                | App exibe relatório com totais gastos por categoria e por mês.           |
-| CT-008 | Cadastro e autenticação de usuário                | RF-XXX (implícito)            | Novo usuário se cadastra com e-mail e senha e faz login com sucesso.     |
-| CT-009 | Definir orçamento mensal                          | RF-009                        | Usuário define limite de R$300/mês e recebe aviso ao ultrapassar.        |
-| CT-010 | Notificação de produto faltante                   | RF-004                        | App alerta que o estoque de arroz está zerado.                           |
+| ID     | Cenário de Teste                                  | Requisitos Relacionados       | Descrição                                                                      |
+|--------|---------------------------------------------------|-------------------------------|--------------------------------------------------------------------------------|
+| CT-001 | Cadastro de produto                               | RF-001                        | Usuário cadastra um novo produto com nome, categoria, quantidade e validade.   |
+| CT-002 | Compartilhamento de lista                         | RF-006                        | Usuário compartilha uma lista com outro usuário da república.                  |
+| CT-003 | Alerta de produto próximo da validade             | RF-005                        | Usuário recebe notificação push sobre item que vence em 2 dias.                |
+| CT-004 | Sugestão de itens com base no histórico           | RF-010                        | Usuário digita “le” e o app sugere “leite” baseado em compras anteriores.      |
+| CT-005 | Classificação por validade                        | RF-003                        | Lista é ordenada automaticamente com base na data de validade.                 |
+| CT-006 | Criação de múltiplas listas                       | RF-011                        | Usuário cria uma lista chamada “Feira” e outra chamada “Supermercado”.         |
+| CT-007 | Relatório de gastos mensal                        | RF-002, RF-007                | App exibe relatório com totais gastos por categoria e por mês.                 |
+| CT-008 | Cadastro e autenticação de usuário                | RF-XXX (implícito)            | Novo usuário se cadastra com e-mail e senha e faz login com sucesso.           |
+| CT-009 | Definir orçamento mensal                          | RF-009                        | Usuário define limite de R$300/mês e recebe aviso ao ultrapassar.              |
+| CT-010 | Notificação de produto faltante                   | RF-004                        | App alerta que o estoque de arroz está zerado.                                 |
 | CT-011 | Adição rápida de itens                            | RF-008                        | Usuário toca em "Adicionar rápido", digita e item é incluído instantaneamente. |
-| CT-012 | Observações nos itens                             | RF-012                        | Usuário adiciona nota: “Leite desnatado, marca X” em um item.            |
-| CT-013 | Alterar status de item                            | RF-013                        | Usuário marca “comprado” em item da lista e visual vê mudança de status. |
+| CT-012 | Observações nos itens                             | RF-012                        | Usuário adiciona nota: “Leite desnatado, marca X” em um item.                  |
+| CT-013 | Alterar status de item                            | RF-013                        | Usuário marca “comprado” em item da lista e visual vê mudança de status.       |
 ```
 
 ---
