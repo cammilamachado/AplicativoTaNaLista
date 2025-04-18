@@ -29,3 +29,5 @@
 ## Iconografia
 
 ## Layout Padrão
+
+![Layout_Padrao](./img/Layout.png)
