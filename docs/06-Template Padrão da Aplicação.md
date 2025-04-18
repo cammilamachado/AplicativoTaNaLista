@@ -39,6 +39,6 @@ Dessa forma, para assegurar consistência visual e facilitar a implementação, 
 
 ![Icons](./img/icones.png)
 
-## Layout Padrão
+## Exemplo de Layout Padrão
 
 ![Layout_Padrao](./img/Layout.png)
