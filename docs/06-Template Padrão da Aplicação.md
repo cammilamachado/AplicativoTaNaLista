@@ -6,7 +6,8 @@
 
 **Cores de Fundo:**
 
-* Background (padrão): #682A2A e #2F2B2B
+* Background (padrão): #682A2A (Login)
+* Background (padrão): #2F2B2B (Usuário logado)
   
 **Cores de Texto:**
 
