@@ -33,7 +33,8 @@ O design foi pensado com base em princípios de responsividade. A ideia foi orga
   
 ## Iconografia
 
-A aplicação fará uso de uma variedade de ícones com o objetivo de aprimorar tanto a usabilidade quanto a estética. Dessa forma, para assegurar consistência visual e facilitar a implementação, serão utilizados ícones de bibliotecas ou sites.
+A aplicação fará uso de uma variedade de ícones com o objetivo de aprimorar tanto a usabilidade quanto a estética.
+Dessa forma, para assegurar consistência visual e facilitar a implementação, serão utilizados ícones de bibliotecas ou sites.
 
 ![Icons](./img/icones.png)
 
