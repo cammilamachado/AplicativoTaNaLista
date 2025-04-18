@@ -19,7 +19,11 @@
 * #AE1B1B (Vermelho) 
 * Alguns tons de roxo 
 
-## Aspectos de Responsividade 
+## Responsividade 
+
+O design foi pensado com base em princípios de responsividade. A ideia foi organizar os elementos de forma que, eles possam se adaptar bem a diferentes tamanhos de tela, para dispositivos móveis.
+
+Os componentes foram distribuídos de forma clara e espaçada, priorizando a leitura e a navegação simples. Assim, o layout poderá ser ajustado com facilidade para diferentes resoluções em dispositivos iOS e Android.
 
 ## Tipografia 
 
