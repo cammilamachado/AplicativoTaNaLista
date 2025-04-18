@@ -23,6 +23,9 @@
 
 ## Tipografia 
 
+* Fonte do Título: Poppins
+* Fonte do Texto: Poppins
+  
 ## Iconografia
 
 ## Layout Padrão
