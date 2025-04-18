@@ -10,7 +10,7 @@
   
 **Cores de Texto:**
 
- *Cor de fonte (padrão): #FFFFFF 
+* Cor de fonte (padrão): #FFFFFF 
 * Cor com menos contraste: #6B6B6B 
 * Cor do texto com underline: #DA761E
 
