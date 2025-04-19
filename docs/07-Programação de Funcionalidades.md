@@ -40,6 +40,8 @@ Atribuição de Responsabilidades - Marcio Lucas
 Atribuição de Responsabilidades - Tarsis Augustus
 
 > - Projeto de Interface (Wireframes Interativos)
+
+![Quadro](./img/Quadro.png)
   
 ## Status Atual das Contribuições dos Membros do Time no GitHub
 
