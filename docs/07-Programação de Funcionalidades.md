@@ -47,9 +47,7 @@ Atribuição de Responsabilidades - Tarsis Augustus
 
 ## Status Atual das Contribuições dos Membros do Time no GitHub
 
-### Integração Contínua
-
-Garantia de que as contribuições são integradas ao código principal de forma contínua e segura.
+![Status](./img/status_membro.png)
 
 ## Comentários Adicionais sobre as Participações Individuais
 
