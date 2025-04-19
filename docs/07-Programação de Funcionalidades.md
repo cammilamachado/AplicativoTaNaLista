@@ -10,7 +10,7 @@ O Wireframe foi desenvolvido utilizando o Figma: [Tá na Lista!](https://www.fig
 
 ### Implementação de Layouts
 
-Os Layouts foram implementados utilizando React Native e o código fonte pode ser acessado pelo link.
+Os Layouts foram implementados utilizando React Native e o código fonte pode ser acessado pelo [link](https://github.com/ICEI-PUCMinas-PSG-SI-TI/psg-ads-n-tiam-2025-1-n-compras-app/tree/main/src).
 
 ## Quadro Visual Atual de Gestão de Trabalho no GitHub
 
