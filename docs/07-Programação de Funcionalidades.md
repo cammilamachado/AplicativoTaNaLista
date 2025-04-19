@@ -16,28 +16,28 @@ Os Layouts foram implementados utilizando React Native e o código fonte pode se
 
 ### Atribuição de Responsabilidades e Acompanhamento de Progresso
 
-* Atribuição de Responsabilidades - Camila Machado
+Atribuição de Responsabilidades - Camila Machado
   
 > - Projeto de Interface (Diagrama de Fluxo de Navegação e Wireframes Interativos)
 
-* Atribuição de Responsabilidades - Edrei Dornelas
+Atribuição de Responsabilidades - Edrei Dornelas
 
 > - Programação de Funcionalidades
   
-* Atribuição de Responsabilidades - Giordano Sa
+Atribuição de Responsabilidades - Giordano Sa
 
 > - Arquitetura de Solução 
   
-* Atribuição de Responsabilidades - Leonardo Mendes
+Atribuição de Responsabilidades - Leonardo Mendes
 
 > - Metodologia
 
-* Atribuição de Responsabilidades - Marcio Lucas
+Atribuição de Responsabilidades - Marcio Lucas
 
 > - Planos de Testes de Funcionalidades e Usabilidade
 > - Registros de Testes de Funcionalidades e Usabilidade
   
-* Atribuição de Responsabilidades - Tarsis Augustus
+Atribuição de Responsabilidades - Tarsis Augustus
 
 > - Projeto de Interface (Wireframes Interativos)
   
