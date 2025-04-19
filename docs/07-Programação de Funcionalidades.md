@@ -26,11 +26,11 @@ Atribuição de Responsabilidades - Edrei Dornelas
   
 Atribuição de Responsabilidades - Giordano Sa
 
-> - Arquitetura de Solução 
+> - Arquitetura de Solução (Requisitos e Restrições; Modelo ER; Esquema Relacional; Padronização de Qualidade de Produto)
   
 Atribuição de Responsabilidades - Leonardo Mendes
 
-> - Metodologia
+> - Metodologia (Tecnologias, Ferramentas, Controle de Versão e Gerenciamento de Projeto)
 
 Atribuição de Responsabilidades - Marcio Lucas
 
