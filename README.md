@@ -1,4 +1,4 @@
-# COMPRAS APP
+# Tá na Lista!
 
 `Análise e Desenvolvimento de Sistemas`
 
