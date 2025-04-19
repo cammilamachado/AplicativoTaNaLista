@@ -1,4 +1,4 @@
-# 📋 Plano de Teste
+# 📋 Plano de Testes de Software
 
 ## 1. Identificação do Plano
 - **Projeto:** Compras App  
