@@ -1,8 +1,6 @@
-# Plano de Testes de Usabilidade
+# Plano de Testes de Usabilidade – Compras App
 
 O teste de usabilidade permite avaliar a qualidade da interface com o usuário da aplicação interativa. O Plano de Testes de Software é gerado a partir da especificação do sistema e consiste em casos de testes que deverão ser executados quando a implementação estiver parcial ou totalmente pronta.
-
-# Plano de Teste de Usabilidade – Compras App
 
 ## 1. Objetivo
 Avaliar a usabilidade do aplicativo Compras App, identificando melhorias na interface, navegação e experiência do usuário, com foco na simplicidade e eficiência na execução das principais tarefas.
