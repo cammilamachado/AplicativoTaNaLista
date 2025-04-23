@@ -4,7 +4,7 @@
 
 Esta documentação tem como objetivo apresentar uma visão clara da confiabilidade e estabilidade das funcionalidades de cadastro e login do Tá na Lista!, a princípio. A seguir, estão os objetivos, resultados esperados, observações e a conclusão geral dos registros de testes.
 
-# Parte I: Cadastro / Login
+Cadastro / Login
 
 ## Teste de Cadastro
 
