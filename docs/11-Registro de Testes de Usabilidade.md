@@ -4,9 +4,13 @@ Esta documentação tem como objetivo apresentar uma avaliação detalhada da us
 
 ## Teste de Cadastro
 
-### Objetivo: Verificar se um usuário pode se cadastrar com praticidade.
+### Objetivo: 
 
-### Observação: A senha está bloqueada, porque os screenshots não são permitidos por motivos de segurança.
+Verificar se um usuário pode se cadastrar com praticidade.
+
+### Observação: 
+
+A senha está bloqueada, porque os screenshots não são permitidos por motivos de segurança.
 
 <p align="center">
   <img src="./img/Cadastro_Sucesso.jpg" alt="Cadastro" width="35%" />
@@ -19,9 +23,13 @@ Os testes de usabilidade mostraram que o processo de cadastro foi concluído, em
 
 ## Teste de Login
 
-### Objetivo: Avaliar se um usuário pode fazer login com praticidade.
+### Objetivo: 
 
-### Observação: O menu principal está sendo finalizado. No momento, para este teste, o usuário é redirecionado para a página inicial. 
+Avaliar se um usuário pode fazer login com praticidade.
+
+### Observação: 
+
+O menu principal está sendo finalizado. No momento, para este teste, o usuário é redirecionado para a página inicial. 
 
 <p align="center">
   <img src="./img/Login.jpg" alt="Login" width="35%" />
