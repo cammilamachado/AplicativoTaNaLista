@@ -4,11 +4,11 @@ Esta documentação tem como objetivo apresentar uma avaliação detalhada da us
 
 ## Teste de Cadastro
 
-### Objetivo: 
+### Objetivo 
 
 Verificar se um usuário pode se cadastrar com praticidade.
 
-### Observação: 
+### Observação
 
 A senha está bloqueada, porque os screenshots não são permitidos por motivos de segurança.
 
@@ -23,11 +23,11 @@ Os testes de usabilidade mostraram que o processo de cadastro foi concluído, em
 
 ## Teste de Login
 
-### Objetivo: 
+### Objetivo 
 
 Avaliar se um usuário pode fazer login com praticidade.
 
-### Observação: 
+### Observação
 
 O menu principal está sendo finalizado. No momento, para este teste, o usuário é redirecionado para a página inicial. 
 
