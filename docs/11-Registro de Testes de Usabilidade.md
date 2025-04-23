@@ -4,7 +4,7 @@ Ao documentar estes testes, nosso objetivo é apresentar uma visão clara da con
 
 Nesta documentação, trazemos os resultados obtidos e a conclusão geral. A seguir, estão os detalhes de cada cenário testado, incluindo descrição, objetivos, resultados esperados e observações relevantes.
 
-# Part I - Cadastro / Login
+# Parte I: Cadastro / Login
 
 ## Teste de Cadastro
 
@@ -37,4 +37,33 @@ Após a realização do teste, foi concluído com sucesso o cadastro do usuário
 
 Após a realização do teste, foi identificado que a funcionalidade para formatação incorreta de e-mail funciona conforme esperado e exibe um alerta ao usuário. Entretanto, o alerta é genérico e não fornece a mensagem de erro específica para esse caso. Dessa forma, esse resultado mostra a necessidade de uma melhoria na experiência do usuário. 
 
+## Teste de Login
 
+### Objetivo: Se um usuário pode fazer login com sucesso ao fornecer credenciais válidas.
+
+### Resultado Esperado: O usuário é autenticado com sucesso e redirecionado para o menu principal do aplicativo.
+
+### Observação: O menu principal está sendo finalizado, no momento para este teste o usuário é redirecionado para a página inicial. 
+
+<p align="center">
+  <img src="./img/Login.jpg" alt="Login" width="35%" />
+  <img src="./img/Login2.jpg" alt="Login2" width="35%" />
+</p>
+
+## Conclusão
+
+Após a realização do teste, foi identificado que a funcionalidade de login opera corretamente. O usuário é capaz de fazer o login com sucesso, e após a autenticação, é redirecionado para a tela inicial (home) do aplicativo, conforme esperado. Esses resultados indicam que a funcionalidade de login está operando de acordo com as especificações e oferecendo uma experiência consistente para os usuários.
+
+## Teste de Login com Credenciais Inválidas
+
+### Objetivo: Testar se o sistema reconhece e responde corretamente a dados de login inválidos.
+
+### Resultado Esperado: O aplicativo informa que os dados inseridos são inválidos e impede o acesso à conta.
+
+<p align="center">
+  <img src="./img/Login_Erro.jpg" alt="Login" width="35%" />
+</p>
+
+### Conclusão
+
+A tentativa de acesso com senha incorreta foi corretamente impedida pelo sistema, que apresentou uma notificação de erro apropriada. Esses resultados demonstram que o processo de autenticação responde de maneira eficaz a credenciais inválidas.
