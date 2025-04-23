@@ -11,6 +11,7 @@ Avaliar a usabilidade do aplicativo Compras App, identificando melhorias na inte
 - **Distribuição:** 2 grupos de 3 usuários (república mista e república feminina)
 
 ## 3. Tarefas a serem Realizadas
+- Realizar o cadastro/login 
 - Criar uma nova lista de compras  
 - Adicionar três produtos com diferentes categorias  
 - Compartilhar a lista com outro usuário  
