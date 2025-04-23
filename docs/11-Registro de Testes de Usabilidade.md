@@ -50,7 +50,7 @@ Após a realização do teste, foi identificado que a funcionalidade para format
   <img src="./img/Login2.jpg" alt="Login2" width="35%" />
 </p>
 
-## Conclusão
+### Conclusão
 
 Após a realização do teste, foi identificado que a funcionalidade de login opera corretamente. O usuário é capaz de fazer o login com sucesso, e após a autenticação, é redirecionado para a tela inicial (home) do aplicativo, conforme esperado. Esses resultados indicam que a funcionalidade de login está operando de acordo com as especificações e oferecendo uma experiência consistente para os usuários.
 
