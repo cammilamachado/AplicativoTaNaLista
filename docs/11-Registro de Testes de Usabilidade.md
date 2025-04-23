@@ -6,11 +6,11 @@ Nesta documentação, trazemos os resultados obtidos e a conclusão geral. A seg
 
 ## Teste de Cadastro
 
-### **Objetivo:** Verificar se um usuário pode se cadastrar com sucesso ao fornecer todas as informações necessárias.
+### Objetivo: Verificar se um usuário pode se cadastrar com sucesso ao fornecer todas as informações necessárias.
 
-### **Resultado Esperado:** O usuário é cadastrado com sucesso e redirecionado para a página inicial para efetuar login.
+### Resultado Esperado: O usuário é cadastrado com sucesso e redirecionado para a página inicial para efetuar login.
 
-### **Observação:** A senha está bloqueado, porque está bloqueado os screenshots por motivos de segurança.
+### Observação: A senha está bloqueada, porque os screenshots não são permitidos por motivos de segurança.
 
 <p align="center">
   <img src="./img/Cadastro_Sucesso.jpg" alt="Cadastro" width="45%" />
