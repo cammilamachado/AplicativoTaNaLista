@@ -52,7 +52,7 @@ Após a realização do teste, foi identificado que a funcionalidade para format
 
 ### Conclusão
 
-Após a realização do teste, foi identificado que a funcionalidade de login opera corretamente. O usuário é capaz de fazer o login com sucesso, e após a autenticação, é redirecionado para a tela inicial (home) do aplicativo, conforme esperado. Esses resultados indicam que a funcionalidade de login está operando de acordo com as especificações e oferecendo uma experiência consistente para os usuários.
+O teste confirmou que a funcionalidade de login opera conforme o esperado, permitindo o acesso com credenciais válidas e redirecionando corretamente o usuário para a tela de menu principal.
 
 ## Teste de Login com Credenciais Inválidas
 
