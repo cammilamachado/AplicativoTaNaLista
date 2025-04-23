@@ -12,6 +12,9 @@ Nesta documentação, trazemos os resultados obtidos e a conclusão geral. A seg
 
 ### **Observação:** A senha está bloqueado, porque está bloqueado os screenshots por motivos de segurança.
 
-![Cadastro](./img/Cadastro_Sucesso.jpg)  ![Cadastro](./img/Sucesso_Cadastro.jpg)
+<p align="center">
+  <img src="./img/Cadastro_Sucesso.jpg" alt="Cadastro" width="45%" />
+  <img src="./img/Sucesso_Cadastro.jpg" alt="Sucesso" width="45%" />
+</p>
 
 
