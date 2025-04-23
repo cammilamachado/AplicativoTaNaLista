@@ -8,11 +8,17 @@ Esta documentação tem como objetivo apresentar uma visão clara da confiabilid
 
 ## Teste de Cadastro
 
-### Objetivo: Verificar se um usuário pode se cadastrar com sucesso ao fornecer todas as informações necessárias.
+### Objetivo 
 
-### Resultado Esperado: O usuário é cadastrado com sucesso e redirecionado para a página inicial para efetuar login.
+Verificar se um usuário pode se cadastrar com sucesso ao fornecer todas as informações necessárias.
 
-### Observação: A senha está bloqueada, porque os screenshots não são permitidos por motivos de segurança.
+### Resultado Esperado 
+
+O usuário é cadastrado com sucesso e redirecionado para a página inicial para efetuar login.
+
+### Observação 
+
+A senha está bloqueada, porque os screenshots não são permitidos por motivos de segurança.
 
 <p align="center">
   <img src="./img/Cadastro_Sucesso.jpg" alt="Cadastro" width="35%" />
@@ -25,9 +31,13 @@ Após a realização do teste, foi concluído com sucesso o cadastro do usuário
 
 ## Teste de Cadastro com E-mail Inválido
 
-### Objetivo: Verificar se o aplicativo Tá na Lista! valida corretamente o formato do endereço de e-mail.
+### Objetivo 
 
-### Resultado Esperado: O aplicativo exibe uma mensagem de erro, pois o formato é inválido e, assim, não permite o cadastro.
+Verificar se o aplicativo Tá na Lista! valida corretamente o formato do endereço de e-mail.
+
+### Resultado Esperado
+
+O aplicativo exibe uma mensagem de erro, pois o formato é inválido e, assim, não permite o cadastro.
 
 <p align="center">
   <img src="./img/Erro_Email.jpg" alt="Email" width="35%" />
@@ -39,11 +49,17 @@ Após a realização do teste, foi identificado que a funcionalidade para format
 
 ## Teste de Login
 
-### Objetivo: Se um usuário pode fazer login com sucesso ao fornecer credenciais válidas.
+### Objetivo 
 
-### Resultado Esperado: O usuário é autenticado com sucesso e redirecionado para o menu principal do aplicativo.
+Se um usuário pode fazer login com sucesso ao fornecer credenciais válidas.
 
-### Observação: O menu principal está sendo finalizado, no momento para este teste o usuário é redirecionado para a página inicial. 
+### Resultado Esperado 
+
+O usuário é autenticado com sucesso e redirecionado para o menu principal do aplicativo.
+
+### Observação 
+
+O menu principal está sendo finalizado, no momento para este teste o usuário é redirecionado para a página inicial. 
 
 <p align="center">
   <img src="./img/Login.jpg" alt="Login" width="35%" />
@@ -56,9 +72,13 @@ O teste confirmou que a funcionalidade de login opera conforme o esperado, permi
 
 ## Teste de Login com Credenciais Inválidas
 
-### Objetivo: Testar se o sistema reconhece e responde corretamente a dados de login inválidos.
+### Objetivo 
 
-### Resultado Esperado: O aplicativo informa que os dados inseridos são inválidos e impede o acesso à conta.
+Testar se o sistema reconhece e responde corretamente a dados de login inválidos.
+
+### Resultado Esperado 
+
+O aplicativo informa que os dados inseridos são inválidos e impede o acesso à conta.
 
 <p align="center">
   <img src="./img/Login_Erro.jpg" alt="Login" width="35%" />
