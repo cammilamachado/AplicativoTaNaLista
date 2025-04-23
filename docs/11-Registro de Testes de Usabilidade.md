@@ -2,7 +2,7 @@
 
 Ao documentar estes testes, nosso objetivo é apresentar uma visão clara da confiabilidade e estabilidade das funcionalidades de cadastro e login do Tá na Lista!, o aplicativo é voltado à organização de listas de compras compartilhadas entre moradores de república. Esta análise destaca os pontos positivos e eventuais melhorias observadas durante os testes realizados.
 
-Nesta documentação, trazemos os resultados obtidos e a conclusão geral. A seguir, estão os detalhes de cada cenário testado, incluindo descrição, objetivos, resultados esperados e observações relevantes.
+Nesta documentação, trazemos os resultados obtidos e a conclusão geral. A seguir, estão os detalhes de cada cenário testado, incluindo objetivos, resultados esperados, observações e conclusão dos registros de testes.
 
 # Parte I: Cadastro / Login
 
