@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "ComprasApp",
+    "slug": "ComprasApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "plugins": ["expo-font"],
+    "assetBundlePatterns": ["**/*"]
+  }
+}
