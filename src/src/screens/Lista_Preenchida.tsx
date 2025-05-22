@@ -22,11 +22,11 @@ interface Produto {
 
 export default function Lista() {
   const navigation = useNavigation();
-  const [usuarios, setUsuarios] = useState<Produto[]>([]);
+  const [produtos, setProdutos] = useState<Produto[]>([]);
   const [modalVisible, setModalVisible] = useState(false);
   const [nome, setNome] = useState("");
-  const [idade, setIdade] = useState("");
-  const [email, setEmail] = useState("");
+  const [quantidade, setQuantidade] = useState("");
+  const [validade, setValidade] = useState("");
 
   useEffect(() => {
     carregarUsuarios();
@@ -39,14 +39,14 @@ export default function Lista() {
         id: doc.id,
         ...doc.data(),
       })) as Produto[];
-      setUsuarios(lista);
+      setProdutos(lista);
     } catch (error) {
       console.error("Erro ao buscar dados:", error);
     }
   }
 
   const adicionarProduto = async () => {
-    if (!nome || !idade || !email) {
+    if (!nome || !quantidade || !validade) {
       Alert.alert("Erro", "Preencha todos os campos");
       return;
     }
@@ -54,13 +54,13 @@ export default function Lista() {
     try {
       await addDoc(collection(db, "usuarios"), {
         nome,
-        idade: Number(idade),
-        email,
+        idade: Number(quantidade),
+        email: validade,
       });
       setModalVisible(false);
       setNome("");
-      setIdade("");
-      setEmail("");
+      setQuantidade("");
+      setValidade("");
       carregarUsuarios(); // recarrega os dados
     } catch (error) {
       console.error("Erro ao adicionar usuário:", error);
@@ -81,7 +81,7 @@ export default function Lista() {
       <Text style={styles.titulo}>Lista de Produtos</Text>
 
       <FlatList
-        data={usuarios}
+        data={produtos}
         keyExtractor={(item) => item.id}
         renderItem={renderItem}
         contentContainerStyle={styles.lista}
@@ -99,7 +99,7 @@ export default function Lista() {
       <Modal visible={modalVisible} animationType="slide" transparent>
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
-            <Text style={styles.modalTitulo}>Novo Usuário</Text>
+            <Text style={styles.modalTitulo}>Adicionar produto</Text>
 
             <TextInput
               placeholder="Nome"
@@ -110,15 +110,15 @@ export default function Lista() {
             <TextInput
               placeholder="Idade"
               style={styles.input}
-              value={idade}
-              onChangeText={setIdade}
+              value={quantidade}
+              onChangeText={setQuantidade}
               keyboardType="numeric"
             />
             <TextInput
               placeholder="Email"
               style={styles.input}
-              value={email}
-              onChangeText={setEmail}
+              value={validade}
+              onChangeText={setValidade}
               keyboardType="email-address"
             />
 
