@@ -36,7 +36,7 @@ export default function Home() {
         </TouchableOpacity>
       </View>
 
-      {/* Menu lateral*/}
+      {/* Menu_Lateral*/}
       <Modal visible={menuVisible} animationType="slide" transparent>
         <Pressable style={styles.modalOverlay} onPress={() => setMenuVisible(false)}>
           <Pressable style={[styles.sidebar, { backgroundColor: sidebarColor }]} onPress={() => { }}>
@@ -111,7 +111,7 @@ export default function Home() {
           </Pressable>
         </Pressable>
       </Modal>
-     {/* Menu lateral*/}
+     {/* Menu_Lateral*/}
       
       <Image
         source={require('../../assets/logo3.png')}
