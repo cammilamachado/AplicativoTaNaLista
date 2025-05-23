@@ -241,7 +241,7 @@ const styles = StyleSheet.create({
   sidebarItem: {
     flexDirection: 'row',
     fontSize: 15,
-    marginBottom: 20,
+    marginBottom: 30,
   },
   icon: {
     marginRight: 8,
