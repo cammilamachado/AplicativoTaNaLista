@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     justifyContent: 'center',
     padding: 5,
-    backgroundColor: '#1E1E2F',
+    backgroundColor: '#231F20',
   },
   card: {
     backgroundColor: '#2B2B3D',
