@@ -244,7 +244,7 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   icon: {
-    marginRight: 8,
+    marginRight: 10,
   },
   themeToggle: {
     flexDirection: 'row',
