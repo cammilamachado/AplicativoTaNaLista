@@ -11,7 +11,7 @@ export default function Gastos() {
   return (
     <View style={styles.container}>
 
-       {/* Menu */}
+      {/* Menu */}
       <TouchableOpacity style={styles.menuIcon}>
         <Text style={styles.menuText}>☰</Text>
       </TouchableOpacity>
