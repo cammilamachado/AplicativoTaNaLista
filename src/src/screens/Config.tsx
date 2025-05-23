@@ -11,7 +11,7 @@ export default function Configuracoes() {
 
                 <TouchableOpacity style={[styles.option, styles.email]}>
                     <Ionicons name="mail-outline" size={22} />
-                    <Text style={styles.optionText}>Email</Text>
+                    <Text style={styles.optionText}>E-mail</Text>
                     <Ionicons name="chevron-forward-outline" size={18} />
                 </TouchableOpacity>
 
