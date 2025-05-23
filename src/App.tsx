@@ -6,10 +6,10 @@ import { ThemeProvider } from './src/context/Modo_Claro';
 
 export default function App() {
   return (
-     <ThemeProvider>
-    <NavigationContainer>
-      <MainStack />
-    </NavigationContainer>
+    <ThemeProvider>
+      <NavigationContainer>
+        <MainStack />
+      </NavigationContainer>
     </ThemeProvider>
   );
 }
