@@ -50,7 +50,6 @@ const styles = StyleSheet.create({
         width: 300,
         height: 300,
         marginBottom: 15,
-
     },
     title: {
         color: '#fff',
