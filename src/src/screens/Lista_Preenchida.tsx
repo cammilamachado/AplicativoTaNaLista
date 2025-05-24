@@ -1,17 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
-import {
-  View,
-  Text,
-  FlatList,
-  StyleSheet,
-  Modal,
-  TextInput,
-  TouchableOpacity,
-  Alert,
-} from "react-native";
+import { View, Text, FlatList, StyleSheet, Modal, TextInput, TouchableOpacity, Alert } from "react-native";
 import { collection, getDocs, addDoc } from "firebase/firestore";
 import { db } from "../firebase/firebase";
+import BouncyCheckbox from "react-native-bouncy-checkbox";
 
 interface Produto {
   id: string;
@@ -19,7 +11,7 @@ interface Produto {
   quantidade: number;
   validade: Date;
 }
-
+const produtosStatic: Produto[] = [{ id: "1", validade: new Date(Date.now()), nome: " Pão de forma", quantidade: 2 }, { id: "21", nome: " Sabonete", validade: new Date(Date.now()), quantidade: 5 }];
 export default function Lista() {
   const navigation = useNavigation();
   const [produtos, setProdutos] = useState<Produto[]>([]);
@@ -70,29 +62,42 @@ export default function Lista() {
 
   const renderItem = ({ item }: { item: Produto }) => (
     <View style={styles.card}>
-      <Text style={styles.nome}>{item.nome}</Text>
-      <Text>Quantidade: {item.quantidade}</Text>
-      <Text>Valido até: {item.validade.toLocaleDateString()}</Text>
+      <BouncyCheckbox
+        size={25}
+        fillColor="red"
+        unFillColor="#F5F5F5"
+        iconStyle={{ borderColor: "red" }}
+        innerIconStyle={{ borderWidth: 2 }}
+        textStyle={{ fontFamily: "JosefinSans-Regular" }}
+        onPress={(isChecked: boolean) => { console.log(isChecked) }}
+      />
+      <View style={styles.textocard}>
+        <Text style={styles.nome}>{item.nome}</Text>
+        <Text>Quantidade: {item.quantidade}</Text>
+        <Text>Valido até: {item.validade.toLocaleDateString()}</Text>
+      </View>
+
     </View>
   );
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Lista de Produtos</Text>
+
 
       <FlatList
-        data={produtos}
+        data={produtosStatic}
         keyExtractor={(item) => item.id}
         renderItem={renderItem}
         contentContainerStyle={styles.lista}
       />
+
 
       {/* Botão '+' flutuante */}
       <TouchableOpacity
         style={styles.botaoFlutuante}
         onPress={() => setModalVisible(true)}
       >
-        <Text style={styles.iconeBotao}>＋</Text>
+        <Text style={styles.iconeBotao}>＋ Adicionar</Text>
       </TouchableOpacity>
 
       {/* Modal de cadastro */}
@@ -147,8 +152,10 @@ const styles = StyleSheet.create({
   container: { flex: 1, padding: 16, backgroundColor: "#fff" },
   titulo: { fontSize: 24, fontWeight: "bold", marginBottom: 16 },
   lista: { paddingBottom: 16 },
+  textocard: { flexDirection: "column" },
   card: {
-    backgroundColor: "#f9f9f9",
+    flexDirection: "row",
+    backgroundColor: "#F5F5F5",
     padding: 16,
     marginBottom: 12,
     borderRadius: 8,
@@ -164,7 +171,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     right: 24,
     bottom: 24,
-    backgroundColor: "#2196f3",
+    backgroundColor: "#eaddff",
     width: 60,
     height: 60,
     borderRadius: 30,
