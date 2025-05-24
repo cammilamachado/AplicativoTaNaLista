@@ -135,7 +135,7 @@ export default function Home() {
       </Text>
 
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.buttonP}>
+        <TouchableOpacity onPress={() => { navigation.navigate('NavLista') }} style={styles.buttonP}>
           <Text style={styles.buttonText}>Criar nova lista</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.buttonS}>
