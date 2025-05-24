@@ -58,6 +58,17 @@ export default function Home() {
               style={styles.menuItem}
               onPress={() => {
                 setMenuVisible(false);
+                navigation.navigate('Estoque');
+              }}
+            >
+              <Ionicons name="cube-outline" size={18} color={textColor} style={styles.icon} />
+              <Text style={[styles.sidebarItemText, { color: textColor }]}>Estoque</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={styles.menuItem}
+              onPress={() => {
+                setMenuVisible(false);
                 navigation.navigate('Config');
               }}
             >
@@ -111,14 +122,14 @@ export default function Home() {
           </Pressable>
         </Pressable>
       </Modal>
-     {/* Menu_Lateral*/}
-      
+      {/* Menu_Lateral*/}
+
       <Image
         source={require('../../assets/logo3.png')}
         style={styles.image}
         resizeMode="contain"
       />
-  
+
       <Text style={[styles.description, { color: textColor }]}>
         Você ainda não participa de nenhuma lista de compras. Crie ou entre em uma para começar a <Text style={styles.bold}>organizar</Text> os itens.
       </Text>
