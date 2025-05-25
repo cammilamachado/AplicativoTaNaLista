@@ -153,8 +153,11 @@ export default function Home() {
       </Text>
 
       <View style={styles.buttonContainer}>
-        <TouchableOpacity 
-          onPress={() => setCreateListVisible(true)}
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate('NavLista')
+            setCreateListVisible(true)
+          }}
           style={styles.buttonP}
         >
           <Text style={styles.buttonText}>Criar nova lista</Text>
