@@ -1,0 +1,117 @@
+.poll-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto var(--spacing-md);
+  background: var(--background-light);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-large);
+  overflow: hidden;
+  box-shadow: var(--shadow-small);
+}
+
+.poll-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+}
+
+.poll-avatar {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: url('https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-24/ARN0Wp44V0.png') no-repeat center;
+  background-size: cover;
+  border-radius: var(--border-radius-full);
+  flex-shrink: 0;
+}
+
+.poll-initial {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+
+.poll-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.poll-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--text-primary);
+  letter-spacing: 0.15px;
+  margin: 0 0 var(--spacing-xs) 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.poll-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--text-primary);
+  letter-spacing: 0.25px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.poll-dates {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-md);
+  background: url('https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-24/rZ2LXnFqUt.png') no-repeat center;
+  background-size: cover;
+  height: 100px;
+  position: relative;
+}
+
+.date-start,
+.date-end,
+.date-separator {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000000;
+  letter-spacing: 0.1px;
+  text-align: center;
+}
+
+.date-start {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 81px;
+}
+
+.date-separator {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+}
+
+.date-end {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 68px;
+}

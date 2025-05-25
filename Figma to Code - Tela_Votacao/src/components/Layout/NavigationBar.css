@@ -1,0 +1,77 @@
+.navigation-bar {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  width: 100%;
+  height: 105px;
+  padding: 0 var(--spacing-sm);
+  background: #6a6a6a;
+  position: relative;
+  z-index: 50;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: var(--spacing-xs);
+  padding: 12px 0 16px 0;
+  background: transparent;
+  color: var(--text-secondary);
+  transition: all 0.2s ease;
+  border-radius: var(--border-radius-medium);
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item.active {
+  background: #682a2a;
+  color: var(--text-light);
+  padding-bottom: 50px;
+}
+
+.nav-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--border-radius-medium);
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.nav-icon-list {
+  background-image: url('https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-24/7D4q5GttJV.png');
+}
+
+.nav-icon-inventory {
+  background-image: url('https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-24/D9cb8ALgjE.png');
+}
+
+.nav-icon-schedule {
+  background-image: url('https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-24/fU6wALmO0w.png');
+}
+
+.nav-icon-vote {
+  background-image: url('https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-24/0OQNmfLXqJ.png');
+}
+
+.nav-label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}

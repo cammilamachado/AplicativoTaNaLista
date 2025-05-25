@@ -1,0 +1,67 @@
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 53px;
+  padding: 0 var(--spacing-md);
+  background: transparent;
+  color: var(--text-light);
+  position: relative;
+  z-index: 100;
+}
+
+.time-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.time-display {
+  font-family: var(--font-family-secondary);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.dynamic-island {
+  width: 124px;
+  height: 10px;
+  background: #000;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.status-indicators {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 7px;
+}
+
+.cellular-signal,
+.wifi-signal,
+.battery-indicator {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cellular-signal {
+  width: 19.2px;
+  height: 12.226px;
+  background-image: url('https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-24/KnanGq2umV.png');
+}
+
+.wifi-signal {
+  width: 17.142px;
+  height: 12.328px;
+  background-image: url('https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-24/OgL3f0BtiW.png');
+}
+
+.battery-indicator {
+  width: 27.328px;
+  height: 13px;
+  background-image: url('https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-24/EBAew16nvg.png');
+}

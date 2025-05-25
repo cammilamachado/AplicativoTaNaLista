@@ -1,0 +1,47 @@
+.voting-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) 0;
+}
+
+.menu-button {
+  width: 47px;
+  height: 47px;
+  background: url('https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-05-24/j08SeQ3TWr.png') no-repeat center;
+  background-size: cover;
+  opacity: 0.6;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  align-self: flex-start;
+  margin-bottom: var(--spacing-lg);
+}
+
+.menu-button:hover {
+  opacity: 1;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-xl);
+  text-align: center;
+  min-height: 400px;
+}
+
+.empty-state h2 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.empty-state p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin: 0;
+}
