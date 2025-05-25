@@ -1,17 +1,31 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity, Pressable, Modal,  Switch, TextInput,} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  TouchableOpacity,
+  Pressable,
+  Modal,
+  Switch,
+} from 'react-native';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { useTheme } from '../context/Modo_Claro';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/MainStack';
+import CriarListaModal from '../modals/CriarListaModal';
+import EntrarListaModal from '../modals/EntrarListaModal';
 
 export default function Home() {
 
-  const [codigo, setCodigo] = useState('');
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
-  const [modalVisible, setmodalVisible] = useState(false);
+
   const [menuVisible, setMenuVisible] = useState(false);
+
+  const [createListVisible, setCreateListVisible] = useState(false);
+  const [EnterListVisible, setEnterListVisible] = useState(false);
+
   const { theme, toggleTheme } = useTheme();
   const isLight = theme === 'light';
 
@@ -116,6 +130,18 @@ export default function Home() {
       </Modal>
       {/* Menu_Lateral*/}
 
+      <CriarListaModal 
+        visible={createListVisible} 
+        setIsVisible={setCreateListVisible}
+        onCreateTemporaria={() => {}}
+        onCreateFixa={() => {}}
+      />
+
+      <EntrarListaModal
+        visible={EnterListVisible} 
+        setIsVisible={setEnterListVisible}
+      />
+
       <Image
         source={require('../../assets/logo3.png')}
         style={styles.image}
@@ -127,10 +153,19 @@ export default function Home() {
       </Text>
 
       <View style={styles.buttonContainer}>
-        <TouchableOpacity onPress={() => { navigation.navigate('NavLista') }} style={styles.buttonP}>
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate('NavLista')
+            setCreateListVisible(true)
+          }}
+          style={styles.buttonP}
+        >
           <Text style={styles.buttonText}>Criar nova lista</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => { setmodalVisible(true) }} style={styles.buttonS}>
+        <TouchableOpacity 
+          onPress={() => setEnterListVisible(true)}
+          style={styles.buttonS}
+        >
           <Text style={styles.buttonText}>Entrar em uma lista</Text>
         </TouchableOpacity>
       </View>
@@ -143,39 +178,11 @@ export default function Home() {
           </Text>
         </Text>
       </Pressable>
-
-      <Modal visible={modalVisible} animationType="slide" transparent>
-        <View style={styles.modalContainer}>
-          <View style={styles.modalContent}>
-            <Text style={styles.description}>Digite o código da sua lista</Text>
-            <TextInput
-              placeholder="Seu código"
-              style={styles.input}
-              value={codigo}
-              onChangeText={setCodigo}
-              keyboardType="numeric"
-            />
-            <TouchableOpacity
-              style={[styles.botaoModal, { backgroundColor: "#ff0000" }]}
-              onPress={() => setmodalVisible(false)}
-            >
-              <Text>Cancelar</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-      </Modal>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  input: {
-    borderWidth: 1,
-    borderColor: "#ccc",
-    padding: 10,
-    borderRadius: 6,
-    marginBottom: 12,
-  },
   container: {
     flex: 1,
     padding: 24,
@@ -239,12 +246,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: 'rgba(0,0,0,0.4)',
   },
-  modalContainer: {
-    flex: 1,
-    backgroundColor: "#000000aa",
-    justifyContent: "center",
-    padding: 20,
-  },
   sidebar: {
     width: 260,
     height: '100%',
@@ -303,17 +304,5 @@ const styles = StyleSheet.create({
   },
   sidebarItemText: {
     fontSize: 15,
-  },
-  botaoModal: {
-    padding: 12,
-    borderRadius: 6,
-    alignItems: "center",
-    width: "48%",
-    alignSelf: "center"
-  },
-  modalContent: {
-    backgroundColor: "#fff",
-    padding: 20,
-    borderRadius: 8,
   },
 });
