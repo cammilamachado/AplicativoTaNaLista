@@ -6,18 +6,12 @@
 
 **Cores de Fundo:**
 
-* Background (padrão): #A82223 (Login)
-* Background (padrão): #F2F2F2 e #231F20 (Usuário logado)
-  
+* Background (padrão): #A82223 e #231F20
+
 **Cores de Texto:**
 
-* Cor de fonte (padrão): #fff
-* Cor com menos contraste: #6B6B6B 
-* Cor do texto com underline: #DA761E
-
-**Cores Complementares:**
-
-* #AE1B1B (Vermelho) 
+* Cor de fonte (padrão): #fff e #000 
+* Cor do texto com underline: #FFA726
 
 ## Responsividade 
 
@@ -27,8 +21,8 @@ O design foi pensado com base em princípios de responsividade. A ideia foi orga
 
 ## Tipografia 
 
-* Fonte do Título: Poppins
-* Fonte do Texto: Poppins
+* Fonte do Título: Roboto
+* Fonte do Texto: Roboto
   
 ## Iconografia
 
