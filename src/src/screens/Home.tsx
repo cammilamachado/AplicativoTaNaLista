@@ -14,12 +14,18 @@ import { useTheme } from '../context/Modo_Claro';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/MainStack';
+import CriarListaModal from '../modals/CriarListaModal';
+import EntrarListaModal from '../modals/EntrarListaModal';
 
 export default function Home() {
 
   const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
 
   const [menuVisible, setMenuVisible] = useState(false);
+
+  const [createListVisible, setCreateListVisible] = useState(false);
+  const [EnterListVisible, setEnterListVisible] = useState(false);
+
   const { theme, toggleTheme } = useTheme();
   const isLight = theme === 'light';
 
@@ -124,6 +130,18 @@ export default function Home() {
       </Modal>
       {/* Menu_Lateral*/}
 
+      <CriarListaModal 
+        visible={createListVisible} 
+        setIsVisible={setCreateListVisible}
+        onCreateTemporaria={() => {}}
+        onCreateFixa={() => {}}
+      />
+
+      <EntrarListaModal
+        visible={EnterListVisible} 
+        setIsVisible={setEnterListVisible}
+      />
+
       <Image
         source={require('../../assets/logo3.png')}
         style={styles.image}
@@ -135,10 +153,16 @@ export default function Home() {
       </Text>
 
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.buttonP}>
+        <TouchableOpacity 
+          onPress={() => setCreateListVisible(true)}
+          style={styles.buttonP}
+        >
           <Text style={styles.buttonText}>Criar nova lista</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.buttonS}>
+        <TouchableOpacity 
+          onPress={() => setEnterListVisible(true)}
+          style={styles.buttonS}
+        >
           <Text style={styles.buttonText}>Entrar em uma lista</Text>
         </TouchableOpacity>
       </View>
