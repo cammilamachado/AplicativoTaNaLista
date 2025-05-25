@@ -42,8 +42,8 @@ const EntrarListaModal: React.FC<ListaModalProps> = ({
               placeholderTextColor="#aaa"
               style={styles.input}
             />
-
           </View>
+          
       </View>
     </Modal>
   );
