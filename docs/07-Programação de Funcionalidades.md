@@ -28,9 +28,9 @@ Atribuição de Responsabilidades - Edrei Dornelas
   
 Atribuição de Responsabilidades - Giordano Sa
 
-> - Arquitetura de Solução (Requisitos e Restrições; Modelo ER; Esquema Relacional; Padronização de Qualidade de Produto)
+> - Arquitetura de Solução (Requisitos e Restrições; Modelo ER, Esquema Relacional e Padronização de Qualidade de Produto)
 > - Implementação das telas
-> - Registro de Testes
+> - Registro de Testes 
   
 Atribuição de Responsabilidades - Leonardo Mendes
 
@@ -47,9 +47,13 @@ Atribuição de Responsabilidades - Tarsis Augustus
 > - Projeto de Interface (Wireframes Interativos)
 > - Implementação das telas
 
+### Sprint 2
+
 ![Quadro](./img/Quadro2.png)
 
 ![Quadro](./img/Quadro.png)
+
+### Sprint 3
 
 ![Quadro](./img/quadro.png)
 
@@ -58,7 +62,7 @@ Atribuição de Responsabilidades - Tarsis Augustus
 
 ## Status Atual das Contribuições dos Membros do Time no GitHub
 
-![Status](./img/status_membro.png)
+![Status](./img/status.png)
 
 ## Comentários Adicionais sobre as Participações Individuais
 
