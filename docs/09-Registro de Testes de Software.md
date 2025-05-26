@@ -96,10 +96,8 @@ Fornecer opções adicionais para o usuario.
 
 ### Resultado Esperado 
 
-<p align="center">
   [print 1 menu lateral](https://github.com/user-attachments/assets/869ffc52-f563-46ee-9791-81552d305ac4)
   [print 1 menu lateral modo claro](https://github.com/user-attachments/assets/a15670ee-c53e-48f0-bdd0-0ec3fa20788a)
-</p>
 
 # Criar Lista
 
@@ -107,11 +105,7 @@ Fornecer opções adicionais para o usuario.
 
 ### Resultado Esperado 
 
-<p align="center">
 ![print 1 criar lista](https://github.com/user-attachments/assets/1aac518c-7942-4a5e-8773-f8237c71eb8d)
-
- 
-</p>
 
 ### Observação
 
