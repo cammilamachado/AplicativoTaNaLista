@@ -103,6 +103,8 @@ Fornecer opções adicionais para o usuario.
 
 ### Objetivo 
 
+Fornecer ao usuario a função de criar uma nova lista.
+
 ### Resultado Esperado 
 
 ![print 1 criar lista](https://github.com/user-attachments/assets/1aac518c-7942-4a5e-8773-f8237c71eb8d)
@@ -112,6 +114,8 @@ Fornecer opções adicionais para o usuario.
 ### Conclusão
 
 # Entrar Lista
+
+Fornecer ao usuario a função de entrar em uma lista previamente criada.
 
 ### Objetivo 
 
@@ -127,6 +131,8 @@ Fornecer opções adicionais para o usuario.
 
 ### Objetivo 
 
+O usuario é capaz de gerar uma "resposta de retorno" para aplicação.
+
 ### Resultado Esperado 
 
   ![tela 1 ajuda feedback](https://github.com/user-attachments/assets/77f8ca28-f16f-4318-b6e6-01cb8373b4bc)
@@ -139,6 +145,8 @@ Fornecer opções adicionais para o usuario.
 
 ### Objetivo 
 
+Objetivo da organização.
+
 ### Resultado Esperado 
 
   ![tela 1 sobre](https://github.com/user-attachments/assets/df33b49d-532c-496d-b9dc-5b3eb01de188)
@@ -148,6 +156,8 @@ Fornecer opções adicionais para o usuario.
 # Homepage do visitante
 
 ### Objetivo 
+
+Essa é a homepage que o usuario padrão será redirecionado após realizar login.
 
 ### Resultado Esperado 
 
@@ -159,6 +169,8 @@ Fornecer opções adicionais para o usuario.
 
 ### Objetivo 
 
+A funcionalidade do estoque, como ela vai ser e um exemplo da adição de itens;
+
 ### Resultado Esperado 
 
   ![print 1 tela de estoque - Copia](https://github.com/user-attachments/assets/f595f756-676b-4833-9df8-cdb2383082fe)
@@ -169,6 +181,8 @@ Fornecer opções adicionais para o usuario.
 
 # Cronograma
 
+A funcionalidade de atribuir uma tarefa a algum participante é atribuida paralelamente ao cronograma;
+
 ### Objetivo 
 
 ### Resultado Esperado 
@@ -177,35 +191,32 @@ Fornecer opções adicionais para o usuario.
 
 ### Conclusão
 
-
 ![print 2 tela cronograma](https://github.com/user-attachments/assets/c77ecb7c-4a30-4d2c-a7ed-606eacc39572)
-
 
 # Votação
 
 ### Objetivo 
 
-### Resultado Esperado 
+A funcionalidade votação tem como propósito fornecer o usuario administrador a opção de criar enquetes para discussões.
 
+### Resultado Esperado 
 
   ![print 1 tela votacao](https://github.com/user-attachments/assets/3d19a78d-90ea-4523-b0e0-464306eac706)
 
 ### Conclusão
 
-
   ![print 2 tela votacao](https://github.com/user-attachments/assets/817e8725-c7e0-4852-b4e8-e6b38fccbb9b)
-
 
 
 # Controle de gastos
 
-### Objetivo 
+### Objetivo
+
+Gera um metódo simples para controle dos gastos dos participantes;
 
 ### Resultado Esperado 
 
-
   ![tela 1 controle gastos](https://github.com/user-attachments/assets/7dca1d1e-94c7-4da3-a751-55cf1683d3d1)
-
 
 ### Conclusão
 
@@ -213,18 +224,20 @@ Fornecer opções adicionais para o usuario.
 
 ### Objetivo 
 
-### Resultado Esperado 
+Permite que o usuario adapte algumas configurações do aplicativo;
 
+### Resultado Esperado 
 
   ![print 1 configurações](https://github.com/user-attachments/assets/7fb227f9-6b99-4962-abe8-da97e98f2605)
 88a)
-
 
 ### Conclusão
 
 # Suporte
 
 ### Objetivo 
+
+A função suporte permite que o usuario tire dúvidas acerca da aplicação.
 
 ### Resultado Esperado 
 
@@ -235,6 +248,8 @@ Fornecer opções adicionais para o usuario.
 # Função Filtros dos itens da lista
 
 ### Objetivo 
+
+Os itens que forem adicionados a lista terão adicionalmente opções de filtros que o usuario pode selecionar;
 
 ### Resultado Esperado 
 
