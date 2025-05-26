@@ -97,40 +97,66 @@ Fornecer opções adicionais para o usuario.
 ### Resultado Esperado 
 
 <p align="center">
-
   ![print 1 menu lateral](https://github.com/user-attachments/assets/869ffc52-f563-46ee-9791-81552d305ac4)
   ![print 1 menu lateral modo claro](https://github.com/user-attachments/assets/a15670ee-c53e-48f0-bdd0-0ec3fa20788a)
+</p>
+
+# Criar Lista
+
+### Objetivo 
+
+### Resultado Esperado 
+
+<p align="center">
+![print 1 criar lista](https://github.com/user-attachments/assets/1aac518c-7942-4a5e-8773-f8237c71eb8d)
+
  
 </p>
 
+### Observação
 
-# Homepage do visitante
+### Conclusão
+
+# Entrar Lista
 
 ### Objetivo 
 
 ### Resultado Esperado 
+
+<p align="center">
+  ![print 1 juntar-se a lista](https://github.com/user-attachments/assets/f5a2bd1a-7580-4fca-8022-2ab5deb60743)
+
+</p>
 
 ### Observação
 
 ### Conclusão
 
-# Homepage do visitante
+# Feedback
 
 ### Objetivo 
 
 ### Resultado Esperado 
+
+<p align="center">
+  ![tela 1 ajuda feedback](https://github.com/user-attachments/assets/77f8ca28-f16f-4318-b6e6-01cb8373b4bc)
+
+</p>
 
 ### Observação
 
 ### Conclusão
 
-# Homepage do visitante
+# Sobre
 
 ### Objetivo 
 
 ### Resultado Esperado 
 
-### Observação
+<p align="center">
+  ![tela 1 sobre](https://github.com/user-attachments/assets/df33b49d-532c-496d-b9dc-5b3eb01de188)
+
+</p>
 
 ### Conclusão
 
@@ -140,61 +166,97 @@ Fornecer opções adicionais para o usuario.
 
 ### Resultado Esperado 
 
+<p align="center">
+  ![print 1 menu](https://github.com/user-attachments/assets/8ce86f73-4279-4f1b-8e85-e36b6d3bf1bb)
+
+</p>
+
 ### Conclusão
 
-# Homepage do visitante
+# Estoque
 
 ### Objetivo 
 
 ### Resultado Esperado 
 
+<p align="center">
+  ![print 1 tela de estoque - Copia](https://github.com/user-attachments/assets/f595f756-676b-4833-9df8-cdb2383082fe)
+
+</p>
+
 ### Conclusão
 
-# Homepage do visitante
+<p align="center">
+![print 2 tela estoque](https://github.com/user-attachments/assets/7d49065c-6828-4084-989f-4d87ea3f82a4)
+</p>
+
+# Cronograma
 
 ### Objetivo 
 
 ### Resultado Esperado 
 
+<p align="center">
+  ![print 1 tela cronograma](https://github.com/user-attachments/assets/3669cb67-0456-4f67-ae4e-090b1b7fe665)
+</p>
+
 ### Conclusão
 
-# Homepage do visitante
+<p align="center">
+![print 2 tela cronograma](https://github.com/user-attachments/assets/c77ecb7c-4a30-4d2c-a7ed-606eacc39572)
+</p>
+
+# Votação
 
 ### Objetivo 
 
 ### Resultado Esperado 
 
+<p align="center">
+  ![print 1 tela votacao](https://github.com/user-attachments/assets/3d19a78d-90ea-4523-b0e0-464306eac706)
+</p>
+
 ### Conclusão
 
-# Homepage do visitante
+<p align="center">
+  ![print 2 tela votacao](https://github.com/user-attachments/assets/817e8725-c7e0-4852-b4e8-e6b38fccbb9b)
+
+</p>
+
+# Controle de gastos
 
 ### Objetivo 
 
 ### Resultado Esperado 
 
+<p align="center">
+  ![tela 1 controle gastos](https://github.com/user-attachments/assets/7dca1d1e-94c7-4da3-a751-55cf1683d3d1)
+</p>
+
 ### Conclusão
 
-# Homepage do visitante
+# Configurações
 
 ### Objetivo 
 
 ### Resultado Esperado 
 
+<p align="center">
+  ![print 1 configurações](https://github.com/user-attachments/assets/7fb227f9-6b99-4962-abe8-da97e98f2605)
+88a)
+</p>
+
 ### Conclusão
 
-# Homepage do visitante
+# Suporte
 
 ### Objetivo 
 
 ### Resultado Esperado 
 
-### Conclusão
-
-# Homepage do visitante
-
-### Objetivo 
-
-### Resultado Esperado 
+<p align="center">
+![print 1 tela suporte](https://github.com/user-attachments/assets/bd8a16ff-38d2-4d17-938e-2e09dc021a84)
+</p>
 
 ### Conclusão
 
