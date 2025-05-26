@@ -96,8 +96,8 @@ Fornecer opções adicionais para o usuario.
 
 ### Resultado Esperado 
 
-  [print 1 menu lateral](https://github.com/user-attachments/assets/869ffc52-f563-46ee-9791-81552d305ac4)
-  [print 1 menu lateral modo claro](https://github.com/user-attachments/assets/a15670ee-c53e-48f0-bdd0-0ec3fa20788a)
+  ![print 1 menu lateral](https://github.com/user-attachments/assets/869ffc52-f563-46ee-9791-81552d305ac4)
+  ![print 1 menu lateral modo claro](https://github.com/user-attachments/assets/a15670ee-c53e-48f0-bdd0-0ec3fa20788a)
 
 # Criar Lista
 
@@ -117,10 +117,10 @@ Fornecer opções adicionais para o usuario.
 
 ### Resultado Esperado 
 
-<p align="center">
+
   ![print 1 juntar-se a lista](https://github.com/user-attachments/assets/f5a2bd1a-7580-4fca-8022-2ab5deb60743)
 
-</p>
+
 
 ### Observação
 
@@ -132,10 +132,10 @@ Fornecer opções adicionais para o usuario.
 
 ### Resultado Esperado 
 
-<p align="center">
+
   ![tela 1 ajuda feedback](https://github.com/user-attachments/assets/77f8ca28-f16f-4318-b6e6-01cb8373b4bc)
 
-</p>
+
 
 ### Observação
 
