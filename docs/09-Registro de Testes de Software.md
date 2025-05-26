@@ -97,10 +97,10 @@ Fornecer opções adicionais para o usuario.
 ### Resultado Esperado 
 
 <p align="center">
-  <img src=".![print 1 menu lateral](https://github.com/user-attachments/assets/e5cd6625-7647-4aeb-b8f6-6dc0b2684d4e)
- />
- <img src=".![print 1 menu lateral modo claro](https://github.com/user-attachments/assets/f0a977bc-ec77-4a8f-bd9d-2f19266906ad)
-/>   
+
+  ![print 1 menu lateral](https://github.com/user-attachments/assets/869ffc52-f563-46ee-9791-81552d305ac4)
+  ![print 1 menu lateral modo claro](https://github.com/user-attachments/assets/a15670ee-c53e-48f0-bdd0-0ec3fa20788a)
+ 
 </p>
 
 
