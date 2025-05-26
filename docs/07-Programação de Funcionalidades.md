@@ -39,7 +39,7 @@ Atribuição de Responsabilidades - Leonardo Mendes
 
 Atribuição de Responsabilidades - Marcio Lucas
 
-> - Planos de Testes de Sotware
+> - Planos de Testes de Software
 > - Implementação das telas
 
 Atribuição de Responsabilidades - Tarsis Augustus
