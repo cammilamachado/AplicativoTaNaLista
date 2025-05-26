@@ -19,27 +19,33 @@ Os Layouts foram implementados utilizando React Native e o código fonte pode se
 Atribuição de Responsabilidades - Camila Machado
   
 > - Projeto de Interface (Diagrama de Fluxo de Navegação e Wireframes Interativos)
+> - Implementação das telas
 
 Atribuição de Responsabilidades - Edrei Dornelas
 
 > - Programação de Funcionalidades
+> - Implementação das telas
   
 Atribuição de Responsabilidades - Giordano Sa
 
 > - Arquitetura de Solução (Requisitos e Restrições; Modelo ER; Esquema Relacional; Padronização de Qualidade de Produto)
+> - Implementação das telas
+> - Registro de Testes
   
 Atribuição de Responsabilidades - Leonardo Mendes
 
 > - Metodologia (Tecnologias, Ferramentas, Controle de Versão e Gerenciamento de Projeto)
+> - Implementação das telas
 
 Atribuição de Responsabilidades - Marcio Lucas
 
-> - Planos de Testes de Funcionalidades e Usabilidade
-> - Registros de Testes de Funcionalidades e Usabilidade
-  
+> - Planos de Testes de Sotware
+> - Implementação das telas
+
 Atribuição de Responsabilidades - Tarsis Augustus
 
 > - Projeto de Interface (Wireframes Interativos)
+> - Implementação das telas
 
 ![Quadro](./img/Quadro2.png)
 
@@ -64,27 +70,27 @@ Atribuição de Responsabilidades - Tarsis Augustus
 
 > - Competência no desenvolvimento de software.
 > - Trouxe soluções práticas.
-> - Comprometido com a qualidade em todas as etapas, mesmo em relação com desafios.
+> - Comprometido com a qualidade em todas as etapas, mesmo com desafios.
 > - Colaboração dentro da equipe, disposto a ajudar.
 
 **Giordano:**
 
-> - Conseguiu trazer boas ideias ao projeto com facilidade.
+> - Conseguiu trazer boas ideias ao projeto.
 > - Contribuiu para melhorar a experiência do usuário, apesar das restrições de tempo.
-> - Participou de forma colaborativa, apoiando a equipe em momentos mais críticos.
+> - Participou de forma colaborativa, apoiando a equipe.
 > - Postura proativa, assumindo responsabilidades.
 
 **Leonardo:**
 
-> - Comprometimento diante de múltiplas tarefas.
-> - Gerenciou prazos com eficácia, com uma comunicação clara e objetiva.
+> - Comprometimento diante das tarefas.
+> - Gerenciou prazos com eficácia.
 > - Participou das discussões, com sugestões construtivas.
 > - Iniciativa em propor melhorias no projeto.
 
 **Marcio:**
 
 > - Domínio técnico e versatilidade no desenvolvimento de funcionalidades.
-> - Calma e eficiência mesmo em situações de alta pressão.
+> - Calma e eficiência.
 > - Assumiu tarefas com responsabilidade e entregou com qualidade.
 > - Colaboração dentro da equipe, disposto a ajudar.
 
@@ -93,4 +99,4 @@ Atribuição de Responsabilidades - Tarsis Augustus
 > - Criatividade e precisão na elaboração dos wireframes.
 > - Equilibrou bem design e usabilidade, contribuindo para a experiência do usuário.
 > - Participou ativamente das discussões, com sugestões construtivas.
-> - Confiança e comprometimento mesmo sob múltiplas demandas.
+> - Confiança e comprometimento mesmo sob várias demandas.
