@@ -51,6 +51,11 @@ Atribuição de Responsabilidades - Tarsis Augustus
 
 ![Quadro](./img/Quadro.png)
 
+![Quadro](./img/quadro.png)
+
+![Quadro](./img/quadro1.png)
+![Quadro](./img/quadro2.png)
+
 ## Status Atual das Contribuições dos Membros do Time no GitHub
 
 ![Status](./img/status_membro.png)
