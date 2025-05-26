@@ -87,3 +87,148 @@ O aplicativo informa que os dados inseridos são inválidos e impede o acesso à
 ### Conclusão
 
 A tentativa de acesso com senha incorreta foi corretamente impedida pelo sistema, que apresentou uma notificação de erro apropriada. Esses resultados demonstram que o processo de autenticação responde de maneira eficaz a credenciais inválidas.
+
+# Menu Lateral
+
+### Objetivo 
+
+Fornecer opções adicionais para o usuario.
+
+### Resultado Esperado 
+
+<p align="center">
+  <img src=".![print 1 menu lateral](https://github.com/user-attachments/assets/e5cd6625-7647-4aeb-b8f6-6dc0b2684d4e)
+ />
+ <img src=".![print 1 menu lateral modo claro](https://github.com/user-attachments/assets/f0a977bc-ec77-4a8f-bd9d-2f19266906ad)
+/>   
+</p>
+
+
+# Homepage do visitante
+
+### Objetivo 
+
+### Resultado Esperado 
+
+### Observação
+
+### Conclusão
+
+# Homepage do visitante
+
+### Objetivo 
+
+### Resultado Esperado 
+
+### Observação
+
+### Conclusão
+
+# Homepage do visitante
+
+### Objetivo 
+
+### Resultado Esperado 
+
+### Observação
+
+### Conclusão
+
+# Homepage do visitante
+
+### Objetivo 
+
+### Resultado Esperado 
+
+### Conclusão
+
+# Homepage do visitante
+
+### Objetivo 
+
+### Resultado Esperado 
+
+### Conclusão
+
+# Homepage do visitante
+
+### Objetivo 
+
+### Resultado Esperado 
+
+### Conclusão
+
+# Homepage do visitante
+
+### Objetivo 
+
+### Resultado Esperado 
+
+### Conclusão
+
+# Homepage do visitante
+
+### Objetivo 
+
+### Resultado Esperado 
+
+### Conclusão
+
+# Homepage do visitante
+
+### Objetivo 
+
+### Resultado Esperado 
+
+### Conclusão
+
+# Homepage do visitante
+
+### Objetivo 
+
+### Resultado Esperado 
+
+### Conclusão
+
+# Homepage do visitante
+
+### Objetivo 
+
+### Resultado Esperado 
+
+### Conclusão
+
+# Homepage do visitante
+
+### Objetivo 
+
+### Resultado Esperado 
+
+### Conclusão
+
+# Homepage do visitante
+
+### Objetivo 
+
+### Resultado Esperado 
+
+### Conclusão
+
+# Homepage do visitante
+
+### Objetivo 
+
+### Resultado Esperado 
+
+### Conclusão
+
+# Homepage do visitante
+
+### Objetivo 
+
+### Resultado Esperado 
+
+### Conclusão
+
+
+
