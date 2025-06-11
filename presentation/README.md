@@ -6,14 +6,13 @@
 
 ## Vídeo de Apresentação do Aplicativo
 
-<li><a href=""> Vídeo do Tá Na Lista!</a></li>
+<li><a href=""> Vídeo Tá Na Lista!</a></li>
 
 ## Conjunto de Slides (Estrutura)
 
 Sumário
 
-** Participantes
-** 
-**
-**
-** Conclusão
+* Participantes
+*   
+*
+* Conclusão
