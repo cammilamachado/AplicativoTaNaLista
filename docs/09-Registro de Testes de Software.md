@@ -87,3 +87,178 @@ O aplicativo informa que os dados inseridos são inválidos e impede o acesso à
 ### Conclusão
 
 A tentativa de acesso com senha incorreta foi corretamente impedida pelo sistema, que apresentou uma notificação de erro apropriada. Esses resultados demonstram que o processo de autenticação responde de maneira eficaz a credenciais inválidas.
+
+# Menu Lateral
+
+### Objetivo 
+
+Fornecer opções adicionais para o usuario.
+
+### Resultado Esperado 
+
+  ![print 1 menu lateral](https://github.com/user-attachments/assets/869ffc52-f563-46ee-9791-81552d305ac4)
+  ![print 1 menu lateral modo claro](https://github.com/user-attachments/assets/a15670ee-c53e-48f0-bdd0-0ec3fa20788a)
+
+# Criar Lista
+
+### Objetivo 
+
+Fornecer ao usuario a função de criar uma nova lista.
+
+### Resultado Esperado 
+
+![print 1 criar lista](https://github.com/user-attachments/assets/1aac518c-7942-4a5e-8773-f8237c71eb8d)
+
+### Observação
+
+### Conclusão
+
+# Entrar Lista
+
+Fornecer ao usuario a função de entrar em uma lista previamente criada.
+
+### Objetivo 
+
+### Resultado Esperado 
+
+  ![print 1 juntar-se a lista](https://github.com/user-attachments/assets/f5a2bd1a-7580-4fca-8022-2ab5deb60743)
+
+### Observação
+
+### Conclusão
+
+# Feedback
+
+### Objetivo 
+
+O usuario é capaz de gerar uma "resposta de retorno" para aplicação.
+
+### Resultado Esperado 
+
+  ![tela 1 ajuda feedback](https://github.com/user-attachments/assets/77f8ca28-f16f-4318-b6e6-01cb8373b4bc)
+
+### Observação
+
+### Conclusão
+
+# Sobre
+
+### Objetivo 
+
+Objetivo da organização.
+
+### Resultado Esperado 
+
+  ![tela 1 sobre](https://github.com/user-attachments/assets/df33b49d-532c-496d-b9dc-5b3eb01de188)
+
+### Conclusão
+
+# Homepage do visitante
+
+### Objetivo 
+
+Essa é a homepage que o usuario padrão será redirecionado após realizar login.
+
+### Resultado Esperado 
+
+  ![print 1 menu](https://github.com/user-attachments/assets/8ce86f73-4279-4f1b-8e85-e36b6d3bf1bb)
+
+### Conclusão
+
+# Estoque
+
+### Objetivo 
+
+A funcionalidade do estoque, como ela vai ser e um exemplo da adição de itens;
+
+### Resultado Esperado 
+
+  ![print 1 tela de estoque - Copia](https://github.com/user-attachments/assets/f595f756-676b-4833-9df8-cdb2383082fe)
+
+### Conclusão
+
+![print 2 tela estoque](https://github.com/user-attachments/assets/7d49065c-6828-4084-989f-4d87ea3f82a4)
+
+# Cronograma
+
+A funcionalidade de atribuir uma tarefa a algum participante é atribuida paralelamente ao cronograma;
+
+### Objetivo 
+
+### Resultado Esperado 
+
+  ![print 1 tela cronograma](https://github.com/user-attachments/assets/3669cb67-0456-4f67-ae4e-090b1b7fe665)
+
+### Conclusão
+
+![print 2 tela cronograma](https://github.com/user-attachments/assets/c77ecb7c-4a30-4d2c-a7ed-606eacc39572)
+
+# Votação
+
+### Objetivo 
+
+A funcionalidade votação tem como propósito fornecer o usuario administrador a opção de criar enquetes para discussões.
+
+### Resultado Esperado 
+
+  ![print 1 tela votacao](https://github.com/user-attachments/assets/3d19a78d-90ea-4523-b0e0-464306eac706)
+
+### Conclusão
+
+  ![print 2 tela votacao](https://github.com/user-attachments/assets/817e8725-c7e0-4852-b4e8-e6b38fccbb9b)
+
+
+# Controle de gastos
+
+### Objetivo
+
+Gera um metódo simples para controle dos gastos dos participantes;
+
+### Resultado Esperado 
+
+  ![tela 1 controle gastos](https://github.com/user-attachments/assets/7dca1d1e-94c7-4da3-a751-55cf1683d3d1)
+
+### Conclusão
+
+# Configurações
+
+### Objetivo 
+
+Permite que o usuario adapte algumas configurações do aplicativo;
+
+### Resultado Esperado 
+
+  ![print 1 configurações](https://github.com/user-attachments/assets/7fb227f9-6b99-4962-abe8-da97e98f2605)
+88a)
+
+### Conclusão
+
+# Suporte
+
+### Objetivo 
+
+A função suporte permite que o usuario tire dúvidas acerca da aplicação.
+
+### Resultado Esperado 
+
+![print 1 tela suporte](https://github.com/user-attachments/assets/bd8a16ff-38d2-4d17-938e-2e09dc021a84)
+
+### Conclusão
+
+# Função Filtros dos itens da lista
+
+### Objetivo 
+
+Os itens que forem adicionados a lista terão adicionalmente opções de filtros que o usuario pode selecionar;
+
+### Resultado Esperado 
+
+![Itens da lista](https://github.com/user-attachments/assets/66065822-05ef-4134-a7bc-ed61ac10fa9b)
+
+### Conclusão
+
+![filtro itens da lista](https://github.com/user-attachments/assets/2b8091e3-4139-45cf-91f1-ca8745efc0e5)
+
+
+
+

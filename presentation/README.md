@@ -1,3 +1,18 @@
 # Apresentação da Solução
 
-Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.
+## TÁ NA LISTA! APP 
+
+<li><a href=""> Slide de Apresentação </a></li>
+
+## Vídeo de Apresentação do Aplicativo
+
+<li><a href=""> Vídeo Tá Na Lista!</a></li>
+
+## Conjunto de Slides (Estrutura)
+
+Sumário
+
+* Participantes
+*   
+*
+* Conclusão
