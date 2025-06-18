@@ -10,26 +10,29 @@ import {
   TouchableOpacity,
   Alert,
 } from "react-native";
-import { collection, getDocs, addDoc } from "firebase/firestore";
+import { collection, getDocs, addDoc, Timestamp } from "firebase/firestore";
 import { db } from "../firebase/firebase";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import { Ionicons } from "@expo/vector-icons";
 
 interface Produto {
   id: string;
   nome: string;
   quantidade: number;
-  validade: Date;
 }
 
 const produtosStatic: Produto[] = [
-  { id: "1", validade: new Date(Date.now()), nome: "Pão de forma", quantidade: 2 },
-  { id: "21", nome: "Sabonete", validade: new Date(Date.now()), quantidade: 5 },
+  {
+    id: "1",
+    nome: "Pão de forma",
+    quantidade: 2,
+  },
+  { id: "21", nome: "Sabonete", quantidade: 5 },
 ];
 
 export default function Lista() {
   const navigation = useNavigation();
-  const [produtos, setProdutos] = useState<Produto[]>(produtosStatic);
+  const [produtos, setProdutos] = useState<Produto[]>([]);
   const [modalVisible, setModalVisible] = useState(false);
   const [filterModalVisible, setFilterModalVisible] = useState(false);
   const [nome, setNome] = useState("");
@@ -42,12 +45,14 @@ export default function Lista() {
 
   async function carregarProdutos() {
     try {
-      const snapshot = await getDocs(collection(db, "listas"));
+      const snapshot = await getDocs(collection(db, "lista"));
       const lista: Produto[] = snapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),
       })) as Produto[];
       setProdutos(lista.length ? lista : produtosStatic);
+      console.log(lista);
+      console.log(produtos);
     } catch (error) {
       console.error("Erro ao buscar dados:", error);
       setProdutos(produtosStatic);
@@ -55,20 +60,18 @@ export default function Lista() {
   }
 
   const adicionarProduto = async () => {
-    if (!nome || !quantidade || !validade) {
+    if (!nome || !quantidade ) {
       Alert.alert("Erro", "Preencha todos os campos");
       return;
     }
     try {
-      await addDoc(collection(db, "listas"), {
+      await addDoc(collection(db, "lista"), {
         nome,
         quantidade: Number(quantidade),
-        validade: new Date(validade),
       });
       setModalVisible(false);
       setNome("");
       setQuantidade("");
-      setValidade("");
       carregarProdutos();
     } catch (error) {
       console.error("Erro ao adicionar produto:", error);
@@ -76,10 +79,6 @@ export default function Lista() {
     }
   };
 
-  const filtrarPorValidade = () => {
-    setProdutos([...produtos].sort((a, b) => b.validade.getTime() - a.validade.getTime()));
-    setFilterModalVisible(false);
-  };
 
   const filtrarPorQuantidadeDecrescente = () => {
     setProdutos([...produtos].sort((a, b) => b.quantidade - a.quantidade));
@@ -96,16 +95,30 @@ export default function Lista() {
       <BouncyCheckbox
         size={25}
         fillColor="red"
-        unFillColor="#F5F5F5"
-        iconStyle={{ borderColor: "red" }}
+        unFillColor="#2B2B3D"
+        iconStyle={{ borderColor: "black" }}
         innerIconStyle={{ borderWidth: 2 }}
         textStyle={{ fontFamily: "JosefinSans-Regular" }}
-        onPress={(isChecked: boolean) => console.log(isChecked)}
+        onPress={() =>
+          Alert.alert(
+            "Confirmar compra",
+            "Deseja confirmar a compra do item?",
+            [
+              {
+                text: "Cancelar",
+                onPress: () => console.log("Cancel Pressed"),
+                style: "cancel",
+              },
+              { text: "OK", 
+                onPress: () => console.log("OK Pressed") 
+              },
+            ]
+          )
+        }
       />
       <View style={styles.textocard}>
         <Text style={styles.nome}>{item.nome}</Text>
-        <Text>Quantidade: {item.quantidade}</Text>
-        <Text>Válido até: {item.validade.toLocaleDateString()}</Text>
+        <Text style={styles.info}>Quantidade: {item.quantidade}</Text>
       </View>
     </View>
   );
@@ -117,7 +130,11 @@ export default function Lista() {
           style={styles.filterButton}
           onPress={() => setFilterModalVisible(true)}
         >
-          <Ionicons name="filter-outline" size={16} style={{ marginRight: 6 }} />
+          <Ionicons
+            name="filter-outline"
+            size={16}
+            style={{ marginRight: 6 }}
+          />
           <Text style={styles.filterButtonText}>Filtro</Text>
         </TouchableOpacity>
       </View>
@@ -129,74 +146,105 @@ export default function Lista() {
         contentContainerStyle={styles.lista}
       />
 
-      <TouchableOpacity style={styles.botaoFlutuante} onPress={() => setModalVisible(true)}>
+      <TouchableOpacity
+        style={styles.botaoFlutuante}
+        onPress={() => setModalVisible(true)}
+      >
         <Text style={styles.iconeBotao}>＋ Adicionar</Text>
       </TouchableOpacity>
 
       <Modal
         visible={filterModalVisible}
-        animationType="fade"
+        animationType="slide"
         transparent
         onRequestClose={() => setFilterModalVisible(false)}
       >
         <View style={styles.modalOverlay}>
           <View style={styles.filterModalContent}>
-            <TouchableOpacity style={styles.filterOption} onPress={filtrarPorValidade}>
-              <Text style={styles.filterOptionText}>Filtrar por data de validade</Text>
+
+            <TouchableOpacity
+              style={styles.filterOption}
+              onPress={filtrarPorQuantidadeDecrescente}
+            >
+              <Text style={styles.filterOptionText}>
+                Filtrar por quantidade (decrescente)
+              </Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.filterOption} onPress={filtrarPorQuantidadeDecrescente}>
-              <Text style={styles.filterOptionText}>Filtrar por quantidade (decrescente)</Text>
+            <TouchableOpacity
+              style={styles.filterOption}
+              onPress={filtrarPorQuantidadeCrescente}
+            >
+              <Text style={styles.filterOptionText}>
+                Filtrar por quantidade (crescente)
+              </Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.filterOption} onPress={filtrarPorQuantidadeCrescente}>
-              <Text style={styles.filterOptionText}>Filtrar por quantidade (crescente)</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.filterOption} onPress={() => setFilterModalVisible(false)}>
+            <TouchableOpacity
+              style={styles.filterOption}
+              onPress={() => setFilterModalVisible(false)}
+            >
               <Text style={styles.filterOptionText}>Cancelar</Text>
             </TouchableOpacity>
           </View>
         </View>
       </Modal>
 
-      {modalVisible && (
+        <Modal
+        visible= {modalVisible}
+        animationType="slide"
+        transparent = {true}
+        >
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
             <Text style={styles.modalTitulo}>Adicionar produto</Text>
-            <TextInput placeholder="Nome" style={styles.input} value={nome} onChangeText={setNome} />
+            <TextInput
+              placeholder="Nome"
+              style={styles.input}
+              value={nome}
+              onChangeText={setNome}
+              placeholderTextColor="#aaa"
+            />
             <TextInput
               placeholder="Quantidade"
               style={styles.input}
               value={quantidade}
               onChangeText={setQuantidade}
               keyboardType="numeric"
+              placeholderTextColor="#aaa"
             />
-            <TextInput
-              placeholder="Data de validade (YYYY-MM-DD)"
-              style={styles.input}
-              value={validade}
-              onChangeText={setValidade}
-            />
+
             <View style={styles.botoesModal}>
-              <TouchableOpacity style={[styles.botaoModal, { backgroundColor: "#ccc" }]} onPress={() => setModalVisible(false)}>
-                <Text>Cancelar</Text>
+              <TouchableOpacity
+                style={[styles.botaoModal, { backgroundColor: "red" }]}
+                onPress={() => setModalVisible(false)}
+              >
+                <Text style={{ color: "#fff", fontWeight :"bold" }}>Cancelar</Text>
               </TouchableOpacity>
-              <TouchableOpacity style={[styles.botaoModal, { backgroundColor: "#4caf50" }]} onPress={adicionarProduto}>
-                <Text style={{ color: "#fff" }}>Salvar</Text>
+              <TouchableOpacity
+                style={[styles.botaoModal, { backgroundColor: "blue" }]}
+                onPress={adicionarProduto}
+              >
+                <Text style={{ color: "#fff", fontWeight :"bold" }}>Salvar</Text>
               </TouchableOpacity>
             </View>
           </View>
         </View>
-      )}
+        </Modal>
+
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, padding: 16, backgroundColor: "#fff" },
+  container: { flex: 1, padding: 16, backgroundColor: "#231F20" },
   lista: { paddingBottom: 16 },
   textocard: { flexDirection: "column" },
+  info: {
+    fontSize: 16,
+    color: "#ddd",
+  },
   card: {
     flexDirection: "row",
-    backgroundColor: "#F5F5F5",
+    backgroundColor: "#2B2B3D",
     padding: 16,
     marginBottom: 12,
     borderRadius: 8,
@@ -206,23 +254,79 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 4,
   },
-  nome: { fontSize: 18, fontWeight: "bold" },
+  nome: { fontSize: 18, fontWeight: "bold", color: "#ddd" },
 
   filterContainer: { alignItems: "flex-end", marginBottom: 8 },
-  filterButton: { flexDirection: "row", alignItems: "center", backgroundColor: "#e0e0e0", paddingHorizontal: 12, paddingVertical: 8, borderRadius: 4 },
+  filterButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#e0e0e0",
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 4,
+  },
   filterButtonText: { color: "#000", fontWeight: "500" },
-  modalOverlay: { flex: 1, backgroundColor: "rgba(0,0,0,0.3)", justifyContent: "center", padding: 20 },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: "rgba(0,0,0,0.3)",
+    justifyContent: "center",
+    padding: 20,
+  },
   filterModalContent: { backgroundColor: "#fff", borderRadius: 8, padding: 16 },
-  filterOption: { paddingVertical: 12, borderBottomWidth: 1, borderBottomColor: "#ccc" },
+  filterOption: {
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: "#ccc",
+  },
   filterOptionText: { fontSize: 16, color: "#000" },
 
-  botaoFlutuante: { position: "absolute", right: 24, bottom: 24, backgroundColor: "#eaddff", width: 60, height: 60, borderRadius: 30, alignItems: "center", justifyContent: "center", elevation: 5 },
+  botaoFlutuante: {
+    position: "absolute",
+    right: 24,
+    bottom: 24,
+    backgroundColor: "#eaddff",
+    width: "auto",
+    height: 60,
+    borderRadius: 30,
+    alignItems: "center",
+    justifyContent: "center",
+    elevation: 5,
+  },
   iconeBotao: { fontSize: 30, color: "#fff", lineHeight: 32 },
 
-  modalContainer: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: "#000000aa", justifyContent: "center", padding: 20 },
-  modalContent: { backgroundColor: "#fff", padding: 20, borderRadius: 8 },
-  modalTitulo: { fontSize: 20, fontWeight: "bold", marginBottom: 16 },
-  input: { borderWidth: 1, borderColor: "#ccc", padding: 10, borderRadius: 6, marginBottom: 12 },
+  modalContainer: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: 'rgba(0,0,0,0.5)',
+    padding: 20,
+  },
+  modalContent: { backgroundColor: '#2B2B3D',
+    borderRadius: 20,
+    padding: 20,},
+  modalTitulo: { 
+    color: "#fff",
+    fontSize: 20, 
+    fontWeight: "bold", 
+    marginBottom: 16,
+    alignSelf:'center'
+  },
+  input: {
+ backgroundColor: '#333',
+    color: '#fff',
+    padding: 12,
+    borderRadius: 10,
+    marginBottom: 10,
+  },
   botoesModal: { flexDirection: "row", justifyContent: "space-between" },
-  botaoModal: { padding: 12, borderRadius: 6, alignItems: "center", width: "48%" },
+  botaoModal: {
+    padding: 12,
+    borderRadius: 6,
+    alignItems: "center",
+    width: "48%",
+  },
 });
