@@ -5,19 +5,23 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/MainStack';
 import { auth } from '../firebase/firebase';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-
+import { db } from '../firebase/firebase';
+import { doc, setDoc } from 'firebase/firestore';
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList, 'Cadastro'>;
 
 export default function Cadastro() {
   const navigation = useNavigation<NavigationProp>();
 
+  const [nomeCompleto, setNomeCompleto] = useState('');
+  const [cpf, setCpf] = useState('');
+  const [celular, setCelular] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [confirmarSenha, setConfirmarSenha] = useState('');
 
   const handleCadastro = () => {
-    if (!email || !senha || !confirmarSenha) {
+    if (!nomeCompleto || !cpf || !celular || !email || !senha || !confirmarSenha) {
       alert('Preencha todos os campos obrigatórios!');
       return;
     }
@@ -28,12 +32,22 @@ export default function Cadastro() {
     }
 
     createUserWithEmailAndPassword(auth, email, senha)
-      .then(userCredential => {
-        console.log('Usuario cadastrado:', userCredential.user);
+      .then(async (userCredential) => {
+        const user = userCredential.user;
+
+        await setDoc(doc(db, 'usuarios', user.uid), {
+          nome: nomeCompleto,
+          cpf,
+          celular,
+          email: user.email,
+          criadoEm: new Date()
+        });
+
+        console.log('Usuário cadastrado.');
         alert('Cadastro realizado com sucesso!');
         navigation.navigate('Inicio');
       })
-      .catch(error => {
+      .catch((error) => {
         console.error('Erro ao cadastrar:', error.message);
         alert(error.message);
       });
@@ -42,13 +56,11 @@ export default function Cadastro() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        {
-          <Image
-            source={require('../../assets/cadastro.png')}
-            style={styles.logo}
-            resizeMode="contain"
-          />
-        }
+        <Image
+          source={require('../../assets/cadastro.png')}
+          style={styles.logo}
+          resizeMode="contain"
+        />
         <Text style={styles.headerTitle}>CADASTRO</Text>
       </View>
 
@@ -62,6 +74,8 @@ export default function Cadastro() {
           style={styles.input}
           placeholder="Digite seu nome completo"
           placeholderTextColor="#888"
+          value={nomeCompleto}
+          onChangeText={setNomeCompleto}
         />
 
         <Text style={styles.label}>CPF*</Text>
@@ -70,7 +84,8 @@ export default function Cadastro() {
           placeholder="Ex: XXX.XXX.XXX-XX"
           placeholderTextColor="#888"
           keyboardType="numeric"
-
+          value={cpf}
+          onChangeText={setCpf}
         />
 
         <Text style={styles.label}>Celular*</Text>
@@ -79,7 +94,8 @@ export default function Cadastro() {
           placeholder="Ex: (DD) XXXXX-XXXX"
           placeholderTextColor="#888"
           keyboardType="phone-pad"
-
+          value={celular}
+          onChangeText={setCelular}
         />
 
         <Text style={styles.label}>E-mail*</Text>
