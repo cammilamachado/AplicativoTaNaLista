@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+
 const firebaseConfig = {
   apiKey: "AIzaSyAgDNWcWhxIp3yji4xvXHJq3g7tOOte1RY",
   authDomain: "comprasapp-3b097.firebaseapp.com",
