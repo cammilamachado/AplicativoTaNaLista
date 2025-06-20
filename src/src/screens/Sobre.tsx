@@ -1,8 +1,14 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import { Feather } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { RootStackParamList } from '../navigation/MainStack';
+
 
 export default function Sobre() {
+  const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+
   return (
     <ScrollView contentContainerStyle={styles.content}>
       <View style={styles.card}>
@@ -18,15 +24,16 @@ export default function Sobre() {
           — Equipe Tá Na Lista
         </Text>
 
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Termos')}>
           <Feather name="file-text" size={18} color="#fff" style={styles.icon} />
           <Text style={styles.buttonText}>Termos de Serviço</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Privacidade')}>
           <Feather name="shield" size={18} color="#fff" style={styles.icon} />
           <Text style={styles.buttonText}>Política de Privacidade</Text>
         </TouchableOpacity>
+
       </View>
     </ScrollView>
   );
