@@ -121,7 +121,7 @@ export default function Home() {
 
             <View style={styles.themeToggle}>
               <Ionicons name="moon-outline" size={18} color={textColor} />
-              <Text style={[styles.toggleLabel, { color: textColor }]}>Modo Claro</Text>
+              <Text style={[styles.toggleLabel, { color: textColor }]}>  Modo Claro</Text>
               <Switch
                 value={isLight}
                 onValueChange={toggleTheme}
