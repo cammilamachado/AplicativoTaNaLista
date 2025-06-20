@@ -4,7 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/MainStack';
 import { auth } from '../firebase/firebase';
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { signInWithEmailAndPassword, sendPasswordResetEmail } from 'firebase/auth';
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList, 'Login'>;
 
@@ -15,7 +15,7 @@ export default function Login() {
 
   const handleLogin = () => {
     if (!email || !senha) {
-      Alert.alert('Atenção', 'Preencha todos os campos!');
+      Alert.alert('Atenção!', 'Preencha todos os campos!');
       return;
     }
 
@@ -28,6 +28,22 @@ export default function Login() {
       .catch(error => {
         console.error('Erro ao fazer login:', error.message);
         Alert.alert('Erro', 'E-mail ou senha incorretos.');
+      });
+  };
+  
+  const handleEsqueceuSenha = () => {
+    if (!email) {
+      Alert.alert('Atenção!', 'Digite seu e-mail para redefinir a senha.');
+      return;
+    }
+
+    sendPasswordResetEmail(auth, email)
+      .then(() => {
+        Alert.alert('E-mail enviado', `Enviamos um link para: ${email}`);
+      })
+      .catch((error) => {
+        console.error('Erro ao enviar e-mail de redefinição:', error.message);
+        Alert.alert('Erro', 'Não foi possível enviar o e-mail de redefinição.');
       });
   };
 
@@ -60,8 +76,8 @@ export default function Login() {
           value={senha}
           onChangeText={setSenha}
         />
-
-        <Pressable>
+        
+        <Pressable onPress={handleEsqueceuSenha}>
           <Text style={styles.link}>
             Esqueceu sua senha?{' '}
             <Text style={styles.linkHighlight}>Clique aqui.</Text>
