@@ -12,6 +12,8 @@ import Ajuda from '../screens/Ajuda';
 import Sobre from '../screens/Sobre';
 import Suporte from '../screens/Suporte';
 import Estoque from '../screens/Tela_Estoque';
+import Termos from '../screens/Termos';
+import Privacidade from '../screens/Privacidade';
 
 export type RootStackParamList = {
   Inicio: undefined;
@@ -25,6 +27,8 @@ export type RootStackParamList = {
   Sobre: undefined;
   Suporte: undefined;
   Estoque: undefined;
+  Termos: undefined;
+  Privacidade: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -43,6 +47,8 @@ export default function MainStack() {
       <Stack.Screen name="Config" component={Config} />
       <Stack.Screen name="Suporte" component={Suporte} />
       <Stack.Screen name="Estoque" component={Estoque} />
+      <Stack.Screen name="Termos" component={Termos} />
+      <Stack.Screen name="Privacidade" component={Privacidade} />
     </Stack.Navigator>
   );
 }
