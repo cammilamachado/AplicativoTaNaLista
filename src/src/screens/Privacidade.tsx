@@ -84,6 +84,5 @@ const styles = StyleSheet.create({
     lineHeight: 24,
     marginBottom: 10,
     textAlign: 'justify',
-
   },
 });
