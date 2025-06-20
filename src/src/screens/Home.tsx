@@ -45,31 +45,35 @@ export default function Home() {
       {/* Menu_Lateral*/}
       <Modal visible={menuVisible} animationType="slide" transparent>
         <Pressable style={styles.modalOverlay} onPress={() => setMenuVisible(false)}>
+
           <Pressable style={[styles.sidebar, { backgroundColor: sidebarColor }]} onPress={() => { }}>
+
             <View style={styles.logoWrapper}>
               <Ionicons name="grid" size={28} color="#fff" />
             </View>
 
-            <TouchableOpacity style={styles.mainButton}>
+            <TouchableOpacity
+              style={styles.mainButton}
+              onPress={() => {
+                setMenuVisible(false);
+                setCreateListVisible(true);
+              }}
+            >
               <Ionicons name="create" size={18} color="#fff" style={{ marginRight: 8 }} />
               <Text style={styles.mainButtonText}>Criar lista de compras</Text>
             </TouchableOpacity>
 
-            <View style={styles.sidebarItem}>
-              <Ionicons name="document-text-outline" size={18} color={textColor} style={styles.icon} />
-              <Text style={[styles.sidebarItemText, { color: textColor }]}>Entrar em uma lista</Text>
-            </View>
-
             <TouchableOpacity
-              style={styles.menuItem}
+              style={styles.sidebarItem}
               onPress={() => {
                 setMenuVisible(false);
-                navigation.navigate('Estoque');
+                setEnterListVisible(true);
               }}
             >
-              <Ionicons name="cube-outline" size={18} color={textColor} style={styles.icon} />
-              <Text style={[styles.sidebarItemText, { color: textColor }]}>Estoque</Text>
+              <Ionicons name="document-text-outline" size={18} color={textColor} style={styles.icon} />
+              <Text style={[styles.sidebarItemText, { color: textColor }]}>Entrar em uma lista</Text>
             </TouchableOpacity>
+
 
             <TouchableOpacity
               style={styles.menuItem}
@@ -117,7 +121,7 @@ export default function Home() {
 
             <View style={styles.themeToggle}>
               <Ionicons name="moon-outline" size={18} color={textColor} />
-              <Text style={[styles.toggleLabel, { color: textColor }]}>  Modo Claro</Text>
+              <Text style={[styles.toggleLabel, { color: textColor }]}>Modo Claro</Text>
               <Switch
                 value={isLight}
                 onValueChange={toggleTheme}
@@ -130,15 +134,15 @@ export default function Home() {
       </Modal>
       {/* Menu_Lateral*/}
 
-      <CriarListaModal 
-        visible={createListVisible} 
+      <CriarListaModal
+        visible={createListVisible}
         setIsVisible={setCreateListVisible}
-        onCreateTemporaria={() => {}}
-        onCreateFixa={() => {}}
+        onCreateTemporaria={() => { }}
+        onCreateFixa={() => { }}
       />
 
       <EntrarListaModal
-        visible={EnterListVisible} 
+        visible={EnterListVisible}
         setIsVisible={setEnterListVisible}
       />
 
@@ -162,7 +166,7 @@ export default function Home() {
         >
           <Text style={styles.buttonText}>Criar nova lista</Text>
         </TouchableOpacity>
-        <TouchableOpacity 
+        <TouchableOpacity
           onPress={() => setEnterListVisible(true)}
           style={styles.buttonS}
         >
