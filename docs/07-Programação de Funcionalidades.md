@@ -109,3 +109,25 @@ Atribuição de Responsabilidades - Tarsis Augustus
 > - Equilibrou bem design e usabilidade, contribuindo para a experiência do usuário.
 > - Participou ativamente das discussões, com sugestões construtivas.
 > - Confiança e comprometimento mesmo sob várias demandas.
+
+## Autenticação
+
+**Evidências de Implementação da Autenticação.**
+
+![Autenticacao](./img/autenticacao.png)
+
+## Modelo do Projeto de BD
+
+![Database](./img/database.png)
+
+![Gastos](./img/gastos.png)
+
+![Listas](./img/listas.png)
+
+![Tarefas](./img/tarefa_por_usuario.png)
+
+![Usuarios](./img/usuarios.png)
+
+
+
+
