@@ -1,23 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, Modal, TextInput, Alert } from 'react-native';
 import { Calendar, LocaleConfig } from 'react-native-calendars';
-import { format, parseISO } from 'date-fns';
+import { format } from 'date-fns';
 import { ptBR } from 'date-fns/locale/pt-BR';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { db } from '../firebase/firebase';
+import { collection, doc, query, where, orderBy, getDocs, addDoc, updateDoc, deleteDoc, serverTimestamp } from 'firebase/firestore';
+import { auth } from '../firebase/firebase'; 
 
-// Configuração de localização para português
 LocaleConfig.locales['pt'] = {
   monthNames: [
     'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
     'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
   ],
-  monthNamesShort: [
-    'Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun',
-    'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'
-  ],
-  dayNames: [
-    'Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'
-  ],
+  monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+  dayNames: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
   dayNamesShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'],
   today: 'Hoje'
 };
@@ -26,23 +23,29 @@ LocaleConfig.defaultLocale = 'pt';
 interface Tarefa {
   id: string;
   titulo: string;
-  data: string; // Formato YYYY-MM-DD
+  data: string;
   descricao?: string;
   concluida?: boolean;
 }
 
 const Tela_Cronograma = () => {
+  const usuarioAtual = auth.currentUser;
+  const uid = usuarioAtual?.uid;
   const [tarefas, setTarefas] = useState<Tarefa[]>([]);
   const [modalVisivel, setModalVisivel] = useState(false);
   const [dataSelecionada, setDataSelecionada] = useState(format(new Date(), 'yyyy-MM-dd'));
-  const [novaTarefa, setNovaTarefa] = useState({
-    titulo: '',
-    descricao: '',
-    data: format(new Date(), 'yyyy-MM-dd')
-  });
+  const [novaTarefa, setNovaTarefa] = useState({ titulo: '', descricao: '', data: format(new Date(), 'yyyy-MM-dd') });
   const [editandoTarefaId, setEditandoTarefaId] = useState<string | null>(null);
 
-  // Gerar datas marcadas com as tarefas
+  // Referência para coleção do usuário no Firestore
+  const tarefasCollectionRef = uid
+    ? collection(db, 'tarefas_por_usuario', uid, 'tarefas')
+    : null;
+  if (!uid || !tarefasCollectionRef) {
+  return <View><Text>Carregando usuário...</Text></View>;
+}
+
+  // Gera datas marcadas para o calendário
   const gerarDatasMarcadas = () => {
     const marcadas: { [key: string]: { marked: boolean; dotColor: string } } = {};
     tarefas.forEach(tarefa => {
@@ -51,43 +54,92 @@ const Tela_Cronograma = () => {
     return marcadas;
   };
 
-  // Adicionar nova tarefa ou editar
-  const adicionarOuEditarTarefa = () => {
+  // Carregar tarefas do dia selecionado
+  const carregarTarefasDoDia = async () => {
+    if (!tarefasCollectionRef) return;
+
+    try {
+      const q = query(
+        tarefasCollectionRef,
+        where('data', '==', dataSelecionada),
+        orderBy('criadoEm')
+      );
+      const querySnapshot = await getDocs(q);
+
+      const tarefasDia: Tarefa[] = querySnapshot.docs.map(docSnap => ({
+        id: docSnap.id,
+        ...(docSnap.data() as Omit<Tarefa, 'id'>)
+      }));
+
+      // Mantém as tarefas de outras datas e atualiza as do dia selecionado
+      const outras = tarefas.filter(t => t.data !== dataSelecionada);
+      setTarefas([...outras, ...tarefasDia]);
+    } catch (error) {
+      Alert.alert('Erro', 'Não foi possível carregar as tarefas.');
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    carregarTarefasDoDia();
+  }, [dataSelecionada, uid]);
+
+  // Adicionar ou editar tarefa
+  const adicionarOuEditarTarefa = async () => {
+    if (!tarefasCollectionRef) {
+      Alert.alert('Erro', 'Usuário não autenticado.');
+      return;
+    }
+
     if (!novaTarefa.titulo.trim()) {
       Alert.alert('Erro', 'Digite um título para a tarefa');
       return;
     }
 
-    if (editandoTarefaId) {
-      setTarefas(tarefas.map(tarefa =>
-        tarefa.id === editandoTarefaId
-          ? { ...tarefa, titulo: novaTarefa.titulo, descricao: novaTarefa.descricao, data: novaTarefa.data }
-          : tarefa
-      ));
-      setEditandoTarefaId(null);
-    } else {
-      const novaTarefaCompleta: Tarefa = {
-        id: Math.random().toString(36).substring(7),
-        titulo: novaTarefa.titulo,
-        data: novaTarefa.data,
-        descricao: novaTarefa.descricao,
-        concluida: false
-      };
-      setTarefas([...tarefas, novaTarefaCompleta]);
+    try {
+      if (editandoTarefaId) {
+        const docRef = doc(tarefasCollectionRef, editandoTarefaId);
+        await updateDoc(docRef, {
+          titulo: novaTarefa.titulo,
+          descricao: novaTarefa.descricao,
+          data: novaTarefa.data,
+          atualizadoEm: serverTimestamp(),
+        });
+        setEditandoTarefaId(null);
+      } else {
+        await addDoc(tarefasCollectionRef, {
+          titulo: novaTarefa.titulo,
+          descricao: novaTarefa.descricao,
+          data: novaTarefa.data,
+          concluida: false,
+          criadoEm: serverTimestamp(),
+          atualizadoEm: serverTimestamp(),
+        });
+      }
+      setModalVisivel(false);
+      setNovaTarefa({ titulo: '', descricao: '', data: dataSelecionada });
+      carregarTarefasDoDia();
+    } catch (error) {
+      Alert.alert('Erro', 'Não foi possível salvar a tarefa.');
+      console.error(error);
     }
-    setModalVisivel(false);
-    setNovaTarefa({
-      titulo: '',
-      descricao: '',
-      data: dataSelecionada
-    });
   };
 
-  // Marcar como concluída/desconcluída
-  const alternarConcluida = (id: string) => {
-    setTarefas(tarefas.map(tarefa =>
-      tarefa.id === id ? { ...tarefa, concluida: !tarefa.concluida } : tarefa
-    ));
+  // Alternar tarefa concluída
+  const alternarConcluida = async (id: string, concluidaAtual: boolean) => {
+    if (!tarefasCollectionRef) return;
+
+    try {
+      const docRef = doc(tarefasCollectionRef, id);
+      await updateDoc(docRef, {
+        concluida: !concluidaAtual,
+        atualizadoEm: serverTimestamp(),
+      });
+      carregarTarefasDoDia();
+    } catch (error) {
+      Alert.alert('Erro', 'Não foi possível atualizar a tarefa.');
+      console.error(error);
+    }
   };
 
   // Excluir tarefa
@@ -100,39 +152,40 @@ const Tela_Cronograma = () => {
         {
           text: 'Excluir',
           style: 'destructive',
-          onPress: () => setTarefas(tarefas.filter(tarefa => tarefa.id !== id))
+          onPress: async () => {
+            if (!tarefasCollectionRef) return;
+            try {
+              const docRef = doc(tarefasCollectionRef, id);
+              await deleteDoc(docRef);
+              carregarTarefasDoDia();
+            } catch (error) {
+              Alert.alert('Erro', 'Não foi possível excluir a tarefa.');
+              console.error(error);
+            }
+          }
         }
       ]
     );
   };
 
-  // Editar tarefa
+  // Editar tarefa (abre modal)
   const editarTarefa = (tarefa: Tarefa) => {
-    setNovaTarefa({
-      titulo: tarefa.titulo,
-      descricao: tarefa.descricao || '',
-      data: tarefa.data
-    });
+    setNovaTarefa({ titulo: tarefa.titulo, descricao: tarefa.descricao || '', data: tarefa.data });
     setEditandoTarefaId(tarefa.id);
     setModalVisivel(true);
   };
 
-  // Formatar data para exibição (corrige bug de fuso)
   const formatarData = (data: string) => {
-    // Garante que a data seja interpretada como local
     const [ano, mes, dia] = data.split('-').map(Number);
     const dataObj = new Date(ano, mes - 1, dia);
     return format(dataObj, "dd 'de' MMMM 'de' yyyy", { locale: ptBR });
   };
 
-  // Quando seleciona uma data, atualiza também a data do modal
   const aoSelecionarDia = (day: { dateString: string }) => {
     setDataSelecionada(day.dateString);
-    setNovaTarefa(nova => ({
-      ...nova,
-      data: day.dateString
-    }));
+    setNovaTarefa(nova => ({ ...nova, data: day.dateString }));
   };
+
 
   return (
     <View style={styles.container}>
@@ -181,7 +234,7 @@ const Tela_Cronograma = () => {
                 </Text>
                 <View style={styles.iconesContainer}>
                   <TouchableOpacity
-                    onPress={() => alternarConcluida(tarefa.id)}
+                    onPress={() => alternarConcluida(tarefa.id, tarefa.concluida!)}
                     style={styles.iconeBotao}
                     accessibilityLabel={tarefa.concluida ? "Desmarcar como concluída" : "Marcar como concluída"}
                   >
