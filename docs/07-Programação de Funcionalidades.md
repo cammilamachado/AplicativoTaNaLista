@@ -119,7 +119,7 @@ Atribuição de Responsabilidades - Tarsis Augustus
   
 ![Autenticacao](./img/autenticacao.png)
 
-## Modelo do Projeto de BD
+## Estrutura do Banco de Dados (Firebase Firestore)
 
 Abaixo estão as coleções e documentos utilizados no Firestore Database, com as capturas de tela e estrutura de dados.
 
