@@ -31,7 +31,7 @@ Os artefatos do projeto são desenvolvidos em diferentes ambientes, garantindo u
 
 | **Ambiente**      | **Plataforma**                                      | **Link de Acesso**                         |
 |------------------|--------------------------------------------------|--------------------------------------------|
-| **Desenvolvimento** | React Native, Expo, .NET (C#), SQLite             | [GitHub - Repositório do Projeto](#)      |
+| **Desenvolvimento** | React Native, Expo, .NET (C#)            | [GitHub - Repositório do Projeto](#)      |
 | **Homologação**   | Firebase (Auth, Firestore), Render, TestFlight     | [TestFlight - Versão Beta](#)             |
 | **Produção**      | Google Play Store, App Store, API em AWS/Firebase | [Google Play Store](#) / [App Store](#)   |
 
@@ -39,7 +39,7 @@ Os artefatos do projeto são desenvolvidos em diferentes ambientes, garantindo u
 
 - **Front-end:** React Native + Expo  
 - **Back-end:** .NET Core (C#)  
-- **Banco de Dados:** SQLite (desenvolvimento), Firebase Firestore (produção)  
+- **Banco de Dados:** Firebase Firestore (produção)  
 - **Autenticação:** Firebase Auth  
 - **Hospedagem da API:** Render ou AWS  
 - **Testes:** NUnit ou xUnit para .NET  
@@ -105,9 +105,13 @@ A equipe adota a metodologia ágil Scrum, com as seguintes funções:
 > - Marcio Lucas
 > - Tarsis Augustus
 
-Equipe de Design:
+- Equipe de Design:
 > - Camila Machado
 > - Leonardo Mendes
+> - Marcio Lucas
+
+- Project Manager:
+> - Tarsis Augustus
 
 Cada um dos membros da equipe assume responsabilidades específicas para garantir a entrega contínua do projeto de forma eficiente e dentro do prazo.
 
@@ -136,7 +140,7 @@ São utilizadas as ferramentas a seguir para otimizar o desenvolvimento e para a
 #### Desenvolvimento
 - **Editor de Código**: Visual Studio Code + extensões para React Native e .NET
 - **Prototipagem**: Figma (para UX/UI e wireframes)
-- **Banco de Dados**: SQLite (desenvolvimento) e Firebase Firestore (produção)
+- **Banco de Dados**: Firebase Firestore (produção)
 - **Hospedagem**: Render (para API) e Firebase (para autenticação e banco de dados)
 
 #### Justificativa
