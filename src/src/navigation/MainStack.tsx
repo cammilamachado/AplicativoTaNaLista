@@ -52,24 +52,3 @@ export default function MainStack() {
     </Stack.Navigator>
   );
 }
-
-// export default function MainStack() {
-//   return (
-//     <Stack.Navigator
-//       screenOptions={{ headerShown: false }}
-//       initialRouteName="Estoque"
-//     >
-//       <Stack.Screen name="Inicio" component={TelaInicial} />
-//       <Stack.Screen name="Cadastro" component={Cadastro} />
-//       <Stack.Screen name="Login" component={Login} />
-//       <Stack.Screen name="NavLista" component={MyTabs} />
-//       <Stack.Screen name="Home" component={Home} />
-//       <Stack.Screen name="Gastos" component={Gastos} />
-//       <Stack.Screen name="Ajuda" component={Ajuda} />
-//       <Stack.Screen name="Sobre" component={Sobre} />
-//       <Stack.Screen name="Config" component={Config} />
-//       <Stack.Screen name="Suporte" component={Suporte} />
-//       <Stack.Screen name="Estoque" component={Estoque} />
-//     </Stack.Navigator>
-//   );
-// }

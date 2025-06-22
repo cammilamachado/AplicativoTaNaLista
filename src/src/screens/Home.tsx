@@ -74,6 +74,16 @@ export default function Home() {
               <Text style={[styles.sidebarItemText, { color: textColor }]}>Entrar em uma lista</Text>
             </TouchableOpacity>
 
+            <TouchableOpacity
+              style={styles.menuItem}
+              onPress={() => {
+                setMenuVisible(false);
+                navigation.navigate('Estoque');
+              }}
+            >
+              <Ionicons name="cube-outline" size={18} color={textColor} style={styles.icon} />
+              <Text style={[styles.sidebarItemText, { color: textColor }]}>Estoque</Text>
+            </TouchableOpacity>
 
             <TouchableOpacity
               style={styles.menuItem}
