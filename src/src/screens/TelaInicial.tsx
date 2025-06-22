@@ -3,12 +3,15 @@ import { View, Text, StyleSheet, Image, Pressable, TouchableOpacity } from 'reac
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/MainStack';
+import { useContext } from 'react';
+import { UserContext } from '../context/User_Context';
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList, 'Inicio'>;
 
 export default function TelaInicial() {
 
     const navigation = useNavigation<NavigationProp>();
+    const { setUserId } = useContext(UserContext);
 
     return (
         <View style={styles.container}>
@@ -31,7 +34,12 @@ export default function TelaInicial() {
 
             <TouchableOpacity
                 style={styles.buttonGuest}
-                onPress={() => navigation.navigate('Home')}>
+                onPress={() => {
+                    const gerarCodigo = () => Math.random().toString(36).substring(2, 7);
+                    
+                    navigation.navigate('Home')
+                    setUserId(gerarCodigo())
+                }}>
                 <Text style={styles.guestText}>Entrar como visitante</Text>
             </TouchableOpacity>
         </View>
