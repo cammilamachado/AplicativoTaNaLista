@@ -6,6 +6,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/MainStack';
 import { auth } from '../firebase/firebase';
 import { signOut } from 'firebase/auth';
+import { useUser } from '../context/User_Context';
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList, 'Config'>;
 
@@ -14,11 +15,14 @@ export default function Configuracoes() {
   const navigation = useNavigation<NavigationProp>();
   const usuarioLogado = auth.currentUser != null;
 
+  const { resetUser } = useUser();
+
   const handleLogout = () => {
     signOut(auth)
       .then(() => {
         Alert.alert('Sessão encerrada', 'Você foi desconectado.');
         navigation.navigate('Inicio');
+        resetUser();
       })
       .catch((error) => {
         console.error('Erro ao sair:', error);

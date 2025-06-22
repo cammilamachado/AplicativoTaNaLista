@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { View, Text, Image, TextInput, StyleSheet, Pressable, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../navigation/MainStack';
 import { auth } from '../firebase/firebase';
 import { signInWithEmailAndPassword, sendPasswordResetEmail } from 'firebase/auth';
+import { useUser } from '../context/User_Context';
 
 type NavigationProp = NativeStackNavigationProp<RootStackParamList, 'Login'>;
 
@@ -12,6 +13,18 @@ export default function Login() {
   const navigation = useNavigation<NavigationProp>();
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
+
+  const { setUserId, userId, listId, listIdStatus } = useUser();
+
+  useEffect(() => {
+    if (userId) {
+      if (listIdStatus === 'found') {
+        navigation.navigate('NavLista');
+      } else if (listIdStatus === 'not_found') {
+        navigation.navigate('Home');
+      }
+    }
+  }, [userId, listIdStatus]);
 
   const handleLogin = () => {
     if (!email || !senha) {
@@ -21,16 +34,15 @@ export default function Login() {
 
     signInWithEmailAndPassword(auth, email, senha)
       .then(userCredential => {
-        console.log('Login realizado:', userCredential.user);
-        Alert.alert('Sucesso', 'Login realizado com sucesso!');
-        navigation.navigate('NavLista');
+        setUserId(userCredential.user.uid);
       })
       .catch(error => {
         console.error('Erro ao fazer login:', error.message);
         Alert.alert('Erro', 'E-mail ou senha incorretos.');
       });
+
   };
-  
+
   const handleEsqueceuSenha = () => {
     if (!email) {
       Alert.alert('Atenção!', 'Digite seu e-mail para redefinir a senha.');

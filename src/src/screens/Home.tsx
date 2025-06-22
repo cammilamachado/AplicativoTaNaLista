@@ -159,7 +159,6 @@ export default function Home() {
       <View style={styles.buttonContainer}>
         <TouchableOpacity
           onPress={() => {
-            navigation.navigate('NavLista')
             setCreateListVisible(true)
           }}
           style={styles.buttonP}

@@ -10,25 +10,18 @@ import {
   TouchableOpacity,
   Alert,
 } from "react-native";
-import { collection, getDocs, addDoc, Timestamp } from "firebase/firestore";
+import { collection, getDocs, addDoc } from "firebase/firestore";
 import { db } from "../firebase/firebase";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { Ionicons } from "@expo/vector-icons";
+import { useUser } from "../context/User_Context";
 
 interface Produto {
   id: string;
   nome: string;
   quantidade: number;
+  criadoEm: Date;
 }
-
-const produtosStatic: Produto[] = [
-  {
-    id: "1",
-    nome: "Pão de forma",
-    quantidade: 2,
-  },
-  { id: "21", nome: "Sabonete", quantidade: 5 },
-];
 
 export default function Lista() {
   const navigation = useNavigation();
@@ -39,23 +32,34 @@ export default function Lista() {
   const [quantidade, setQuantidade] = useState("");
   const [validade, setValidade] = useState("");
 
+  const { userId, listId } = useUser();
+
   useEffect(() => {
     carregarProdutos();
-  }, []);
+  }, [userId, listId])
 
   async function carregarProdutos() {
-    try {
-      const snapshot = await getDocs(collection(db, "lista"));
-      const lista: Produto[] = snapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      })) as Produto[];
-      setProdutos(lista.length ? lista : produtosStatic);
-      console.log(lista);
-      console.log(produtos);
-    } catch (error) {
-      console.error("Erro ao buscar dados:", error);
-      setProdutos(produtosStatic);
+    if(userId && listId){
+      const produtosRef = collection(db, 'listas', listId, 'produtos');
+
+      try {
+        const produtosSnap = await getDocs(produtosRef);
+        if (produtosSnap.empty) {
+          setProdutos([]);
+          return;
+        }
+
+        const produtosDaLista = produtosSnap.docs.map(doc => ({
+          id: doc.id, 
+          nome: doc.data().nome,
+          quantidade: doc.data().quantidade,
+          criadoEm: doc.data().criadoEm?.toDate ? doc.data().criadoEm.toDate() : new Date()
+        }));
+
+        setProdutos(produtosDaLista);
+      } catch (error) {
+        setProdutos([]);
+      }
     }
   }
 
@@ -65,20 +69,22 @@ export default function Lista() {
       return;
     }
     try {
-      await addDoc(collection(db, "lista"), {
-        nome,
-        quantidade: Number(quantidade),
-      });
-      setModalVisible(false);
-      setNome("");
-      setQuantidade("");
-      carregarProdutos();
+      if (userId && listId) {
+        await addDoc(collection(db, "listas", listId, "produtos"), {
+          nome,
+          quantidade: Number(quantidade),
+          criadoEm: new Date()
+        });
+        setModalVisible(false);
+        setNome("");
+        setQuantidade("");
+        carregarProdutos();
+      }
     } catch (error) {
       console.error("Erro ao adicionar produto:", error);
       Alert.alert("Erro ao salvar");
     }
   };
-
 
   const filtrarPorQuantidadeDecrescente = () => {
     setProdutos([...produtos].sort((a, b) => b.quantidade - a.quantidade));
@@ -125,19 +131,21 @@ export default function Lista() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.filterContainer}>
-        <TouchableOpacity
-          style={styles.filterButton}
-          onPress={() => setFilterModalVisible(true)}
-        >
-          <Ionicons
-            name="filter-outline"
-            size={16}
-            style={{ marginRight: 6 }}
-          />
-          <Text style={styles.filterButtonText}>Filtro</Text>
-        </TouchableOpacity>
-      </View>
+      {listId && (
+        <View style={styles.filterContainer}>
+          <TouchableOpacity
+            style={styles.filterButton}
+            onPress={() => setFilterModalVisible(true)}
+          >
+            <Ionicons
+              name="filter-outline"
+              size={16}
+              style={{ marginRight: 6 }}
+            />
+            <Text style={styles.filterButtonText}>Filtro</Text>
+          </TouchableOpacity>
+        </View>
+      )}
 
       <FlatList
         data={produtos}
@@ -146,6 +154,8 @@ export default function Lista() {
         contentContainerStyle={styles.lista}
       />
 
+     {listId && (
+      <>
       <TouchableOpacity
         style={styles.botaoFlutuante}
         onPress={() => setModalVisible(true)}
@@ -153,40 +163,39 @@ export default function Lista() {
         <Text style={styles.iconeBotao}>＋ Adicionar</Text>
       </TouchableOpacity>
 
-      <Modal
-        visible={filterModalVisible}
-        animationType="slide"
-        transparent
-        onRequestClose={() => setFilterModalVisible(false)}
-      >
-        <View style={styles.modalOverlay}>
-          <View style={styles.filterModalContent}>
-
-            <TouchableOpacity
-              style={styles.filterOption}
-              onPress={filtrarPorQuantidadeDecrescente}
-            >
-              <Text style={styles.filterOptionText}>
-                Filtrar por quantidade (decrescente)
-              </Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={styles.filterOption}
-              onPress={filtrarPorQuantidadeCrescente}
-            >
-              <Text style={styles.filterOptionText}>
-                Filtrar por quantidade (crescente)
-              </Text>
-            </TouchableOpacity>
-            <TouchableOpacity
-              style={styles.filterOption}
-              onPress={() => setFilterModalVisible(false)}
-            >
-              <Text style={styles.filterOptionText}>Cancelar</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-      </Modal>
+          <Modal
+            visible={filterModalVisible}
+            animationType="slide"
+            transparent
+            onRequestClose={() => setFilterModalVisible(false)}
+          >
+            <View style={styles.modalOverlay}>
+              <View style={styles.filterModalContent}>
+                <TouchableOpacity
+                  style={styles.filterOption}
+                  onPress={filtrarPorQuantidadeDecrescente}
+                >
+                  <Text style={styles.filterOptionText}>
+                    Filtrar por quantidade (decrescente)
+                  </Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={styles.filterOption}
+                  onPress={filtrarPorQuantidadeCrescente}
+                >
+                  <Text style={styles.filterOptionText}>
+                    Filtrar por quantidade (crescente)
+                  </Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={styles.filterOption}
+                  onPress={() => setFilterModalVisible(false)}
+                >
+                  <Text style={styles.filterOptionText}>Cancelar</Text>
+                </TouchableOpacity>
+              </View>
+            </View>
+          </Modal>
 
         <Modal
         visible= {modalVisible}
@@ -219,6 +228,7 @@ export default function Lista() {
               >
                 <Text style={{ color: "#fff", fontWeight :"bold" }}>Cancelar</Text>
               </TouchableOpacity>
+
               <TouchableOpacity
                 style={[styles.botaoModal, { backgroundColor: "blue" }]}
                 onPress={adicionarProduto}
@@ -229,7 +239,7 @@ export default function Lista() {
           </View>
         </View>
         </Modal>
-
+        </>)}
     </View>
   );
 }

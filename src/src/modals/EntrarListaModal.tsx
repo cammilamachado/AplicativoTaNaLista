@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigation } from '@react-navigation/native';
+import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import {
   Modal,
   View,
@@ -6,8 +8,12 @@ import {
   TouchableOpacity,
   StyleSheet,
   TextInput,
+  Alert,
 } from 'react-native';
-
+import { RootStackParamList } from '../navigation/MainStack';
+import { db } from '../firebase/firebase';
+import { doc, updateDoc, arrayUnion, getDoc } from 'firebase/firestore';
+import { useUser } from '../context/User_Context';
 
 interface ListaModalProps {
   visible: boolean;
@@ -18,13 +24,45 @@ const EntrarListaModal: React.FC<ListaModalProps> = ({
   visible,
   setIsVisible
 }) => {
+  const [codigoLista, setCodigoLista] = useState('');
+  const [loading, setLoading] = useState(false);
+  const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+  const { userId, setListId } = useUser();
+
+  async function handleEntrarLista() {
+    if (!codigoLista.trim()) {
+      Alert.alert('Erro', 'Digite o código da lista.');
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const ListaRef = doc(db, 'listas', codigoLista.trim());
+
+      await updateDoc(ListaRef, {
+        participantes: arrayUnion(userId)
+      });
+      setListId(codigoLista.trim());
+      setIsVisible(false);
+      setCodigoLista('');
+      navigation.navigate('NavLista');
+    } catch (e) {
+      Alert.alert('Erro', 'Não foi possível entrar na lista.');
+    } finally {
+      setLoading(false);
+    }
+  }
+
   return (
     <Modal transparent visible={visible}>
       <View style={styles.overlay}>
         <View style={styles.modalContent}>
             <TouchableOpacity
               style={styles.closeButton}
-              onPress={() => setIsVisible(false)}
+              onPress={() => {
+                setIsVisible(false)
+                setCodigoLista('');
+              }}
             >
               <Text style={styles.closeText}>✕</Text>
             </TouchableOpacity>
@@ -41,9 +79,20 @@ const EntrarListaModal: React.FC<ListaModalProps> = ({
               placeholder="Digite o código"
               placeholderTextColor="#aaa"
               style={styles.input}
+              value={codigoLista}
+              onChangeText={setCodigoLista}
+              autoCapitalize="none"
+              editable={!loading}
             />
-          </View>
-          
+
+            <TouchableOpacity
+              style={[styles.button, { backgroundColor: '#6750A4', borderColor: '#6750A4', marginTop: 16 }]}
+              onPress={handleEntrarLista}
+              disabled={loading}
+            >
+              <Text  style={[styles.buttonText, { color: '#fff' }]}>{loading ? 'Entrando...' : 'Entrar'}</Text>
+            </TouchableOpacity>
+        </View>
       </View>
     </Modal>
   );
@@ -102,5 +151,19 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 3,
     elevation: 4,
+  },
+  button: {
+    borderWidth: 1,
+    borderColor: '#4A3B60',
+    borderRadius: 20,
+    paddingVertical: 10,
+    paddingHorizontal: 10,
+    alignSelf: 'flex-end',
+  },
+  buttonText: {
+    color: '#6750A4',
+    fontSize: 15,
+    fontWeight: 'bold',
+    display: 'flex',
   },
 });
