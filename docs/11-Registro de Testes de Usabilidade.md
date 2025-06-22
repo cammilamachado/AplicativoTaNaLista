@@ -40,4 +40,21 @@ O menu principal está sendo finalizado. No momento, para este teste, o usuário
 
 Os testes de usabilidade confirmaram que o processo de login é simples, rápido e eficaz, proporcionando uma experiência de acesso intuitiva e sem complicações.
 
+## Teste de Adição de itens
+
+### Objetivo 
+
+Verificar se um usuário pode adicionar um item à sua lista
+
+### Observação
+
+
+<p align="center">
+  <img src="./img/Cadastro_Sucesso.jpg" alt="Cadastro" width="35%" />
+  <img src="./img/Sucesso_Cadastro.jpg" alt="Sucesso" width="35%" />
+</p>
+
+### Conclusão
+
+Os testes de usabilidade mostraram que o processo de adição foi concluído com rapidez e praticidade. 
 
