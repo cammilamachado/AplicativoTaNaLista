@@ -32,8 +32,8 @@ Avaliar se um usuário pode fazer login com praticidade.
 O menu principal está sendo finalizado. No momento, para este teste, o usuário é redirecionado para a página inicial. 
 
 <p align="center">
-  <img src="./img/Login.jpg" alt="Login" width="35%" />
-  <img src="./img/Login2.jpg" alt="Login2" width="35%" />
+  <img src="./img/AdicionarProduto.jpeg" alt="Login" width="35%" />
+  <img src="./img/ListaPreenchida.jpeg" alt="Login2" width="35%" />
 </p>
 
 ### Conclusão
