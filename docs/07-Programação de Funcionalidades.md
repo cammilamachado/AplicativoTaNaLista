@@ -109,3 +109,56 @@ Atribuição de Responsabilidades - Tarsis Augustus
 > - Equilibrou bem design e usabilidade, contribuindo para a experiência do usuário.
 > - Participou ativamente das discussões, com sugestões construtivas.
 > - Confiança e comprometimento mesmo sob várias demandas.
+
+## Autenticação
+
+**Evidências de Implementação da Autenticação. A aplicação utiliza o Firebase Authentication para gerenciar o login dos usuários.**
+
+* A autenticação foi implementada com e-mail e senha.
+* O Firebase gerencia os usuários e vincula automaticamente o UID à coleção usuarios.
+  
+![Autenticacao](./img/autenticacao.png)
+
+## Estrutura do Banco de Dados (Firebase Firestore)
+
+Abaixo estão as coleções e documentos utilizados no Firestore Database, com as capturas de tela e estrutura de dados.
+
+### Firestore Database 
+
+A estrutura do banco segue o modelo NoSQL orientado a documentos, com coleções independentes para organização de dados.
+
+![Database](./img/database.png)
+
+### Collection: `estoque`
+
+Armazena os itens disponíveis, classificados por categoria, nome e quantidade.
+
+![Estoque](./img/estoque.png)
+
+### Collection: `gastos`
+
+Registra os gastos estimados e realizados por usuário.
+
+![Gastos](./img/gastos.png)
+
+### Collection: `listas`
+
+Armazena as listas de compras com data de criação, tipo e participantes.
+
+![Listas](./img/listas.png)
+
+### Collection: `tarefas_por_usuario`
+
+Armazena tarefas organizadas por usuário. Cada usuário possui uma subcoleção de tarefas.
+
+![Tarefas](./img/tarefas_por_usuario.png)
+
+### Collection: `usuarios`
+
+Contém os dados cadastrais de cada usuário vinculado ao UID do Firebase Authentication.
+
+![Usuarios](./img/usuarios.png)
+
+
+
+
