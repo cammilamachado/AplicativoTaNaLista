@@ -32,8 +32,8 @@ Avaliar se um usuário pode fazer login com praticidade.
 O menu principal está sendo finalizado. No momento, para este teste, o usuário é redirecionado para a página inicial. 
 
 <p align="center">
-  <img src="./img/AdicionarProduto.jpeg" alt="Login" width="35%" />
-  <img src="./img/ListaPreenchida.jpeg" alt="Login2" width="35%" />
+  <img src="./img/Cadastro_Sucesso.jpg" alt="Cadastro" width="35%" />
+  <img src="./img/Sucesso_Cadastro.jpg" alt="Sucesso" width="35%" />
 </p>
 
 ### Conclusão
@@ -50,8 +50,8 @@ Verificar se um usuário pode adicionar um item à sua lista
 
 
 <p align="center">
-  <img src="./img/Cadastro_Sucesso.jpg" alt="Cadastro" width="35%" />
-  <img src="./img/Sucesso_Cadastro.jpg" alt="Sucesso" width="35%" />
+  <img src="./img/AdicionarProduto.jpeg" alt="Login" width="35%" />
+  <img src="./img/ListaPreenchida.jpeg" alt="Login2" width="35%" />
 </p>
 
 ### Conclusão
