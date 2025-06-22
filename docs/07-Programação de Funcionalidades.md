@@ -129,6 +129,12 @@ A estrutura do banco segue o modelo NoSQL orientado a documentos, com coleções
 
 ![Database](./img/database.png)
 
+### Collection: `estoque`
+
+Armazena os itens disponíveis, classificados por categoria, nome e quantidade.
+
+![Estoque](./img/estoque.png)
+
 ### Collection: `gastos`
 
 Registra os gastos estimados e realizados por usuário.
