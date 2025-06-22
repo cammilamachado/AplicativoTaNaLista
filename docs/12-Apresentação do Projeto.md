@@ -27,4 +27,10 @@ Sumário
 * Conclusão
 * Vídeo
 
+# Considerações Finais 
 
+## Avaliação dos Frameworks 
+
+## Análise Crítica 
+
+## Proposta de Melhoria (Projeto Arquitetural e Implementação)
