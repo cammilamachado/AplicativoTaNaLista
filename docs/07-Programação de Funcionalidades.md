@@ -121,7 +121,7 @@ Atribuição de Responsabilidades - Tarsis Augustus
 
 ## Modelo do Projeto de BD
 
-Abaixo estão as principais coleções e documentos utilizados no Firestore Database, com as capturas de tela e estrutura de dados.
+Abaixo estão as coleções e documentos utilizados no Firestore Database, com as capturas de tela e estrutura de dados.
 
 ### Firestore Database
 
