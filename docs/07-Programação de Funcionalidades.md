@@ -124,7 +124,7 @@ Atribuição de Responsabilidades - Tarsis Augustus
 
 ![Listas](./img/listas.png)
 
-![Tarefas](./img/tarefa_por_usuario.png)
+![Tarefas](./img/tarefas_por_usuario.png)
 
 ![Usuarios](./img/usuarios.png)
 
