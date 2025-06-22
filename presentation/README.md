@@ -13,6 +13,8 @@
 Sumário
 
 * Participantes
-*   
-*
+* Sobre o Tá Na Lista!
+* Funcionalidades
+* O que faltou?
 * Conclusão
+* Vídeo
