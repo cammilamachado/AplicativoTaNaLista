@@ -123,31 +123,31 @@ Atribuição de Responsabilidades - Tarsis Augustus
 
 Abaixo estão as coleções e documentos utilizados no Firestore Database, com as capturas de tela e estrutura de dados.
 
-### Firestore Database
+### Firestore Database 
 
 A estrutura do banco segue o modelo NoSQL orientado a documentos, com coleções independentes para organização de dados.
 
 ![Database](./img/database.png)
 
-### Collection de Controle de Gastos
+### Collection: `gastos`
 
 Registra os gastos estimados e realizados por usuário.
 
 ![Gastos](./img/gastos.png)
 
-### Collection de Listas
+### Collection: `listas`
 
 Armazena as listas de compras com data de criação, tipo e participantes.
 
 ![Listas](./img/listas.png)
 
-### Collection de Tarefas por usuário
+### Collection: `tarefas_por_usuario`
 
 Armazena tarefas organizadas por usuário. Cada usuário possui uma subcoleção de tarefas.
 
 ![Tarefas](./img/tarefas_por_usuario.png)
 
-### Collection de usuários cadastrados
+### Collection: `usuarios`
 
 Contém os dados cadastrais de cada usuário vinculado ao UID do Firebase Authentication.
 
