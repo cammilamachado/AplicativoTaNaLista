@@ -110,6 +110,21 @@ Atribuição de Responsabilidades - Tarsis Augustus
 > - Participou ativamente das discussões, com sugestões construtivas.
 > - Confiança e comprometimento mesmo sob várias demandas.
 
+## Padrões de Projeto de Codificação
+
+O aplicativo Tá Na Lista! possui boa organização e adoção de vários padrões de codificação recomendados, o que facilita a manutenção e a escalabilidade.
+
+| Padrões                              | Situação | Observação                                                   |
+|--------------------------------------|----------|--------------------------------------------------------------|
+| **Nomenclatura clara**               | Sim      | Nomes explicativos                                           |
+| **Arquivos com nomes coerentes**     | Sim      | Como Telas nomeadas como `TelaInicial.tsx`, `Login.tsx`, etc |
+| **Indentação**                       | Sim      | Código bem identado e legível                                |
+| **Organização modular**              | Sim      | Separação por telas e responsabilidades                      |
+| **Validação de entradas**            | Sim      | Campos obrigatórios validados antes de envio                 |
+| **Boas práticas com hooks**          | Sim      | Uso correto do `useState`, `useEffect`, etc                  |
+| **Tratamento de erros**              | Sim      | Uso do `try/catch` e `Alert`                                 |
+| **Estilização com StyleSheet**       | Sim      | Padrão adotado em todas as telas com `StyleSheet.create`     |
+
 ## Autenticação
 
 **Evidências de Implementação da Autenticação. A aplicação utiliza o Firebase Authentication para gerenciar o login dos usuários.**
