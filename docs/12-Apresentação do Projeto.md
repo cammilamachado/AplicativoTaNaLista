@@ -63,6 +63,6 @@ Com esse projeto apresentamos uma proposta bem definida e focada nas necessidade
 
 * Funcionalidades secundárias não implementadas como notificações de itens em falta, leitor de código de barras e painel de estatísticas;
 
-* Dependência do Firebase gratuito, pois a limitação na escalabilidade e recursos como banco de dados em tempo real pode impactar na usabilidade e mo crescimento do aplicativo.
+* Dependência do Firebase gratuito, pois a limitação na escalabilidade e recursos como banco de dados em tempo real pode impactar na usabilidade e no crescimento do aplicativo.
 
 ## Proposta de Melhoria (Projeto Arquitetural e Implementação)
