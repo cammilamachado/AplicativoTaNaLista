@@ -12,21 +12,6 @@ Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do proje
 
 Foi utilizado figuras, imagens e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
 
-## Avaliação dos Frameworks Utilizados
-Na construção deste aplicativo em React Native, foi utilizado o Expo como principal framework de desenvolvimento, o que facilitou a configuração do ambiente e permitiu a execução em múltiplas plataformas (Android, iOS e Web). O Expo também proporcionou maior praticidade na utilização de recursos nativos como fontes personalizadas, barra de status e carregamento de assets.
-
-Para a navegação entre telas, foi adotada a biblioteca React Navigation, utilizando tanto a navegação por abas (@react-navigation/bottom-tabs) quanto a navegação em pilha (@react-navigation/native-stack), o que proporcionou uma estrutura de navegação flexível e eficiente.
-
-Como backend, foi integrado o Firebase, através dos módulos @react-native-firebase/app, auth e firestore, permitindo a implementação de autenticação de usuários e o armazenamento de dados de forma escalável na nuvem.
-
-Para armazenamento local, a aplicação utilizou o Async Storage, uma solução leve e adequada para persistência de pequenos volumes de dados offline.
-
-Na camada visual, além da estilização proporcionada pelo Bootstrap-like design via Expo Vector Icons, foi feita a personalização de fontes utilizando o pacote @expo-google-fonts/poppins, o que contribuiu para a identidade visual da aplicação.
-
-Recursos de animações e interações avançadas foram implementados com as bibliotecas Reanimated e Gesture Handler, garantindo uma experiência mais fluida ao usuário. Também foi incorporado um calendário interativo com o react-native-calendars e adicionados componentes dinâmicos como o Bouncy Checkbox.
-
-Além disso, todo o desenvolvimento foi realizado em TypeScript, aumentando a segurança durante o desenvolvimento e facilitando a manutenção futura. A combinação dessas tecnologias garantiu uma aplicação escalável, com boa performance e uma interface moderna e responsiva.
-
 ## Vídeo de Apresentação do Aplicativo
 
 <li><a href=""> Vídeo Tá Na Lista!</a></li>
@@ -44,8 +29,40 @@ Sumário
 
 # Considerações Finais 
 
-## Avaliação dos Frameworks 
+## Avaliação dos Frameworks Utilizados
+
+Na construção deste aplicativo em React Native, foi utilizado o Expo como principal framework de desenvolvimento, o que facilitou a configuração do ambiente e permitiu a execução em múltiplas plataformas (Android, iOS e Web). O Expo também proporcionou maior praticidade na utilização de recursos nativos como fontes personalizadas, barra de status e carregamento de assets.
+
+Para a navegação entre telas, foi adotada a biblioteca React Navigation, utilizando tanto a navegação por abas (@react-navigation/bottom-tabs) quanto a navegação em pilha (@react-navigation/native-stack), o que proporcionou uma estrutura de navegação flexível e eficiente.
+
+Como backend, foi integrado o Firebase, através dos módulos @react-native-firebase/app, auth e firestore, permitindo a implementação de autenticação de usuários e o armazenamento de dados de forma escalável na nuvem.
+
+Para armazenamento local, a aplicação utilizou o Async Storage, uma solução leve e adequada para persistência de pequenos volumes de dados offline.
+
+Na camada visual, além da estilização proporcionada pelo Bootstrap-like design via Expo Vector Icons, foi feita a personalização de fontes utilizando o pacote @expo-google-fonts/poppins, o que contribuiu para a identidade visual da aplicação.
+
+Recursos de animações e interações avançadas foram implementados com as bibliotecas Reanimated e Gesture Handler, garantindo uma experiência mais fluida ao usuário. Também foi incorporado um calendário interativo com o react-native-calendars e adicionados componentes dinâmicos como o Bouncy Checkbox.
+
+Além disso, todo o desenvolvimento foi realizado em TypeScript, aumentando a segurança durante o desenvolvimento e facilitando a manutenção futura. A combinação dessas tecnologias garantiu uma aplicação escalável, com boa performance e uma interface moderna e responsiva.
 
 ## Análise Crítica 
+
+Com esse projeto apresentamos uma proposta bem definida e focada nas necessidades dos jovens universitários de repúblicas. Dessa forma, nossa solução atende a uma demanda específica do público-alvo, oferecendo uma alternativa prática para gerenciar compras compartilhadas. Com isso, utilizando de tecnologias adequadas, o Tá Na Lista! entrega recursos essenciais com boa usabilidade. Essa iniciativa foi realizada de forma eficiente e com foco em resolver problemas do dia a dia.
+
+**Pontos Fortes:**
+
+* Objetivo bem definido;
+
+* Funcionalidades entregues: a criação e compartilhamento de listas, a categorização de itens e o monitoramento de estoque foram concluídos e entregues de forma funcional;
+
+* Interface intuitiva;
+
+* Organização do desenvolvimento do que foi pedido em cada sprint, com clareza na priorização das funcionalidades.
+
+**Pontos de Melhoria:**
+
+* Funcionalidades secundárias não implementadas como notificações de itens em falta, leitor de código de barras e painel de estatísticas;
+
+* Dependência do Firebase gratuito, pois a limitação na escalabilidade e recursos como banco de dados em tempo real pode impactar na usabilidade e mo crescimento do aplicativo.
 
 ## Proposta de Melhoria (Projeto Arquitetural e Implementação)
