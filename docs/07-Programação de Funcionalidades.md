@@ -117,7 +117,7 @@ O aplicativo Tá Na Lista! possui boa organização e adoção de vários padrõ
 | Padrões                              | Situação | Observação                                                   |
 |--------------------------------------|----------|--------------------------------------------------------------|
 | **Nomenclatura clara**               | Sim      | Nomes explicativos                                           |
-| **Arquivos com nomes coerentes**     | Sim      | Como Telas nomeadas como `TelaInicial.tsx`, `Login.tsx`, etc |
+| **Arquivos com nomes coerentes**     | Sim      | Telas nomeadas como `TelaInicial.tsx`, `Login.tsx`, etc      |
 | **Indentação**                       | Sim      | Código bem identado e legível                                |
 | **Organização modular**              | Sim      | Separação por telas e responsabilidades                      |
 | **Validação de entradas**            | Sim      | Campos obrigatórios validados antes de envio                 |
