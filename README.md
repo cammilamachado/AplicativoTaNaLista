@@ -21,11 +21,7 @@ Esta aplicação visa otimizar a administração das compras compartilhadas, abo
   
 ## Orientador
 
-* Pedro Felipe Alves de Oliveira
-  
-## Instruções de utilização
-
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+* Pedro Felipe Alves de Oliveira 
 
 # Documentação
 
